@@ -21,6 +21,7 @@
 
 <script>
 import moment from 'moment'
+import config from '~/.temp/config.js'
 import PostItem from '@/components/PostItem'
 import SiteFooter from '@/components/Footer'
 import Pagination from '@/components/Pagination'
@@ -40,19 +41,33 @@ export default {
           name: 'description',
           content: `Browse posts written by ${this.titleCase(this.$page.author.title)}`
         },
+
+        { property: "og:type", content: 'website' },
+        { property: "og:title", content: `Posts written by ${this.titleCase(this.$page.author.title)}` },
+        { property: "og:description", content: `Browse posts written by ${this.titleCase(this.$page.author.title)}` },
+        { property: "og:url", content: `${this.config.siteUrl}/${this.$page.author.path}/` },
+        { property: "og:image", content: this.ogImageUrl },
+
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:description", content: `Browse posts written by ${this.titleCase(this.$page.author.title)}` },
         { name: "twitter:title", content: `Posts written by ${this.titleCase(this.$page.author.title)}` },
+        { name: "twitter:description", content: `Browse posts written by ${this.titleCase(this.$page.author.title)}` },
         { name: "twitter:site", content: "@cossssmin" },
-        { name: "twitter:image", content: '/images/bleda-card.png' },
         { name: "twitter:creator", content: "@cossssmin" },
-        { property: "og:image", content: '/images/bleda-card.png' },
+        { name: "twitter:image", content: this.ogImageUrl },
       ],
     }
   },
   methods: {
     titleCase(str) {
       return str.replace('-', ' ').split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')
+    }
+  },
+  computed: {
+    config () {
+      return config
+    },
+    ogImageUrl () {
+      return `${this.config.siteUrl}/images/bleda-card.png`
     }
   },
 }

@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import config from '~/.temp/config.js'
 import SiteFooter from '@/components/Footer'
 
 export default {
@@ -46,15 +47,26 @@ export default {
           name: 'description',
           content: 'Introduction to the Bleda blog starter for Gridsome.'
         },
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:description", content: 'Introduction to the Bleda blog starter for Gridsome.' },
-        { name: "twitter:title", content: 'About' },
-        { name: "twitter:site", content: "@cossssmin" },
-        { name: "twitter:image", content: '/images/bleda-card.png' },
-        { name: "twitter:creator", content: "@cossssmin" },
+
+        { property: "og:type", content: 'article' },
+        { property: "og:title", content:'About' },
+        { property: "og:description", content: 'Introduction to the Bleda blog starter for Gridsome.' },
+        { property: "og:url", content: `${this.config.siteUrl}/about/` },
         { property: "og:image", content: '/images/bleda-card.png' },
+
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: 'About' },
+        { name: "twitter:description", content: 'Introduction to the Bleda blog starter for Gridsome.' },
+        { name: "twitter:site", content: "@cossssmin" },
+        { name: "twitter:creator", content: "@cossssmin" },
+        { name: "twitter:image", content: '/images/bleda-card.png' },
       ],
     }
+  },
+  computed: {
+    config () {
+      return config
+    },
   },
 }
 </script>

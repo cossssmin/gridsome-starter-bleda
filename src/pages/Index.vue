@@ -34,13 +34,18 @@ export default {
     return {
       title: this.config.siteName,
       meta: [
+        { property: "og:type", content: 'website' },
+        { property: "og:title", content: this.config.siteName },
+        { property: "og:description", content: this.config.siteDescription },
+        { property: "og:url", content: this.config.siteUrl },
+        { property: "og:image", content: this.ogImageUrl },
+
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:description", content: this.config.siteDescription },
         { name: "twitter:title", content: this.config.siteName },
+        { name: "twitter:description", content: this.config.siteDescription },
         { name: "twitter:site", content: "@cossssmin" },
-        { name: "twitter:image", content: '/images/bleda-card.png' },
         { name: "twitter:creator", content: "@cossssmin" },
-        { property: "og:image", content: '/images/bleda-card.png' },
+        { name: "twitter:image", content: this.ogImageUrl },
       ],
     }
   },
@@ -48,6 +53,9 @@ export default {
     config () {
       return config
     },
+    ogImageUrl () {
+      return `${this.config.siteUrl}/images/bleda-card.png`
+    }
   },
 }
 </script>

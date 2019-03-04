@@ -41,7 +41,9 @@
 
 <script>
 import moment from 'moment'
+import config from '~/.temp/config.js'
 import Alert from '@/components/Alert'
+import slugify from '@sindresorhus/slugify'
 import SiteFooter from '@/components/Footer'
 import PostHeader from '~/components/PostHeader'
 
@@ -60,14 +62,20 @@ export default {
           name: 'description',
           content: this.description(this.$page.post)
         },
+
+        { property: "og:type", content: 'article' },
+        { property: "og:title", content: this.$page.post.title },
+        { property: "og:description", content: this.description(this.$page.post) },
+        { property: "og:url", content: this.postUrl },
+        { property: "article:published_time", content: moment(this.$page.post.date).format('YYYY-MM-DD') },
+        { property: "og:image", content: this.ogImageUrl },
+
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:description", content: this.description(this.$page.post) },
         { name: "twitter:title", content: this.$page.post.title },
+        { name: "twitter:description", content: this.description(this.$page.post) },
         { name: "twitter:site", content: "@cossssmin" },
-        { name: "twitter:image", content: this.$page.post.cover },
         { name: "twitter:creator", content: "@cossssmin" },
-        { property: "og:updated_time", content: this.$page.post.datetime },
-        { property: "og:image", content: this.$page.post.cover },
+        { name: "twitter:image", content: this.ogImageUrl },
       ],
     }
   },
@@ -100,12 +108,24 @@ export default {
 
   },
   computed: {
-    avatar() {
+    config () {
+      return config
+    },
+    avatar () {
       return `/images/authors/${this.$page.post.author.id}.png`
     },
-    postIsOlderThanOneYear() {
+    postIsOlderThanOneYear () {
       let postDate = moment(this.$page.post.datetime)
       return moment().diff(postDate, 'years') > 0 ? true : false
+    },
+    postUrl () {
+      let siteUrl = this.config.siteUrl
+      let postSlug = this.$page.post.slug
+
+      return postSlug ? `${siteUrl}/${postSlug}/` : `${siteUrl}/${slugify(this.$page.post.title)}/`
+    },
+    ogImageUrl () {
+      return this.$page.post.cover || `${this.config.siteUrl}/images/bleda-card.png`
     }
   },
 }
@@ -115,6 +135,7 @@ export default {
 query Post ($path: String) {
   post (path: $path) {
     title
+    slug
     datetime: date (format: "YYYY-MM-DD HH:mm:ss")
     content
     description
