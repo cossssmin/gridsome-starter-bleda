@@ -34,9 +34,8 @@ export default {
     return {
       title: this.config.siteName,
       meta: [
-        { name: "description", content: this.config.description },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:description", content: this.config.description },
+        { name: "twitter:description", content: this.config.siteDescription },
         { name: "twitter:title", content: this.config.siteName },
         { name: "twitter:site", content: "@cossssmin" },
         { name: "twitter:image", content: '/images/bleda-card.png' },

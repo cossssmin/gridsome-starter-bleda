@@ -41,7 +41,11 @@ export default {
     return {
       title: 'About',
       meta: [
-        { name: "description", content: 'Introduction to the Bleda blog starter for Gridsome.' },
+        {
+          key: 'description',
+          name: 'description',
+          content: 'Introduction to the Bleda blog starter for Gridsome.'
+        },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:description", content: 'Introduction to the Bleda blog starter for Gridsome.' },
         { name: "twitter:title", content: 'About' },

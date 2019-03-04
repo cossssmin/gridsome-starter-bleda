@@ -36,7 +36,11 @@ export default {
     return {
       title: `Posts tagged "${this.titleCase(this.$page.tag.title)}"`,
       meta: [
-        { name: "description", content: `Browse posts tagged "${this.titleCase(this.$page.tag.title)}"` },
+        {
+          key: 'description',
+          name: 'description',
+          content: `Browse posts tagged "${this.titleCase(this.$page.tag.title)}"`
+        },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:description", content: `Browse posts tagged "${this.titleCase(this.$page.tag.title)}"` },
         { name: "twitter:title", content: `Posts tagged "${this.titleCase(this.$page.tag.title)}"` },

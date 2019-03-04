@@ -55,7 +55,11 @@ export default {
     return {
       title: `${this.$page.post.title} ${this.$page.post.tag ? '- '+this.$page.post.tag.name : ''}`,
       meta: [
-        { name: "description", content: this.description(this.$page.post) },
+        {
+          key: 'description',
+          name: 'description',
+          content: this.description(this.$page.post)
+        },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:description", content: this.description(this.$page.post) },
         { name: "twitter:title", content: this.$page.post.title },

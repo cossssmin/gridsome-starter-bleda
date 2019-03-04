@@ -35,7 +35,11 @@ export default {
     return {
       title: `Posts written by ${this.titleCase(this.$page.author.title)}`,
       meta: [
-        { name: "description", content: `Browse posts written by ${this.titleCase(this.$page.author.title)}` },
+        {
+          key: 'description',
+          name: 'description',
+          content: `Browse posts written by ${this.titleCase(this.$page.author.title)}`
+        },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:description", content: `Browse posts written by ${this.titleCase(this.$page.author.title)}` },
         { name: "twitter:title", content: `Posts written by ${this.titleCase(this.$page.author.title)}` },
