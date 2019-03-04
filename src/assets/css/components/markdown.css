@@ -1,0 +1,88 @@
+.markdown {
+  p, ul, ol {
+    @apply mb-4;
+  }
+
+  ul li, ol li {
+    @apply mb-4;
+  }
+
+  h2, h3, h4, h5, h6 {
+    @apply font-sans text-black my-6;
+  }
+
+  h5, h6 {
+    @apply uppercase;
+  }
+
+  a {
+    @apply text-blue no-underline transition-color;
+
+    &:hover {
+      @apply text-blue-darker;
+    }
+  }
+
+  pre.shiki {
+    @apply -mx-6 p-6 mb-4 text-sm font-mono leading-code overflow-x-auto scrolling-touch;
+  }
+
+  code.shiki {
+    @apply bg-grey-lighter text-grey-darker !important;
+    @apply p-4 block mb-4 font-mono text-sm leading-code overflow-x-auto scrolling-touch;
+  }
+
+  .shiki-inline {
+    @apply bg-grey-lightest text-grey-darker !important;
+    @apply border border-grey-lighter text-xs px-2 py-1 rounded;
+  }
+
+  mark {
+    @apply bg-yellow-light px-2;
+  }
+
+  dl {
+    dt {
+      @apply text-black text-sm font-sans font-bold uppercase mb-2;
+      + dd {
+        @apply mb-4 pl-2;
+      }
+    }
+    dd {
+      @apply mb-4;
+    }
+  }
+
+  blockquote {
+    @apply border-l-4 border-grey-light p-4 mb-4 mx-4 italic;
+
+    p {
+      @apply mb-0;
+    }
+  }
+
+  hr {
+    @apply h-px bg-grey-light my-8;
+  }
+}
+
+@screen sm {
+  .markdown blockquote {
+    @apply mx-10;
+  }
+}
+
+.post-cover {
+
+  &::after {
+    @apply absolute w-full h-48 pin-l pin-b z-0;
+    content: '';
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.5) 100%);
+  }
+
+  &.fullscreen::after {
+    @apply h-full;
+    background: rgba(0,0,0,.15);
+  }
+}
+
