@@ -1,5 +1,6 @@
 *.log
 .cache
+.vscode
 src/.temp
 node_modules
 dist
