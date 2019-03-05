@@ -29,8 +29,8 @@
   }
 
   code.shiki {
-    @apply bg-grey-lighter text-grey-darker !important;
-    @apply p-4 block mb-4 font-mono text-sm leading-code overflow-x-auto scrolling-touch;
+    @apply bg-grey-lightest text-grey-darker !important;
+    @apply border border-grey-lighter p-4 block mb-4 font-mono text-sm leading-code overflow-x-auto scrolling-touch;
   }
 
   .shiki-inline {
