@@ -24,7 +24,8 @@
   }
 
   pre.shiki {
-    @apply -mx-6 p-6 mb-4 text-sm font-mono leading-code overflow-x-auto scrolling-touch;
+    @apply bg-grey-codeblock !important;
+    @apply border border-grey-lighter -mx-6 p-6 mb-4 text-sm font-mono leading-code overflow-x-auto scrolling-touch;
   }
 
   code.shiki {
@@ -73,7 +74,6 @@
 }
 
 .post-cover {
-
   &::after {
     @apply absolute w-full h-48 pin-l pin-b z-0;
     content: '';
