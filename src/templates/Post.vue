@@ -5,7 +5,9 @@
 
       <article class="container mx-auto max-w-lg px-6 sm:px-12 pt-16" :class="{'border-b border-grey-lighter pb-10 mb-16': !$page.post.author}">
 
-        <alert v-if="postIsOlderThanOneYear" color="orange">This post is over a year old, some of this information may be out of date.</alert>
+        <alert v-if="postIsOlderThanOneYear" class="bg-orange-lightest border-l-4 border-orange text-orange-darker">
+          This post is over a year old, some of this information may be out of date.
+        </alert>
 
         <div :class="{'pb-10': $page.post.author || $page.post.tag}" class="markdown text-lg leading-normal text-grey-darkest" v-html="$page.post.content" />
 
