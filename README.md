@@ -2,7 +2,7 @@
 
 > A blog starter theme for [Gridsome](https://gridsome.org), inspired by the [Attila](https://github.com/zutrinken/attila) Ghost theme and styled with [Tailwind CSS](https://tailwindcss.com).
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hellocosmin/gridsome-starter-bleda)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cossssmin/gridsome-starter-bleda)
 
 ## Demo
 
@@ -30,7 +30,7 @@
 - Taxonomies: Tags and Authors
 - Aproximate read time for posts
 - Post excerpts: automatic or user-defined
-- **Paginated** blog, [tag](https://gridsome-starter-bleda.netlify.com/tag/dummy/), and author archives
+- **Paginated** [blog](https://gridsome-starter-bleda.netlify.com/2/), [tag](https://gridsome-starter-bleda.netlify.com/tag/dummy/), and [author](https://gridsome-starter-bleda.netlify.com/author/gridsome/) archives
 - Easily show post dates in your locale (moment.js)
 - Posts show a warning if they're older than 1 year (configurable)
 
@@ -39,13 +39,13 @@
 It's recommended that you install Bleda with the `gridsome create` command, so that Gridsome removes the `.git` folder and installs NPM dependencies for you: 
 
 ```sh 
-gridsome create my-website https://github.com/hellocosmin/gridsome-starter-bleda.git
+gridsome create my-website https://github.com/cossssmin/gridsome-starter-bleda.git
 ```
 
 Alternatively, you can clone this repo and set it up manually:
 
 ```sh 
-git clone https://github.com/hellocosmin/gridsome-starter-bleda.git my-website
+git clone https://github.com/cossssmin/gridsome-starter-bleda.git my-website
 
 # navigate to the directory
 cd my-website

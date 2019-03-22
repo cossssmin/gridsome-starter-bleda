@@ -1,8 +1,8 @@
 /*! purgecss start ignore */
-@import 'tailwindcss/preflight';
+@import 'tailwindcss/base';
 /*! purgecss end ignore */
 
-@import 'components/postflight';
+@import 'components/resets';
 
 @import 'tailwindcss/components';
 

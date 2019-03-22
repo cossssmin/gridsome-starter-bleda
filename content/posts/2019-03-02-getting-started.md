@@ -19,12 +19,12 @@ cover: https://pbs.twimg.com/profile_banners/710394749207896064/1547818514
 After installing Gridsome, run:
 
 ```
-gridsome create my-website https://github.com/hellocosmin/gridsome-starter-bleda.git
+gridsome create my-website https://github.com/cossssmin/gridsome-starter-bleda.git
 ```
 
 Then, `cd my-website` and `gridsome develop` to start a local development server.
 
-Alternatively, you can clone or download the [repo](https://github.com/hellocosmin/gridsome-starter-bleda).
+Alternatively, you can clone or download the [repo on GitHub](https://github.com/cossssmin/gridsome-starter-bleda).
 
 ## Features
 
@@ -40,7 +40,7 @@ Alternatively, you can clone or download the [repo](https://github.com/hellocosm
 - Taxonomies: Tags and Authors
 - Aproximate read time for posts
 - Post excerpts: automatic or user-defined
-- **Paginated** blog, [tag](https://gridsome-starter-bleda.netlify.com/tag/dummy/), and author archives
+- **Paginated** [blog](/2/), [tag](https://gridsome-starter-bleda.netlify.com/tag/dummy/), and [author](/author/gridsome/) archives
 - Easily show post dates in your locale (moment.js)
 - Posts show a warning if they're older than 1 year (configurable)
 
@@ -108,7 +108,7 @@ Update the feed title and all the default URLs, in `gridsome.config.js`:
 
 Posts that are over one year old will show a warning like this one:
 
-<div class="bg-orange-lightest border-l-4 border-orange text-orange-darker leading-normal p-4 md:mx-6 mb-6" role="alert">
+<div class="bg-orange-100 border-l-4 border-orange-500 text-orange-900 leading-normal p-4 md:mx-6 mb-6" role="alert">
     This post is over a year old, some of this information may be out of date.
 </div>
 

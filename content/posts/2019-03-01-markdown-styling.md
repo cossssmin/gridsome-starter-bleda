@@ -24,7 +24,7 @@ Heading 1 is the title of this page. You should only use it once in a document.
 
 ## Links
 
-When you paste in a URL like so: https://ghost.org, it will be automatically converted to a link. Otherwise, you can use the standard `[link text](https://...)` markdown to create a link.
+When you paste in a URL like so: https://gridsome.org, it will be automatically converted to a link. Otherwise, you can use the standard `[link text](https://...)` markdown to create a link.
 
 ## Ordered list
 

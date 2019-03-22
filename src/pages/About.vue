@@ -1,15 +1,15 @@
 <template>
   <Layout>
     <main>
-      <header class="container max-w-lg mx-auto text-center px-6 pt-24">
+      <header class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto text-center px-6 pt-24">
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-1">About</h1>
-        <p class="text-grey-dark text-lg sm:text-3xl">Lorem ipsum dolor &hellip;</p>
+        <p class="text-grey-dark text-lg sm:text-3xl">Lorem ipsum subtitle &hellip;</p>
       </header>
-      <nav class="absolute pin-t pin-l z-20 mt-6 ml-6">
-        <g-link to="/" class="text-grey-darkest border-grey-dark text-sm border opacity-75 hover:opacity-100 rounded-full no-underline px-4 py-2 transition-opacity">&larr; Home</g-link>
+      <nav class="absolute top-0 left-0 z-20 mt-6 ml-6">
+        <g-link to="/" class="text-gray-900 border-gray-400 text-sm border opacity-75 hover:opacity-100 rounded-full px-4 py-2 transition-opacity">&larr; Home</g-link>
       </nav>
-      <article class="container mx-auto max-w-lg px-6 sm:px-12 pt-16 border-b border-grey-lighter pb-10 mb-16">
-        <div class="markdown text-lg leading-normal text-grey-darkest">
+      <article class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-12 pt-16 border-b border-gray-300 pb-10 mb-16">
+        <div class="markdown text-lg leading-normal text-gray-700">
           <p>This is your about page, say something about you or this blog.</p>
           <p>You can edit this page in <code class="shiki-inline">src/pages/About.vue</code></p>
           <hr>

@@ -7,39 +7,57 @@
     @apply mb-4;
   }
 
+  ul {
+    @apply list-disc pl-4;
+  }
+
+  ol {
+    @apply list-decimal pl-4;
+  }
+
   h2, h3, h4, h5, h6 {
-    @apply font-sans text-black my-6;
+    @apply font-sans font-bold text-black my-6;
   }
 
   h5, h6 {
     @apply uppercase;
   }
 
+  h2 { @apply text-2xl; }
+  h3 { @apply text-xl; }
+  h4 { @apply text-lg; }
+  h5 { @apply text-base; }
+  h6 { @apply text-sm; }
+
+  @screen sm {
+    h2 { @apply text-4xl; }
+  }
+
   a {
-    @apply text-blue no-underline transition-color;
+    @apply text-blue-500 transition-color;
 
     &:hover {
-      @apply text-blue-darker;
+      @apply text-blue-700;
     }
   }
 
   pre.shiki {
-    @apply bg-grey-codeblock !important;
-    @apply border border-grey-lighter -mx-6 p-6 mb-4 text-sm font-mono leading-code overflow-x-auto scrolling-touch;
+    @apply bg-gray-codeblock !important;
+    @apply border border-gray-300 -mx-6 p-6 mb-4 text-sm font-mono leading-code overflow-x-auto scrolling-touch;
   }
 
   code.shiki {
-    @apply bg-grey-lightest text-grey-darker !important;
-    @apply border border-grey-lighter p-4 block mb-4 font-mono text-sm leading-code overflow-x-auto scrolling-touch;
+    @apply bg-gray-100 text-gray-700 !important;
+    @apply border border-gray-300 p-4 block mb-4 font-mono text-sm leading-code overflow-x-auto scrolling-touch;
   }
 
   .shiki-inline {
-    @apply bg-grey-lightest text-grey-darker !important;
-    @apply border border-grey-lighter text-xs px-2 py-1 rounded;
+    @apply bg-gray-100 text-gray-700 !important;
+    @apply border border-gray-300 text-xs px-2 py-1 rounded;
   }
 
   mark {
-    @apply bg-yellow-light px-2;
+    @apply bg-yellow-300 px-2;
   }
 
   dl {
@@ -55,7 +73,7 @@
   }
 
   blockquote {
-    @apply border-l-4 border-grey-light p-4 mb-4 mx-4 italic;
+    @apply border-l-4 border-gray-300 p-4 mb-4 mx-4 italic;
 
     p {
       @apply mb-0;
@@ -63,19 +81,27 @@
   }
 
   hr {
-    @apply h-px bg-grey-light my-8;
+    @apply h-px bg-gray-300 my-8;
   }
 }
 
 @screen sm {
-  .markdown blockquote {
-    @apply mx-10;
+  .markdown {
+    blockquote {
+      @apply mx-10;
+    }
+
+    h2 { @apply text-4xl; }
+    h3 { @apply text-3xl; }
+    h4 { @apply text-2xl; }
+    h5 { @apply text-xl; }
+    h6 { @apply text-base; }
   }
 }
 
 .post-cover {
   &::after {
-    @apply absolute w-full h-48 pin-l pin-b z-0;
+    @apply absolute w-full h-48 left-0 bottom-0 z-0;
     content: '';
     background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.5) 100%);
   }

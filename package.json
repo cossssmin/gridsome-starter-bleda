@@ -30,10 +30,12 @@
     "gridsome-plugin-rss": "^1.1.0",
     "medium-zoom": "^1.0.3",
     "moment": "^2.24.0",
+    "vue-parallaxy": "^1.1.1"
+  },
+  "devDependencies": {
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.2",
-    "tailwindcss": "^0.7.4",
-    "tailwindcss-transitions": "^1.0.4",
-    "vue-parallaxy": "^1.1.1"
+    "tailwindcss": "^1.0.0-beta.3",
+    "tailwindcss-transitions": "^1.0.4"
   }
 }

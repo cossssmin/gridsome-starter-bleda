@@ -2,12 +2,12 @@
   <Layout>
     <main>
       <header>
-        <div class="container flex flex-col-reverse xl:max-w-xl mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-grey-lighter">
-          <h1 class="sm:text-4xl md:text-5xl font-sans font-bold mb-2 capitalize">{{ titleCase($page.author.title) }}</h1>
-          <svg class="w-6 fill-current text-grey mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img" aria-labelledby="authorIcon"><title id="authorIcon">Author posts</title><path d="M5 5a5 5 0 0 1 10 0v2A5 5 0 0 1 5 7V5zM0 16.68A19.9 19.9 0 0 1 10 14c3.64 0 7.06.97 10 2.68V20H0v-3.32z"/></svg>
+        <div class="max-w-xl md:max-w-3xl xl:max-w-4xl flex flex-col-reverse mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-gray-300">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize">{{ titleCase($page.author.title) }}</h1>
+          <svg class="w-5 sm:w-6 fill-current text-gray-500 mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img" aria-labelledby="authorIcon"><title id="authorIcon">Author posts</title><path d="M5 5a5 5 0 0 1 10 0v2A5 5 0 0 1 5 7V5zM0 16.68A19.9 19.9 0 0 1 10 14c3.64 0 7.06.97 10 2.68V20H0v-3.32z"/></svg>
         </div>
-        <nav class="absolute pin-t pin-l z-20 mt-6 ml-6">
-          <g-link to="/" class="text-sm border text-grey-darkest border-grey-dark opacity-75 hover:opacity-100 rounded-full no-underline px-4 py-2 transition-opacity">&larr; Home</g-link>
+        <nav class="absolute top-0 left-0 z-20 mt-6 ml-6">
+          <g-link to="/" class="text-sm border text-gray-900 border-gray-400 opacity-75 hover:opacity-100 rounded-full px-4 py-2 transition-opacity">&larr; Home</g-link>
         </nav>
       </header>
       <section>

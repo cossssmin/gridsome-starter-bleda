@@ -89,7 +89,7 @@ module.exports = {
         options.plugins.unshift(...[
           require('postcss-import'),
           require('postcss-nested'),
-          require('tailwindcss')('tailwind.js'),
+          require('tailwindcss'),
         ])
 
         if (process.env.NODE_ENV === 'production') {
