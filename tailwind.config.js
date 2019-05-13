@@ -311,8 +311,11 @@ module.exports = {
       screen: '100vh',
     },
     padding: theme => theme('spacing'),
-    margin: theme => ({ auto: 'auto', ...theme('spacing') }),
-    negativeMargin: theme => theme('spacing'),
+    margin: theme => ({
+      auto: 'auto',
+      ...theme('spacing'),
+      '-6': '-1.5rem',
+    }),
     objectPosition: {
       bottom: 'bottom',
       center: 'center',
