@@ -67,10 +67,10 @@ module.exports = {
         },
         feedItemOptions: node => ({
           title: node.title,
-          description: node.fields.description,
+          description: node.description,
           url: 'https://gridsome-starter-bleda.netlify.com/' + node.slug,
-          author: node.fields.author,
-          date: node.fields.date
+          author: node.author,
+          date: node.date
         }),
         output: {
           dir: './static',

@@ -20,22 +20,22 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.1.1",
-    "@gridsome/source-filesystem": "^0.3.0",
-    "@gridsome/transformer-remark": "^0.2.1",
-    "gridsome": "^0.5.5",
-    "gridsome-plugin-remark-shiki": "^0.2.0",
+    "@gridsome/source-filesystem": "^0.4.1",
+    "@gridsome/transformer-remark": "^0.3.1",
+    "gridsome": "^0.6.1",
+    "gridsome-plugin-remark-shiki": "^0.3.0",
     "gridsome-plugin-rss": "^1.1.0",
-    "medium-zoom": "^1.0.3",
+    "medium-zoom": "^1.0.4",
     "moment": "^2.24.0",
     "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.2",
-    "tailwindcss": "^1.0.0",
-    "tailwindcss-transitions": "^1.0.4"
+    "tailwindcss": "^1.0.1",
+    "tailwindcss-transitions": "^2.0.0"
   }
 }

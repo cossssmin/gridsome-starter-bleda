@@ -382,6 +382,31 @@ module.exports = {
       '0': 0,
       auto: 'auto',
     },
+    transitionProperty: { // defaults to these values
+      'color': 'color',
+      'border-color': 'border-color',
+      'bg': 'background-color',
+      'opacity': 'opacity',
+      'transform': 'transform',
+    },
+    transitionDuration: { // defaults to these values
+      'default': '250ms',
+      '100': '100ms',
+      '200': '200ms',
+      '300': '300ms',
+      '400': '400ms',
+      '500': '500ms',
+    },
+    transitionTimingFunction: { // defaults to these values
+      'default': 'ease-out',
+    },
+    transitionDelay: { // defaults to these values
+      'none': '0ms',
+    },
+    willChange: { // defaults to these values
+      'opacity': 'opacity',
+      'transform': 'transform',
+    },
   },
   variants: {
     appearance: ['responsive'],
@@ -435,6 +460,10 @@ module.exports = {
     tableLayout: ['responsive'],
     textAlign: ['responsive'],
     textColor: ['responsive', 'hover', 'focus'],
+    transitionProperty: ['responsive'],
+    transitionDuration: ['responsive'],
+    transitionTimingFunction: ['responsive'],
+    transitionDelay: ['responsive'],
     fontSize: ['responsive'],
     fontStyle: ['responsive'],
     textTransform: ['responsive'],
@@ -445,39 +474,13 @@ module.exports = {
     verticalAlign: ['responsive'],
     visibility: ['responsive'],
     whitespace: ['responsive'],
+    willChange: ['responsive'],
     wordBreak: ['responsive'],
     width: ['responsive'],
     zIndex: ['responsive'],
   },
   corePlugins: {},
   plugins: [
-    require('tailwindcss-transitions')({
-      variants: [],
-      properties: {
-        'color': 'color',
-        'border-color': 'border-color',
-        'bg': 'background-color',
-        'opacity': 'opacity',
-        'transform': 'transform',
-      },
-      durations: {
-        'default': '250ms',
-        '100': '100ms',
-        '200': '200ms',
-        '300': '300ms',
-        '400': '400ms',
-        '500': '500ms',
-      },
-      timingFunctions: {
-        'default': 'ease-out',
-      },
-      delays: {
-        'none': '0s',
-      },
-      willChange: {
-        'opacity': 'opacity',
-        'transform': 'transform',
-      },
-    }),
+    require('tailwindcss-transitions')(),
   ],
 }
