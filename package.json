@@ -1,6 +1,7 @@
 {
   "name": "gridsome-starter-bleda",
   "description": "A blog starter for Gridsome.",
+  "private": true,
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
