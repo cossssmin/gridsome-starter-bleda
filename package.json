@@ -13,7 +13,7 @@
     "@gridsome/plugin-sitemap": "^0.2.1",
     "@gridsome/source-filesystem": "^0.5.0",
     "@gridsome/transformer-remark": "^0.3.2",
-    "gridsome": "^0.6.6",
+    "gridsome": "^0.6.7",
     "gridsome-plugin-remark-shiki": "^0.3.0",
     "gridsome-plugin-rss": "^1.1.1",
     "medium-zoom": "^1.0.4",
