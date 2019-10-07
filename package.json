@@ -15,7 +15,7 @@
     "@gridsome/transformer-remark": "^0.3.4",
     "gridsome": "^0.7.6",
     "gridsome-plugin-remark-shiki": "^0.3.0",
-    "gridsome-plugin-rss": "^1.1.3",
+    "gridsome-plugin-rss": "^1.2.0",
     "medium-zoom": "^1.0.4",
     "vue-parallaxy": "^1.1.1"
   },
