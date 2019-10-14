@@ -112,7 +112,7 @@ Posts that are over one year old will show a warning like this one:
     This post is over a year old, some of this information may be out of date.
 </div>
 
-This is a flexible alert component, defined in `/src/components/Alert.vue` and pulled into `/src/templates/Post.vue`: 
+This is a flexible alert component, defined in `/src/components/Alert.vue` and pulled into `/src/templates/Post.vue`:
 
 ```vue
 <template>

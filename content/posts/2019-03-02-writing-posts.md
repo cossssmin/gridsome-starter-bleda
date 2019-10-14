@@ -10,21 +10,21 @@ tags:
 cover: https://images.unsplash.com/photo-1539815913963-92c9bfeb9d1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=900&crop=bottom&q=80
 ---
 
-The starter uses Gridsome's filesystem source plugin, which means blog posts are Markdown files that exist in the `/content/posts` directory. 
+The starter uses Gridsome's filesystem source plugin, which means blog posts are Markdown files that exist in the `/content/posts` directory.
 
 ## Creating a new post
 
 There are 2 ways you can create a new post with Bleda:
 
 1. Simply add a new, uniquely-named `*.md` file in the `/content/posts` directory - duh!
-2. In your terminal, navigate to the project root and run this command: 
+2. In your terminal, navigate to the project root and run this command:
 
     ```sh
     npm run newpost "My post title"
-    ``` 
-    
-    The quotes around the title are mandatory. 
-    
+    ```
+
+    The quotes around the title are mandatory.
+
     This will create a new file named `YYYY-MM-DD-my-post-title.md` under `/content/posts`.
 
 ## Supported Front Matter keys
@@ -63,7 +63,7 @@ This is a short guide to using Markdown - see the [full spec](https://daringfire
 
 #### Paragraphs
 
-A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. (A blank line is any line that looks like a blank line — a line containing nothing but spaces or tabs is considered blank.) 
+A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. (A blank line is any line that looks like a blank line — a line containing nothing but spaces or tabs is considered blank.)
 
 Normal paragraphs should not be indented with spaces or tabs.
 
@@ -90,7 +90,7 @@ Unordered:
 
 ```markdown
 - one
-- two 
+- two
 - three
 ```
 
@@ -105,14 +105,14 @@ Ordered:
 #### Blockquotes
 
 ```markdown
-> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere. 
+> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere.
 ```
 
 ### Inserting Images
 
 Local images are added with `![Image alt text](./images/image.jpg)`
 
-Of course, you can reference images from a CDN: 
+Of course, you can reference images from a CDN:
 
 `![Image alt text](https://example.com/image.jpg)`
 

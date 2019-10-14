@@ -6,7 +6,7 @@ author: gridsome
 tags: ['markdown', 'design']
 ---
 
-**Blog posts in Bleda are written using Markdown. However, you are free to use HTML inside Markdown, for any elements not covered by the spec.** 
+**Blog posts in Bleda are written using Markdown. However, you are free to use HTML inside Markdown, for any elements not covered by the spec.**
 
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions.
 
@@ -28,17 +28,17 @@ When you paste in a URL like so: https://gridsome.org, it will be automatically 
 
 ## Ordered list
 
-1. python 
-2. root 
-3. public 
+1. python
+2. root
+3. public
 4. bypass
 
 ## Unordered list
 
-- boolean 
-- stack 
-- foad 
-- tarball 
+- boolean
+- stack
+- foad
+- tarball
 
 ## A definition list
 
