@@ -6,7 +6,7 @@ class TailwindExtractor {
 
 module.exports = {
   siteName: 'A blog starter for Gridsome',
-  siteDescription: "Bleda is a blog starter kit for Gridsome, the static site generator. It's inspired by Attila for Ghost, and styled with Tailwind CSS.",
+  siteDescription: "Bleda is a blog starter kit for Gridsome, the Vue.js static site generator. It's inspired by Attila for Ghost, and styled with Tailwind CSS.",
   siteUrl: 'https://gridsome-starter-bleda.netlify.com',
   titleTemplate: `%s | Bleda`,
   icon: 'src/favicon.png',
@@ -29,32 +29,29 @@ module.exports = {
       options: {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
-        route: '/:slug',
         refs: {
           tags: {
             typeName: 'Tag',
-            route: '/tag/:id',
-            create: true
+            create: true,
           },
           author: {
             typeName: 'Author',
-            route: '/author/:id',
-            create: true
-          }
-        }
-      }
+            create: true,
+          },
+        },
+      },
     },
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-135446199-1'
-      }
+        id: 'UA-135446199-1',
+      },
     },
     {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000, // default
-      }
+      },
     },
     {
       use: 'gridsome-plugin-rss',
@@ -63,22 +60,28 @@ module.exports = {
         feedOptions: {
           title: 'Bleda, a Gridsome blog starter',
           feed_url: 'https://gridsome-starter-bleda.netlify.com/feed.xml',
-          site_url: 'https://gridsome-starter-bleda.netlify.com'
+          site_url: 'https://gridsome-starter-bleda.netlify.com',
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.description,
           url: 'https://gridsome-starter-bleda.netlify.com/' + node.slug,
           author: node.author,
-          date: node.date
+          date: node.date,
         }),
         output: {
           dir: './static',
-          name: 'feed.xml'
-        }
-      }
+          name: 'feed.xml',
+        },
+      },
     },
   ],
+
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id',
+    Author: '/author/:id',
+  },
 
   chainWebpack: config => {
     config.module
