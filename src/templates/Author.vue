@@ -45,7 +45,7 @@ export default {
         { property: "og:type", content: 'website' },
         { property: "og:title", content: `Posts written by ${this.titleCase(this.$page.author.title)}` },
         { property: "og:description", content: `Browse posts written by ${this.titleCase(this.$page.author.title)}` },
-        { property: "og:url", content: `${this.config.siteUrl}/${this.$page.author.path}/` },
+        { property: "og:url", content: `${this.config.siteUrl}/${this.$page.author.path}` },
         { property: "og:image", content: this.ogImageUrl },
 
         { name: "twitter:card", content: "summary_large_image" },

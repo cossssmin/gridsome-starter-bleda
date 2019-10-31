@@ -46,7 +46,7 @@ export default {
         { property: "og:type", content: 'website' },
         { property: "og:title", content: `Posts tagged "${this.titleCase(this.$page.tag.title)}"` },
         { property: "og:description", content: `Browse posts tagged "${this.titleCase(this.$page.tag.title)}"` },
-        { property: "og:url", content: `${this.config.siteUrl}/${this.$page.tag.path}/` },
+        { property: "og:url", content: `${this.config.siteUrl}/${this.$page.tag.path}` },
         { property: "og:image", content: this.ogImageUrl },
 
         { name: "twitter:card", content: "summary_large_image" },
