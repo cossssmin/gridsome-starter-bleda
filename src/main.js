@@ -10,4 +10,8 @@ export default function (Vue, { head }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Fira+Sans:400,700%7CCardo'
   })
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean'
+  })
 }

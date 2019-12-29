@@ -223,6 +223,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Nanum Gothic',
         'Fira Sans',
         '-apple-system',
         'BlinkMacSystemFont',

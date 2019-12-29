@@ -14,7 +14,7 @@
             <span>{{ post.timeToRead }} min read</span>
           </p>
         </header>
-        <p class="leading-normal text-gray-700 text-lg px-2 sm:px-4 md:px-10" v-html="excerpt(post, 280, ' ...')"></p>
+        <p class="leading-normal font-sans text-gray-700 text-lg px-2 sm:px-4 md:px-10" v-html="excerpt(post, 280, ' ...')"></p>
       </div>
     </div>
   </article>

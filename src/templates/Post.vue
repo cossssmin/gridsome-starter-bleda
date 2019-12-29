@@ -5,8 +5,8 @@
 
       <article class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-12 pt-16" :class="{'border-b border-grey-lighter pb-10 mb-16': !$page.post.author}">
 
-        <alert v-if="postIsOlderThanOneYear" class="bg-orange-100 border-l-4 border-orange-500 text-orange-900">
-          This post is over a year old, some of this information may be out of date.
+        <alert v-if="postIsOlderThanOneYear" class="bg-orange-100 border-l-4 border-orange-500 text-orange-900 font-sans">
+          이 포스트는 작성후 일년 이상 지났기 때문에, 내용중 일부는 현재와 다를 수 있습니다.
         </alert>
 
         <div :class="{'pb-10': $page.post.author || $page.post.tags}" class="markdown text-lg leading-normal text-gray-700" v-html="$page.post.content" />
