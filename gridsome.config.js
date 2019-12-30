@@ -16,7 +16,7 @@ module.exports = {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       plugins: [
-        ['gridsome-plugin-remark-shiki', { theme: 'min-light' }]
+        [ 'gridsome-plugin-remark-shiki', { theme: 'min-light' } ]
       ]
     }
   },
@@ -37,6 +37,11 @@ module.exports = {
             create: true,
           },
         },
+        remark: {
+          plugins: [
+            [ '@noxify/gridsome-plugin-remark-embed', { 'enabledProviders': [ 'Youtube', 'Twitter', 'Gist' ] } ]
+          ]
+        }
       },
     },
     {
