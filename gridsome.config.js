@@ -5,10 +5,10 @@ class TailwindExtractor {
 }
 
 module.exports = {
-  siteName: 'Aliencube Community',
-  siteDescription: ".NET focused open source developers community",
+  siteName: 'Aliencube',
+  siteDescription: "cloud-native open source developers community",
   siteUrl: 'https://blog.aliencube.org',
-  titleTemplate: `%s | Aliencube Community`,
+  titleTemplate: `%s | Aliencube`,
   icon: 'src/favicon.png',
 
   transformers: {
