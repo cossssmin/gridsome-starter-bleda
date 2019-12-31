@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Azure
-- Cloud
-- CQRS
+- github
+- cloud
+- cqrs
 fullscreen: false
 cover: ""
 ---

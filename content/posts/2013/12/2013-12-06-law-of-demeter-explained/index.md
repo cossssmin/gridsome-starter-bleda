@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Law of Demeter
-- Method Chaining
-- Object-Oriented Programming
+- law-of-demeter
+- method-chaining
+- object-oriented-programming
 fullscreen: false
 cover: ""
 ---

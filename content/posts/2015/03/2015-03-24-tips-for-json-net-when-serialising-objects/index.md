@@ -6,8 +6,8 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- JSON
-- Json.NET
+- json
+- json-net
 - serialisation
 fullscreen: false
 cover: ""

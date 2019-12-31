@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- DataAnnotations
+- data-annotations
 - fluent-validation
-- Model Binding
+- model-binding
 - validation
 fullscreen: false
 cover: ""

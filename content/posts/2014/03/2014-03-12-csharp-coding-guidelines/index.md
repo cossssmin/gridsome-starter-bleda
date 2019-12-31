@@ -6,8 +6,8 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- C#
-- Coding Guidelines
+- csharp
+- coding-guidelines
 fullscreen: false
 cover: ""
 ---

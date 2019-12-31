@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- AngularJs
-- jQuery
-- JSON
+- angular-js
+- jquery
+- json
 - web-api
 fullscreen: false
 cover: ""

@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Connection String
+- connection-string
 - entity-framework
-- EntityConnection
+- entity-connection
 fullscreen: false
 cover: ""
 ---

@@ -6,11 +6,11 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- EventLog
-- IIS
+- event-log
+- iis
 - logging
-- SecurityException
-- Web Application
+- security-exception
+- web-application
 fullscreen: false
 cover: ""
 ---

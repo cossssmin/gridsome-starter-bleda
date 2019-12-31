@@ -8,9 +8,9 @@ tags:
 - asp-net-iis
 - '401'
 - '403'
-- AuthorizeAttribute
-- HttpStatusCode
-- MVC
+- authorize-attribute
+- http-status-code
+- mvc
 - web-api
 fullscreen: false
 cover: ""

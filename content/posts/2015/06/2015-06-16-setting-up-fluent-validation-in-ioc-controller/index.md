@@ -6,7 +6,7 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Autofac
+- autofac
 - dependency-injection
 - di
 - fluent-validation

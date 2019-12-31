@@ -6,7 +6,7 @@ description: ""
 author: Justin-Yoo
 tags:
 - front-end-web-dev
-- AngularJs
+- angular-js
 - dependency-injection
 - di
 fullscreen: false

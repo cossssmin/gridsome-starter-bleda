@@ -6,12 +6,12 @@ description: ""
 author: Justin-Yoo
 tags:
 - azure-app-service
-- Translation
-- Architecture
+- translation
+- architecture
 - azure-functions
-- AWS Lambda
+- aws-lambda
 - serverless
-- FaaS
+- faas
 fullscreen: false
 cover: ""
 ---

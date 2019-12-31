@@ -6,12 +6,12 @@ description: ""
 author: Justin-Yoo
 tags:
 - azure-app-service
-- Amazon API Gateway
-- Amazon CloudWatch
-- AWA Lambda
-- GitHub
-- Integration
-- Slack
+- amazon-api-gateway
+- amazon-cloudwatch
+- aws-lambda
+- github
+- integration
+- slack
 - webhook
 fullscreen: false
 cover: ""

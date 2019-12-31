@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Code First
+- code-first
 - entity-framework
-- ORM
+- orm
 fullscreen: false
 cover: ""
 ---

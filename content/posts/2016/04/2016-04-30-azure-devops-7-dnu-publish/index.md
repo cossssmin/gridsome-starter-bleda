@@ -6,11 +6,11 @@ description: ""
 author: Justin-Yoo
 tags:
 - visual-studio-alm
-- Azure
+- github
 - devops
-- DNU
-- DNVM
-- Continuous Delivery
+- dnu
+- dnvm
+- continuous-delivery
 fullscreen: false
 cover: ""
 ---

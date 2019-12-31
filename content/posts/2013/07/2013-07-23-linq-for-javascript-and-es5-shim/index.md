@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - front-end-web-dev
-- ES5-Shim
-- LINQ
-- LINQ-to-JavaScript
+- es5-shim
+- linq
+- linq-to-JavaScript
 - linq.js
 fullscreen: false
 cover: ""

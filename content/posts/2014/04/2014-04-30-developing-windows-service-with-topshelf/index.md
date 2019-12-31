@@ -5,10 +5,10 @@ slug: developing-windows-service-with-topshelf
 description: ""
 author: Justin-Yoo
 tags:
-- Windows App Development
-- Console App
-- TopShelf
-- Windows Service
+- windows-app-development
+- console-app
+- topshelf
+- windows-service
 fullscreen: false
 cover: ""
 ---

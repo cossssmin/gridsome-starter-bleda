@@ -6,11 +6,11 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- Authentication
-- JSON Web Token
-- JWT
-- MVC 5
-- WIF
+- authentication
+- json-web-token
+- jwt
+- mvc-5
+- wif
 fullscreen: false
 cover: ""
 ---

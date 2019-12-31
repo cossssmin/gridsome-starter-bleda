@@ -7,7 +7,7 @@ author: Justin-Yoo
 tags:
 - dotnet
 - auto-mapper
-- DTO
+- dto
 fullscreen: false
 cover: ""
 ---

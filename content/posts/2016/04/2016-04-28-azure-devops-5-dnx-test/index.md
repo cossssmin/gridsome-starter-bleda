@@ -6,13 +6,13 @@ description: ""
 author: Justin-Yoo
 tags:
 - visual-studio-alm
-- Azure
+- github
 - devops
 - asp-net-core
-- Continuous Integration
-- DNVM
-- DNX
-- DNX Test
+- continuous-integration
+- dnvm
+- dnx
+- dnx-test
 fullscreen: false
 cover: ""
 ---

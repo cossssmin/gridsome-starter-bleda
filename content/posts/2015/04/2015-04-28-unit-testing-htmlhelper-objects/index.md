@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- ASP.NET MVC
-- HtmlHelper
-- Moq
-- NSubstitute
+- asp-net-mvc
+- html-helper
+- moq
+- nsubstitute
 - unit-testing
 fullscreen: false
 cover: ""

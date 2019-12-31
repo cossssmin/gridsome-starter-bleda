@@ -6,11 +6,11 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- AngularJs
+- angular-js
 - typescript
-- ASP.NET MVC
-- AutoRest
-- HAL
+- asp-net-mvc
+- autorest
+- hal
 - swagger
 - web-api
 fullscreen: false

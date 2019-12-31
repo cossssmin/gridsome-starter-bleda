@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Amazon Linux
-- C#
-- Mono
+- amazon-linux
+- csharp
+- mono
 fullscreen: false
 cover: ""
 ---

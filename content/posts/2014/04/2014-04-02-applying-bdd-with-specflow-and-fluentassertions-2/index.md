@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- BDD
-- C#
-- FluentAssertions
-- SpecFlow
+- bdd
+- csharp
+- fluent-assertions
+- spec-flow
 fullscreen: false
 cover: ""
 ---

@@ -7,11 +7,11 @@ author: Justin-Yoo
 tags:
 - dotnet
 - entity-framework
-- Object-oriented Design
-- Repository Pattern
-- SOLID
-- SRP
-- Unit of Work
+- object-oriented-design
+- repository-patterns
+- solid
+- srp
+- unit-of-work
 fullscreen: false
 cover: ""
 ---

@@ -7,11 +7,11 @@ author: Justin-Yoo
 tags:
 - visual-studio-alm
 - git
-- GitHub
-- History
-- Migration
-- Team Foundation Server
-- TFS
+- github
+- history
+- migration
+- team-foundation-server
+- tfs
 fullscreen: false
 cover: ""
 ---

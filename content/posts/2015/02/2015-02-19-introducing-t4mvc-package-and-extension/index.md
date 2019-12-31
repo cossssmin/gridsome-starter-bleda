@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- MVC
-- Razor
-- T4 Template
-- T4MVC
+- mvc
+- razor
+- t4-template
+- t4mvc
 fullscreen: false
 cover: ""
 ---

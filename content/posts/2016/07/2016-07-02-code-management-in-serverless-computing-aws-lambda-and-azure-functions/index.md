@@ -7,9 +7,9 @@ author: Justin-Yoo
 tags:
 - azure-app-service
 - azure-functions
-- AWS Lambda
+- aws-lambda
 - serverless
-- APEX
+- apex
 fullscreen: false
 cover: ""
 ---

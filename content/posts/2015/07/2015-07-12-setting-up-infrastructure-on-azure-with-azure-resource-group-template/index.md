@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - arm-devops-on-azure
-- Azure
-- Infrastructure
-- Resource Group Management
+- github
+- infrastructure
+- resource-group-management
 fullscreen: false
 cover: ""
 ---

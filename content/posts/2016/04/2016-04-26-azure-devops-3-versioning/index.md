@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - visual-studio-alm
-- Azure
+- github
 - devops
 - asp-net-core
-- Continuous Build
+- continuous-build
 - Versioning
 fullscreen: false
 cover: ""

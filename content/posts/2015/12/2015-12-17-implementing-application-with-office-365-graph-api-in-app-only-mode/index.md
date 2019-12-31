@@ -6,12 +6,12 @@ description: ""
 author: Justin-Yoo
 tags:
 - enterprise-integration
-- App-only
-- ASP.NET
-- ASP.NET 5
-- ASP.NET MVC 6
-- Graph API
-- Microsoft Graph
+- app-only
+- asp-net
+- asp-net-5
+- asp-net-mvc-6
+- graph-api
+- microsoft-graph
 - o365
 - office-365
 - web-api

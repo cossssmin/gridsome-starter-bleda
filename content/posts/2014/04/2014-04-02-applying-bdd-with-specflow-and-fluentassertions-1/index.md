@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- BDD
-- C#
-- FluentAssertions
-- SpecFlow
+- bdd
+- csharp
+- fluent-assertions
+- spec-flow
 fullscreen: false
 cover: ""
 ---
@@ -35,7 +35,7 @@ cover: ""
     - [SpecFlow](http://www.nuget.org/packages/SpecFlow/)
     - [SpecFlow.NUnit](http://www.nuget.org/packages/SpecFlow.NUnit/)
     - [SpecFlow.NUnit.Runners](http://www.nuget.org/packages/SpecFlow.NUnit.Runners)
-- FluentAssertions NuGet 패키지:
+- fluent-assertions NuGet 패키지:
     
     - [FluentAssertions](http://www.nuget.org/packages/FluentAssertions/2.2.0)
 

@@ -6,18 +6,18 @@ description: ""
 author: Justin-Yoo
 tags:
 - front-end-web-dev
-- CSS3
-- EcmaScript 5
-- ES5-Shim
-- H5BP
+- css3
+- ecmascript-5
+- es5-shim
+- h5bp
 - html5
-- html5 Boilerplate
+- html5-boilerplate
 - linq.js
-- Modernizr
-- Normalize
-- Placeholder
+- modernizr
+- normalize
+- placeholder
 - placeholder.js
-- Monkey Patch
+- monkey-patch
 fullscreen: false
 cover: ""
 ---

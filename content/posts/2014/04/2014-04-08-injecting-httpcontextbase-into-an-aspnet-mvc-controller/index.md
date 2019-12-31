@@ -7,8 +7,8 @@ author: Justin-Yoo
 tags:
 - asp-net-iis
 - dependency-injection
-- HttpContextBase
-- MVC
+- http-context-base
+- mvc
 fullscreen: false
 cover: ""
 ---

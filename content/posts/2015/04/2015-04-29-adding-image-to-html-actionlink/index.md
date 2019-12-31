@@ -6,13 +6,13 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- ActionLink
-- HtmlHelper
-- Image
-- ImageActionLink
-- ImageLink
-- Link
-- MVC
+- action-link
+- html-helper
+- image
+- image-action-link
+- image-link
+- link
+- mvc
 fullscreen: false
 cover: ""
 ---

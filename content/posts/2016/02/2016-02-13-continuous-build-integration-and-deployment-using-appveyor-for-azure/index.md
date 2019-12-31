@@ -6,17 +6,17 @@ description: ""
 author: Justin-Yoo
 tags:
 - arm-devops-on-azure
-- AppVeyor
+- appveyor
 - asp-net-core
-- Azure
+- github
 - azure-website
-- CB
+- cb
 - cd
 - ci
-- Continuous Build
-- Continuous Delivery
-- Continuous Deployment
-- Continuous Integration
+- continuous-build
+- continuous-delivery
+- continuous-deployment
+- continuous-integration
 fullscreen: false
 cover: ""
 ---

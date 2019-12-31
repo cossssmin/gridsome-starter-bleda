@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- C#
-- Default Value
-- Value Type
+- csharp
+- default-value
+- value-type
 fullscreen: false
 cover: ""
 ---

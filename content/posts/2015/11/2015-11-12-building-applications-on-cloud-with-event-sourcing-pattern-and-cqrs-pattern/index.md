@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- AngularJs
-- Cloud Design Pattern
+- angular-js
+- cloud-design-patterns
 - cqrs-patterns
-- Event Sourcing Pattern
+- event-sourcing-patterns
 - typescript
 - web-api
 fullscreen: false

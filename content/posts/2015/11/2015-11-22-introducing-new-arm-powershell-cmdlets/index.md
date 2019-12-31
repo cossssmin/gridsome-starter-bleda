@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - arm-devops-on-azure
-- ARM
-- Azure
-- Cmdlet
-- PowerShell
+- arm
+- github
+- cmdlet
+- powershell
 fullscreen: false
 cover: ""
 ---

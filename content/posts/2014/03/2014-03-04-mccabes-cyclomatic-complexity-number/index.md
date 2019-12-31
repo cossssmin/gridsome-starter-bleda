@@ -6,12 +6,12 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Code Analysis
-- Code Metrics
-- CodeMaid
-- KISS
-- MaCabe Cyclomatic
-- Complexity
+- code-analysis
+- code-metrics
+- codemaid
+- kiss
+- mccabe-cyclomatic
+- complexity
 fullscreen: false
 cover: ""
 ---

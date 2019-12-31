@@ -5,10 +5,10 @@ slug: windows-service-com
 description: ""
 author: Justin-Yoo
 tags:
-- Windows App Development
-- COM Object
-- Windows Services
-- Zombie Process
+- windows-app-development
+- com-object
+- windows-services
+- zombie-process
 fullscreen: false
 cover: ""
 ---

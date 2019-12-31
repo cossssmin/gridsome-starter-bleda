@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- GitHub
-- OAuth
-- Octokit
+- github
+- oauth
+- octokit
 fullscreen: false
 cover: ""
 ---

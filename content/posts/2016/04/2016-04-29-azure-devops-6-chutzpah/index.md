@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - visual-studio-alm
-- Azure
+- github
 - devops
-- JavaScript
-- Chutzpah
+- javascript
+- chutzpah
 - test
 fullscreen: false
 cover: ""

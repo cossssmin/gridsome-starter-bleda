@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - azure-app-service
-- Azure
-- Availability
+- azure
+- availability
 - azure-application-insights
-- WebTest
+- webtest
 fullscreen: false
 cover: ""
 ---

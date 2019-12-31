@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - front-end-web-dev
-- AlienStrap
-- Theme
-- Twitter Bootstrap
+- alienstrap
+- theme
+- twitter-bootstrap
 - wordpress
 fullscreen: false
 cover: ""

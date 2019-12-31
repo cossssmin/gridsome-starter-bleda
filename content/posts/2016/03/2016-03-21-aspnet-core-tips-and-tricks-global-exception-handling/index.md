@@ -7,7 +7,7 @@ author: Justin-Yoo
 tags:
 - asp-net-iis
 - asp-net-core
-- Global Exception Handling
+- global-exception-handling
 fullscreen: false
 cover: ""
 ---

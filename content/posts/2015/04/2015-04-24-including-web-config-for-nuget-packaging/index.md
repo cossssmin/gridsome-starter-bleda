@@ -7,9 +7,9 @@ author: Justin-Yoo
 tags:
 - dotnet
 - nuget
-- Transformation
-- Web.Config
-- XDT
+- transformation
+- web-config
+- xdt
 fullscreen: false
 cover: ""
 ---

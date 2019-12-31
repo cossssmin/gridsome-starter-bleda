@@ -6,13 +6,13 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- Bower
-- Grunt
-- Gulp
-- LESS
+- bower
+- grunt
+- gulp
+- less
 - node.js
 - npm
-- Visual Studio 2013
+- visual-studio-2013
 fullscreen: false
 cover: ""
 ---

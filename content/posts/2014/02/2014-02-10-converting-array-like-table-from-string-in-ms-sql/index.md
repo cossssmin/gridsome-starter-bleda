@@ -7,8 +7,8 @@ author: Justin-Yoo
 tags:
 - asp-net-iis
 - array
-- MS-SQL
-- Query
+- ms-sql
+- query
 fullscreen: false
 cover: ""
 ---

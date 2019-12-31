@@ -6,8 +6,8 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- ForEach
-- Parallel
+- for-each
+- parallel
 fullscreen: false
 cover: ""
 ---

@@ -6,11 +6,11 @@ description: ""
 author: Justin-Yoo
 tags:
 - front-end-web-dev
-- AJAX
+- ajax
 - api
 - gh-pages
-- GitHub
-- jQuery
+- github
+- jquery
 - linq.js
 fullscreen: false
 cover: ""

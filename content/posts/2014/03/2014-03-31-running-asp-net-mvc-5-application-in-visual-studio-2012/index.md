@@ -6,8 +6,8 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- MVC 5
-- Visual Studio 2012
+- mvc-5
+- visual-studio-2012
 fullscreen: false
 cover: ""
 ---

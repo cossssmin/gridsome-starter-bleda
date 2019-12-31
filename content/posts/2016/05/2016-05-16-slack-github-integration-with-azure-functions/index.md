@@ -7,9 +7,9 @@ author: Justin-Yoo
 tags:
 - azure-app-service
 - azure-functions
-- GitHub
-- Integration
-- Slack
+- github
+- integration
+- slack
 - webhook
 fullscreen: false
 cover: ""

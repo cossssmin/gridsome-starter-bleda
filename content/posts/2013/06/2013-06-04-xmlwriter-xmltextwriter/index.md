@@ -6,8 +6,8 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- XmlNode
-- XmlTextWriter
+- xml-node
+- xml-text-writer
 fullscreen: false
 cover: ""
 ---

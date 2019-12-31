@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - front-end-web-dev
-- EcmaScript 5
-- JavaScript
-- Strict Mode
-- Translation
+- ecmascript-5
+- javascript
+- strict-mode
+- translation
 fullscreen: false
 cover: ""
 ---

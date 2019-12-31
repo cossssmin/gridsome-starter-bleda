@@ -8,7 +8,7 @@ tags:
 - azure-app-service
 - api-management
 - asp-net-core
-- Azure
+- github
 - swagger
 fullscreen: false
 cover: ""

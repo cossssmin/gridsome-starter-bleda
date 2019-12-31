@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- ASP.NET
-- XElement
-- XmlNode
+- asp-net
+- x-element
+- xml-node
 fullscreen: false
 cover: ""
 ---

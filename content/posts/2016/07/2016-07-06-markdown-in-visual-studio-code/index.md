@@ -5,11 +5,11 @@ slug: markdown-in-visual-studio-code
 description: ""
 author: Justin-Yoo
 tags:
-- Visual Studio Extensibility
-- GFM
-- GitHub Flavoured Markdown
-- Markdown
-- Visual Studio Code
+- visual-studio-extensibility
+- gfm
+- github-flavoured-markdown
+- markdown
+- visual-studio-code
 fullscreen: false
 cover: ""
 ---

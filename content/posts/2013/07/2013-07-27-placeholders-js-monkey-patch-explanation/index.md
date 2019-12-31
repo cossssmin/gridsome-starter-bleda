@@ -6,14 +6,14 @@ description: ""
 author: Justin-Yoo
 tags:
 - front-end-web-dev
-- IE8
-- IE9
-- JavaScript
-- jQuery
-- jQuery.placeholder
-- Placeholder
+- ie8
+- ie9
+- javascript
+- jquery
+- jquery.placeholder
+- placeholder
 - placeholder.js
-- Monkey Patch
+- monkey-patch
 fullscreen: false
 cover: ""
 ---

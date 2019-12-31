@@ -6,8 +6,8 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- HttpServerUtility
-- MapPath
+- http-server-utility
+- map-path
 fullscreen: false
 cover: ""
 ---

@@ -6,12 +6,12 @@ description: ""
 author: Justin-Yoo
 tags:
 - visual-studio-alm
-- Azure
+- github
 - devops
 - asp-net-core
-- Continuous Build
-- DNU
-- DNVM
+- continuous-build
+- dnu
+- dnvm
 fullscreen: false
 cover: ""
 ---

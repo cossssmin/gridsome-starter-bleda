@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Console App
-- Converter
-- Encoding
+- console-app
+- converter
+- encoding
 fullscreen: false
 cover: ""
 ---
@@ -44,7 +44,7 @@ Aliencube.TextEncodingConverter.ConsoleApp.exe /d /ie:949 /oe:utf-8 /i:sample /o
 ## Future Release
 
 - GUI Application for Windows
-- Console Application for Mac
+- console-app for Mac
 - GUI Application for Mac
 
 ## Contribution

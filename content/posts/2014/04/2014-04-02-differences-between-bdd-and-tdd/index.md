@@ -6,8 +6,8 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- BDD
-- TDD
+- bdd
+- tdd
 fullscreen: false
 cover: ""
 ---

@@ -6,8 +6,8 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- HAL
-- REST
+- hal
+- rest
 - serialisation
 - web-api
 fullscreen: false

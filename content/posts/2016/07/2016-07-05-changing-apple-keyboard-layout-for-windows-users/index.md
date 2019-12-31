@@ -5,11 +5,11 @@ slug: changing-apple-keyboard-layout-for-windows-users
 description: ""
 author: Justin-Yoo
 tags:
-- Windows for IT
-- Windows
-- Keyboard
-- Layout
-- Mapping
+- windows-for-it
+- windows
+- keyboard
+- layout
+- mapping
 fullscreen: false
 cover: ""
 ---

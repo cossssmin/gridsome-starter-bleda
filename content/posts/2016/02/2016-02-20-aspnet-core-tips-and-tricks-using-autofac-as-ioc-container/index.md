@@ -7,7 +7,7 @@ author: Justin-Yoo
 tags:
 - asp-net-iis
 - asp-net-core
-- Autofac
+- autofac
 - dependency-injection
 - ioc
 fullscreen: false

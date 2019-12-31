@@ -6,11 +6,11 @@ description: ""
 author: Justin-Yoo
 tags:
 - visual-studio-alm
-- Azure
+- aure
 - devops
-- MSDeploy
-- WAWSDeploy
-- Continuous Deployment
+- msdeploy
+- wawsdeploy
+- continuous-deployment
 fullscreen: false
 cover: ""
 ---

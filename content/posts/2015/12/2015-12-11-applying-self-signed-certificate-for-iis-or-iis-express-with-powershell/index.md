@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- IIS
-- IIS Express
-- PowerShell
-- Self-signed Certificate
+- iis
+- iis-express
+- powershell
+- self-signed-certificate
 fullscreen: false
 cover: ""
 ---

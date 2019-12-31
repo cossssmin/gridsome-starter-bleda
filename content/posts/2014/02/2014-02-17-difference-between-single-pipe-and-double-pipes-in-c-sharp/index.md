@@ -6,8 +6,8 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Bitwise Operator
-- Logical Operator
+- bitwise-operator
+- logical-operator
 fullscreen: false
 cover: ""
 ---

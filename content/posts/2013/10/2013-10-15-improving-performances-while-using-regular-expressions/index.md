@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Compile
-- Regular Expression
-- Runtime
+- compile-time
+- regular-expression
+- runtime
 fullscreen: false
 cover: ""
 ---

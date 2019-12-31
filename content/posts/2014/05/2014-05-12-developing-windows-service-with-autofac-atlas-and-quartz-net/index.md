@@ -5,11 +5,11 @@ slug: developing-windows-service-with-autofac-atlas-and-quartz-net
 description: ""
 author: Justin-Yoo
 tags:
-- Windows App Development
-- Atlas
-- Autofac
-- Quartz.NET
-- Windows Service
+- windows-app-development
+- atlas
+- autofac
+- quartz-net
+- windows-service
 fullscreen: false
 cover: ""
 ---

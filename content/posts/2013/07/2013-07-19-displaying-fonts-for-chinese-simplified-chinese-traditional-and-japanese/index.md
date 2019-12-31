@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - front-end-web-dev
-- Fonts
-- Chinese
-- Japanese
+- fonts
+- chinese
+- japanese
 fullscreen: false
 cover: ""
 ---

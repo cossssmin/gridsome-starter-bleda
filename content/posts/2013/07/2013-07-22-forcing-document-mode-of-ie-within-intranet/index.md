@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- IE Document Mode
-- IIS Configuration
-- Intranet
+- ie-document-mode
+- iis-configuration
+- intranet
 fullscreen: false
 cover: ""
 ---

@@ -6,7 +6,7 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- Amazon Linux
+- amazon-linux
 - dotnet-core
 fullscreen: false
 cover: ""

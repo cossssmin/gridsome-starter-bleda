@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - visual-studio-alm
-- Azure
+- github
 - devops
-- Service Principal
+- service-principal
 fullscreen: false
 cover: ""
 ---

@@ -6,10 +6,10 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- crmsvcutil.exe
-- Dynamics CRM 2015
-- Dynamics CRM 2015 Online
-- Entity Filtering
+- crmsvcutil-exe
+- dynamics-crm-2015
+- dynamics-crm-2015-online
+- entity-filtering
 - testability
 fullscreen: false
 cover: ""

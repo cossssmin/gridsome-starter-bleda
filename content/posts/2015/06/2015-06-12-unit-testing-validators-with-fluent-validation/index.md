@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - dotnet
-- FluentAssertions
+- fluent-assertions
 - fluent-validation
-- NUnit
+- nunit
 - unit-testing
 fullscreen: false
 cover: ""

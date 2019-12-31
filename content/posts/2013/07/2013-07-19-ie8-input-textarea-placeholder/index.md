@@ -6,9 +6,9 @@ description: ""
 author: Justin-Yoo
 tags:
 - front-end-web-dev
-- IE8
-- jQuery
-- Placeholder
+- ie8
+- jquery
+- placeholder
 - plugin
 fullscreen: false
 cover: ""

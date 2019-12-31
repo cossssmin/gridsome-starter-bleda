@@ -6,11 +6,11 @@ description: ""
 author: Justin-Yoo
 tags:
 - asp-net-iis
-- ASP.NET
-- IsolatedStorageException
-- OpenXML
-- System.IO.Packaging
-- Troubleshooting
+- asp-net
+- isolated-storage-exception
+- open-xml
+- system-io-packaging
+- troubleshooting
 fullscreen: false
 cover: ""
 ---
