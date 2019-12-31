@@ -16,7 +16,7 @@ jobs:
     - name: Install Netlify CLI
       shell: bash
       run: |
-        npm install -g netlify-cli
+        sudo npm install -g netlify-cli
 
     - name: Install npm packages
       shell: bash
