@@ -1,0 +1,34 @@
+name: Publish Static Web App to Azure Blob Storage
+
+on:
+  push:
+    branches:
+    - dev
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v1
+
+    - name: Install Netlify CLI
+      shell: bash
+      run: |
+        npm install -g netlify-cli
+
+    - name: Install npm packages
+      shell: bash
+      run: |
+        npm install
+
+    - name: Build app
+      shell: bash
+      run: |
+        npm run build
+
+    - name: Publish app
+      shell: bash
+      run: |
+        netlify deploy -s ${{ secrets.NETLIFY_SITE_ID }} -a ${{ secrets.NETLIFY_AUTH_TOKEN }}
