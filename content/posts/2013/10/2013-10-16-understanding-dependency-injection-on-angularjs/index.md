@@ -3,12 +3,12 @@ title: "AngularJS 디펜던시 인젝션(DI) 이해하기"
 date: "2013-10-16"
 slug: understanding-dependency-injection-on-angularjs
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - AngularJs
-- Dependency Injection
-- DI
+- dependency-injection
+- di
 fullscreen: false
 cover: ""
 ---

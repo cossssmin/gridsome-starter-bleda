@@ -3,13 +3,13 @@ title: "Azure Functions 프리컴파일링 자세히 보기"
 date: "2017-04-30"
 slug: precompiled-azure-functions-revisited
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- CQRS Pattern
-- Precompiling
-- Web API
+- azure-app-service
+- azure-functions
+- cqrs-patterns
+- precompiling
+- web-api
 fullscreen: false
 cover: ""
 ---

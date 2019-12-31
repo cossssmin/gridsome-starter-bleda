@@ -1,15 +1,15 @@
 ---
-title: "아주어 API Management 팁 & 트릭 - Swagger 2.0"
+title: "아주어 API Management 팁 & 트릭 - swagger 2.0"
 date: "2016-03-01"
 slug: azure-api-management-tips-and-tricks-swagger-20
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- API Management
-- ASP.NET Core
+- azure-app-service
+- api-management
+- asp-net-core
 - Azure
-- Swagger
+- swagger
 fullscreen: false
 cover: ""
 ---

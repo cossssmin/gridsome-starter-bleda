@@ -3,11 +3,11 @@ title: "Entity Framework 커넥션 스트링 가변적으로 구성하기"
 date: "2013-09-02"
 slug: setting-up-connection-string-for-entity-framework-dynamically
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Connection String
-- Entity Framework
+- entity-framework
 - EntityConnection
 fullscreen: false
 cover: ""

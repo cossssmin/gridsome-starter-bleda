@@ -3,15 +3,15 @@ title: "크로스 브라우징을 위한 HTML5 Boilerplate + 추가 스크립트
 date: "2013-07-28"
 slug: html5-boilerplate-and-more-for-seamless-cross-browsing
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - CSS3
 - EcmaScript 5
 - ES5-Shim
 - H5BP
-- HTML5
-- HTML5 Boilerplate
+- html5
+- html5 Boilerplate
 - linq.js
 - Modernizr
 - Normalize

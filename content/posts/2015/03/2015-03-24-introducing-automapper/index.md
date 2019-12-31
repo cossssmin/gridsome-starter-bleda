@@ -3,10 +3,10 @@ title: "AutoMapper 소개"
 date: "2015-03-24"
 slug: introducing-automapper
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
-- AutoMapper
+- dotnet
+- auto-mapper
 - DTO
 fullscreen: false
 cover: ""

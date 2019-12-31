@@ -3,16 +3,16 @@ title: "애저 데브옵스 확장 기능을 애저 데브옵스에서 개발하
 date: "2019-07-24"
 slug: building-azure-devops-extension-on-azure-devops-5
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
-- Azure DevOps
-- Extensions
-- ALM
-- Publish
-- Automated
-- CI
-- CD
+- visual-studio-alm
+- azure-devops
+- extensions
+- alm
+- publish
+- automated
+- ci
+- cd
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/06/building-azure-devops-extension-on-azure-devops.png
 ---

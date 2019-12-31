@@ -3,13 +3,13 @@ title: "로직 앱을 이용해서 Tick 또는 유닉스 타임스탬프 값을 
 date: "2018-11-04"
 slug: converting-tick-or-epoch-to-timestamp-in-logic-app
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Logic Apps
-- Epoch
-- Ticks
-- Timestamp
+- azure-app-service
+- azure-logic-apps
+- epoch
+- ticks
+- timestamp
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/11/converting-tick-or-epoch-to-timestamp-in-logic-app-00.png
 ---

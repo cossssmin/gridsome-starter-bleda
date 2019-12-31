@@ -3,9 +3,9 @@ title: "JSON Web Token(JWT)으로 Session 객체를 대체할 수 있을까?"
 date: "2015-02-12"
 slug: can-json-web-token-jwt-alter-session-object
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - Authentication
 - JSON Web Token
 - JWT

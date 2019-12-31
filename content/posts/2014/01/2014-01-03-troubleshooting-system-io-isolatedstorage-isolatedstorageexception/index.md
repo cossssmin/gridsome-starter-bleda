@@ -3,9 +3,9 @@ title: "System.IO.IsolatedStorage.IsolatedStorageException 에러 발생시 해�
 date: "2014-01-03"
 slug: troubleshooting-system-io-isolatedstorage-isolatedstorageexception
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - ASP.NET
 - IsolatedStorageException
 - OpenXML

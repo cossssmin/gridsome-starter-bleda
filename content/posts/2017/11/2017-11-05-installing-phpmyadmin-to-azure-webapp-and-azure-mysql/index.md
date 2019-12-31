@@ -3,13 +3,13 @@ title: "phpMyAdmin 애플리케이션을 애저 웹 앱에 설치하고 애저 M
 date: "2017-11-05"
 slug: installing-phpmyadmin-to-azure-webapp-and-azure-mysql
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Web App
-- PhpMyAdmin
-- PHP
-- MySQL
+- azure-app-service
+- azure-web-app
+- phpmyadmin
+- php
+- mysql
 fullscreen: false
 cover: ""
 ---

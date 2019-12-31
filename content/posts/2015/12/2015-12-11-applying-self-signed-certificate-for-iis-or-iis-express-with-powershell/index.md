@@ -3,9 +3,9 @@ title: "파워쉘을 이용하여 IIS 또는 IIS Express에 자가서명 루트 
 date: "2015-12-11"
 slug: applying-self-signed-certificate-for-iis-or-iis-express-with-powershell
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - IIS
 - IIS Express
 - PowerShell

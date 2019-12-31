@@ -3,10 +3,10 @@ title: "MS-SQL 쿼리를 이용하여 문자열을 배열로 전환하기"
 date: "2014-02-10"
 slug: converting-array-like-table-from-string-in-ms-sql
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- Array
+- asp-net-iis
+- array
 - MS-SQL
 - Query
 fullscreen: false

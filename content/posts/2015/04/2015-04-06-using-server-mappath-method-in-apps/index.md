@@ -3,9 +3,9 @@ title: "앱에서도 Server.MapPath() 메소드 사용하기"
 date: "2015-04-06"
 slug: using-server-mappath-method-in-apps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - HttpServerUtility
 - MapPath
 fullscreen: false
@@ -19,7 +19,7 @@ cover: ""
 ## 라이브러리
 
 - 소스코드: [https://github.com/aliencube/AlienUtility](https://github.com/aliencube/AlienUtility)
-- NuGet: [https://www.nuget.org/packages/Aliencube.AppUtilities/](https://www.nuget.org/packages/Aliencube.AppUtilities/)
+- nuget: [https://www.nuget.org/packages/Aliencube.AppUtilities/](https://www.nuget.org/packages/Aliencube.AppUtilities/)
 
 ## 코드 소개
 

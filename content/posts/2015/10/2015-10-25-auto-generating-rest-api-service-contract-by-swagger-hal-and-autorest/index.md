@@ -3,16 +3,16 @@ title: "Swagger 및 HAL, AutoRest를 이용한 Web API 서비스 콘트랙트 �
 date: "2015-10-25"
 slug: auto-generating-rest-api-service-contract-by-swagger-hal-and-autorest
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - AngularJs
-- TypeScript
+- typescript
 - ASP.NET MVC
 - AutoRest
 - HAL
-- Swagger
-- Web API
+- swagger
+- web-api
 fullscreen: false
 cover: ""
 ---

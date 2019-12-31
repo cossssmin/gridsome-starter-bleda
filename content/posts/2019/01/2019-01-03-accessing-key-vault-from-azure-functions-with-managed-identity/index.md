@@ -3,15 +3,15 @@ title: "애저 펑션에서 Managed Identity를 이용해 애저 키 저장소�
 date: "2019-01-03"
 slug: accessing-key-vault-from-azure-functions-with-managed-identity
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Azure Key Vault
-- Managed Identity
-- Managed Service Identity
-- Dependency Injection
-- DI
+- azure-app-service
+- azure-functions
+- azure-key-vault
+- managed-identity
+- managed-service-identity
+- dependency-injection
+- di
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/01/accessing-key-vault-from-azure-functions-with-managed-identity-00.png
 ---

@@ -3,16 +3,16 @@ title: "애저 데브옵스 파이프라인 리팩토링 테크닉"
 date: "2019-09-04"
 slug: azure-devops-pipelines-refactoring-technics
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
-- Azure DevOps
-- Azure Pipelines
-- Refactoring
-- Templates
-- Stages
-- Jobs
-- Steps
+- visual-studio-alm
+- azure-devops
+- azure-pipelines
+- refactoring
+- templates
+- stages
+- jobs
+- steps
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/08/azure-devops-pipelines-refactoring-technics-00.jpg
 ---

@@ -3,9 +3,9 @@ title: "Enumerable.FirstOrDefault() 메소드가 반환하는 기본 값"
 date: "2014-02-16"
 slug: what-enumerable-firstordefault-tsource-returns-as-a-default-value
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - C#
 - Default Value
 - Value Type

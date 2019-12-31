@@ -3,9 +3,9 @@ title: "데메테르의 법칙 Law of Demeter"
 date: "2013-12-06"
 slug: law-of-demeter-explained
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Law of Demeter
 - Method Chaining
 - Object-Oriented Programming

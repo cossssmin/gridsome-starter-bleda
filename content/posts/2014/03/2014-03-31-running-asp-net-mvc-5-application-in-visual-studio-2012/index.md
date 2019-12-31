@@ -3,9 +3,9 @@ title: "비주얼 스튜디오 2012에서 ASP.NET MVC 5 돌리기"
 date: "2014-03-31"
 slug: running-asp-net-mvc-5-application-in-visual-studio-2012
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - MVC 5
 - Visual Studio 2012
 fullscreen: false

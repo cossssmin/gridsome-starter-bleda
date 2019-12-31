@@ -3,16 +3,16 @@ title: "HTML5 Media Capture API와 Azure Cognitive Services를 이용한 OCR 구
 date: "2017-03-28"
 slug: implementing-ocr-using-azure-cognitive-services-with-html5-media-capture-api
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
-- ASP.NET Core
-- TypeScript
-- Vue.js
-- Azure Cognitive Services
-- Vision API
-- HTML Media Capture
-- OCR
+- front-end-web-dev
+- asp-net-core
+- typescript
+- vue-js
+- azure-cognitive-services
+- vision-api
+- html-media-capture
+- ocr
 fullscreen: false
 cover: ""
 ---
@@ -90,7 +90,7 @@ https://gist.github.com/justinyoo/9feb495ce38577ac8128810fdc13993e
 
 ## Web API 구현 - ProjectOxford Vision API
 
-Web API 구현은 상당히 간단하다. [`HttpClient`](https://docs.microsoft.com/de-de/dotnet/core/api/system.net.http.httpclient) 클라스를 이용해서 REST API를 직접 호출하면 된다. 또는 아예 [ProjectOxford - Vision API](https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/) NuGet 패키지를 이용하면 더 쉽게 Vision API를 이용할 수 있다. 아래 코드는 간단히 구현한 Web API이다.
+Web API 구현은 상당히 간단하다. [`HttpClient`](https://docs.microsoft.com/de-de/dotnet/core/api/system.net.http.httpclient) 클라스를 이용해서 REST API를 직접 호출하면 된다. 또는 아예 [ProjectOxford - vision-api](https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/) NuGet 패키지를 이용하면 더 쉽게 Vision API를 이용할 수 있다. 아래 코드는 간단히 구현한 Web API이다.
 
 https://gist.github.com/justinyoo/a3088d9a0f85dacf3ec94c109c8138ac
 

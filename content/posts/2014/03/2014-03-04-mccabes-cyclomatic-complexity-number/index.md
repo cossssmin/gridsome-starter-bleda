@@ -3,9 +3,9 @@ title: "McCabe 소프트웨어 복잡도 지수"
 date: "2014-03-04"
 slug: mccabes-cyclomatic-complexity-number
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Code Analysis
 - Code Metrics
 - CodeMaid

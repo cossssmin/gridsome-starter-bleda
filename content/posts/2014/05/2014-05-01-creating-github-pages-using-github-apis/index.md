@@ -3,11 +3,11 @@ title: "GitHub API를 이용하여 페이지 만들기"
 date: "2014-05-01"
 slug: creating-github-pages-using-github-apis
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - AJAX
-- API
+- api
 - gh-pages
 - GitHub
 - jQuery

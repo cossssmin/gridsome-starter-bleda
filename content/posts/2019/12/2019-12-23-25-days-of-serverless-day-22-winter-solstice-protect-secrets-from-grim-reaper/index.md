@@ -3,16 +3,16 @@ title: "25일간의 서버리스 챌린지 (22일차): 동짓날 저승 사자�
 date: "2019-12-23"
 slug: 25-days-of-serverless-day-22-winter-solstice-protect-secrets-from-grim-reaper
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- '25 Days of Serverless'
-- Azure Blob Storage
-- Azure Functions
-- Azure Key Vault
-- Backup
-- Restore
-- Serverless Challenges
+- azure-app-service
+- '25-days-of-serverless'
+- azure-blob-storage
+- azure-functions
+- azure-key-vault
+- backup
+- restore
+- serverless-challenges
 fullscreen: true
 cover: https://res.cloudinary.com/jen-looper/image/upload/v1575489111/images/challenge-22_glk8t3.jpg
 ---

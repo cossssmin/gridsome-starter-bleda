@@ -3,18 +3,18 @@ title: "애저 펑션을 위한 SRE 첫걸음"
 date: "2019-08-14"
 slug: azure-functions-sre-on-azure-devops-the-first-cut
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
-- SRE
-- DevOps
-- Azure Functions
-- Azure DevOps
-- Azure Pipelines
-- Multi-stage
-- Unit Testing
-- Integration Testing
-- End-to-end Testing
+- visual-studio-alm
+- sre
+- devops
+- azure-functions
+- azure-devops
+- azure-pipelines
+- multi-stage
+- unit-testing
+- integration-testing
+- end-to-end-testing
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/07/azure-functions-sre-on-azure-devops-the-first-cut-00.png
 ---

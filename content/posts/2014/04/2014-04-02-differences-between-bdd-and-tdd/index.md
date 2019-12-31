@@ -3,9 +3,9 @@ title: "BDD와 TDD의 차이"
 date: "2014-04-02"
 slug: differences-between-bdd-and-tdd
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - BDD
 - TDD
 fullscreen: false

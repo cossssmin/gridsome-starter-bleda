@@ -3,12 +3,12 @@ title: "Azure DevOps 시리즈 #3 - Versioning"
 date: "2016-04-26"
 slug: azure-devops-3-versioning
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
+- visual-studio-alm
 - Azure
-- DevOps
-- ASP.NET Core
+- devops
+- asp-net-core
 - Continuous Build
 - Versioning
 fullscreen: false
@@ -26,7 +26,7 @@ cover: ""
 7. [애플리케이션 패키지 자동화 - DNU Publish](http://blog.aliencube.org/ko/2016/04/30/azure-devops-7-dnu-publish)
 8. [애플리케이션 배포 자동화 - MSDeploy/WAWSDeploy](http://blog.aliencube.org/ko/2016/05/01/azure-devops-8-msdeploy-wawsdeploy)
 9. 데이터베이스 이전 자동화 1 - KUDU
-10. 데이터베이스 이전 자동화 2 - Azure Functions
+10. 데이터베이스 이전 자동화 2 - azure-functions
 
 [지난 포스트](http://blog.aliencube.org/ko/2016/04/24/azure-devops-2-arm-templates)에서는 ARM 템플릿을 이용해서 리소스들을 자동으로 설치하는 방법에 대해 알아보았다. 이제 실제로 애플리케이션을 Azure Web App에 배포해야 하는데, 배포 전에 반드시 수행해야 할 작업들이 빌드, 테스트, 패키징 등이 있다. 일반적으로 빌드 서버에서 이런 작업들이 이루어지면서 매번 빌드할 때 마다 빌드 번호를 부여받는다. 이 포스트에서는 이 빌드 번호를 애플리케이션의 버저닝에 포함시키는 스크립트를 작성해 보도록 한다.
 

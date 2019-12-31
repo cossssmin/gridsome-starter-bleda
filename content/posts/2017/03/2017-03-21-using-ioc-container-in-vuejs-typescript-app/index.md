@@ -3,17 +3,17 @@ title: "Vue.js + TypeScript 앱에서 IoC 컨테이너 사용하기"
 date: "2017-03-21"
 slug: using-ioc-container-in-vuejs-typescript-app
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
-- ASP.NET Core
-- TypeScript
-- Vue.js
-- Dependency Injection
-- DI
-- InversifyJs
-- Inversion of Control
-- IoC
+- front-end-web-dev
+- asp-net-core
+- typescript
+- vue-js
+- dependency-injection
+- di
+- inversify-js
+- inversion-of-control
+- ioc
 fullscreen: false
 cover: ""
 ---

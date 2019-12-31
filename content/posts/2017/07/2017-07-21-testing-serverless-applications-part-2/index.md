@@ -3,13 +3,13 @@ title: "서버리스 애플리케이션 테스트하기 - 애저 로직 앱"
 date: "2017-07-21"
 slug: testing-serverless-applications-part-2
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Azure Logic Apps
-- Mocking
-- Testability
+- azure-app-service
+- azure-functions
+- azure-logic-apps
+- mocking
+- testability
 fullscreen: false
 cover: ""
 ---

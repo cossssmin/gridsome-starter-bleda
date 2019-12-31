@@ -3,9 +3,9 @@ title: "TFS 리포지토리를 git으로 커밋 로그를 포함해서 이전하
 date: "2015-05-15"
 slug: migrating-tfs-repos-to-git-with-whole-commit-histories
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
+- visual-studio-alm
 - git
 - GitHub
 - History

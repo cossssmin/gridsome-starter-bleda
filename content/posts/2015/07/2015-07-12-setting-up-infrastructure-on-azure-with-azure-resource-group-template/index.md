@@ -3,9 +3,9 @@ title: "Azure Resource Group 템플릿으로 인프라스트럭처 한방에 셋
 date: "2015-07-12"
 slug: setting-up-infrastructure-on-azure-with-azure-resource-group-template
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ARM & DevOps on Azure
+- arm-devops-on-azure
 - Azure
 - Infrastructure
 - Resource Group Management

@@ -3,7 +3,7 @@ title: "Visual Studio Code 에서 깃헙 스타일 마크다운 사용하기"
 date: "2016-07-06"
 slug: markdown-in-visual-studio-code
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
 - Visual Studio Extensibility
 - GFM

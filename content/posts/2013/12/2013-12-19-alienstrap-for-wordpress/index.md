@@ -3,13 +3,13 @@ title: "Alienstrap for Wordpress"
 date: "2013-12-19"
 slug: alienstrap-for-wordpress
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - AlienStrap
 - Theme
 - Twitter Bootstrap
-- Wordpress
+- wordpress
 fullscreen: false
 cover: ""
 ---

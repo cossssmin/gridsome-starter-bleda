@@ -3,12 +3,12 @@ title: "ARM 템플릿에서 로직앱 분리해 내기"
 date: "2018-06-09"
 slug: separation-of-concerns-logic-app-from-arm-template
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ARM & DevOps on Azure
-- ARM Templates
-- Azure Logic Apps
-- Separation of Concerns
+- arm-devops-on-azure
+- steps
+- azure-logic-apps
+- separation-of-concerns
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/06/separate-of-concerns-logic-app-from-arm-template-00.jpg
 ---

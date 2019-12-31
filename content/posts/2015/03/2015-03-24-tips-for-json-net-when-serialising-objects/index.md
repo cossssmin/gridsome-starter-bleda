@@ -3,12 +3,12 @@ title: "Json.NET을 이용한 객체 Serialisation에 쓰이는 소소한 팁들
 date: "2015-03-24"
 slug: tips-for-json-net-when-serialising-objects
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - JSON
 - Json.NET
-- Serialisation
+- serialisation
 fullscreen: false
 cover: ""
 ---

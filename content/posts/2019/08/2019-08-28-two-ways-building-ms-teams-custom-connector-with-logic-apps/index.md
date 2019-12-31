@@ -3,13 +3,13 @@ title: "로직앱으로 MS 팀즈 커스텀 커넥터 만드는 두 가지 방�
 date: "2019-08-28"
 slug: two-ways-building-ms-teams-custom-connector-with-logic-apps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Enterprise Integration
-- Azure Logic Apps
-- Custom Connector
-- Incoming Webhook
-- Microsoft Teams
+- enterprise-integration
+- azure-logic-apps
+- custom-connector
+- incoming-webhook
+- microsoft-teams
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/08/two-ways-building-ms-teams-custom-connector-with-logic-apps-00.png
 ---

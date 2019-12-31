@@ -3,9 +3,9 @@ title: "자바스크립트에서 strict mode를 사용해야 하는 이유"
 date: "2014-01-02"
 slug: reasons-behind-using-strict-mode-while-coding-javascript
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - EcmaScript 5
 - JavaScript
 - Strict Mode

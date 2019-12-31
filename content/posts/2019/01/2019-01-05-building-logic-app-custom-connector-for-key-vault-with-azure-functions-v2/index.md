@@ -3,13 +3,13 @@ title: "애저 키 저장소를 위한 커스텀 로직 앱 커넥터 만들기"
 date: "2019-01-05"
 slug: building-logic-app-custom-connector-for-key-vault-with-azure-functions-v2
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Azure Key Vault
-- Azure Logic Apps
-- Custom Connector
+- azure-app-service
+- azure-functions
+- azure-key-vault
+- azure-logic-apps
+- custom-connector
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/01/rendering-swagger-definitions-on-azure-functions-00.png
 ---

@@ -3,13 +3,13 @@ title: "로직 앱을 이용해서 애저 키 저장소 시크릿을 백업/복�
 date: "2019-11-21"
 slug: backup-restore-key-vault-secrets-via-logic-apps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Enterprise Integration
-- Azure Logic Apps
-- Azure Key Vault
-- Backup
-- Restore
+- enterprise-integration
+- azure-logic-apps
+- azure-key-vault
+- backup
+- restore
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/11/backup-restore-key-vault-secrets-via-logic-apps-00.png
 ---

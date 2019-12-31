@@ -3,14 +3,14 @@ title: "애저 PaaS 테라포밍"
 date: "2019-01-17"
 slug: terraforming-azure-paas
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ARM & DevOps on Azure
-- ARM Templates
-- Azure Functions
-- Azure Logic Apps
-- Azure PaaS
-- Terraform
+- arm-devops-on-azure
+- steps
+- azure-functions
+- azure-logic-apps
+- azure-paas
+- terraform
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/01/terraforming-azure-ipaas-00.png
 ---

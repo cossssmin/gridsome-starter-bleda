@@ -3,15 +3,15 @@ title: "Mountebank를 이용한 애저 펑션 통합 테스팅"
 date: "2019-08-07"
 slug: azure-functions-integration-testing-with-mountebank
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- Azure Functions
-- Availability Check
-- Health Check
-- Unit Test
-- Integration Test
-- Mountebank
+- asp-net-iis
+- azure-functions
+- availability-check
+- health-check
+- unit-testing
+- integration-testing
+- mountebank
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/07/mountebank-integration-testing-00.png
 ---

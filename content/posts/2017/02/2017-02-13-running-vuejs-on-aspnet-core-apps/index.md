@@ -3,13 +3,13 @@ title: "ASP.NET Core 애플리케이션에서 Vue.js 통합하기"
 date: "2017-02-13"
 slug: running-vuejs-on-aspnet-core-apps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
-- ASP.NET Core
-- Azure Website
-- Vue.js
-- Webpack
+- front-end-web-dev
+- asp-net-core
+- azure-website
+- vue-js
+- webpack
 fullscreen: false
 cover: ""
 ---

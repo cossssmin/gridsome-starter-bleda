@@ -3,14 +3,14 @@ title: "Fluent API를 사용한 Domain Specific Language (DSL) 첫걸음"
 date: "2019-01-11"
 slug: domain-specific-language-with-fluent-api
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
-- DDD
-- Domain Driven Development
-- Domain Specific Language
-- DSL
-- Ubiquitous Language
+- dotnet
+- ddd
+- domain-driven-development
+- domain-specific-language
+- dsl
+- ubiquitous-language
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/01/domain-specific-language-101-00.png
 ---

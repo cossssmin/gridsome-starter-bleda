@@ -1,14 +1,14 @@
 ---
-title: "ASP.NET Core 팁 & 트릭 - Swagger 통합"
+title: "ASP.NET Core 팁 & 트릭 - swagger 통합"
 date: "2016-02-22"
 slug: aspnet-core-tips-and-tricks-integrating-swagger
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- API Management
-- ASP.NET Core
-- Swagger
+- asp-net-iis
+- api-management
+- asp-net-core
+- swagger
 fullscreen: false
 cover: ""
 ---

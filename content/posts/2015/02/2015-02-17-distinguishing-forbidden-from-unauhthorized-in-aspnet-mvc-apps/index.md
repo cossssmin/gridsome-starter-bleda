@@ -3,15 +3,15 @@ title: "닷넷 MVC 앱에서 Unauthorized와 Forbidden 구분하여 에러 페�
 date: "2015-02-17"
 slug: distinguishing-forbidden-from-unauhthorized-in-aspnet-mvc-apps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - '401'
 - '403'
 - AuthorizeAttribute
 - HttpStatusCode
 - MVC
-- Web API
+- web-api
 fullscreen: false
 cover: ""
 ---

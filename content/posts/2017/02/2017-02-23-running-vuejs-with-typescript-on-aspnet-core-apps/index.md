@@ -3,14 +3,14 @@ title: "Vue.js + TypeScript 조합으로 ASP.NET Core 애플리케이션 개발�
 date: "2017-02-23"
 slug: running-vuejs-with-typescript-on-aspnet-core-apps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
-- ASP.NET Core
-- Azure Website
-- TypeScript
-- Vue.js
-- Webpack
+- front-end-web-dev
+- asp-net-core
+- azure-website
+- typescript
+- vue-js
+- webpack
 fullscreen: false
 cover: ""
 ---
@@ -19,8 +19,8 @@ cover: ""
 
 - 기본 템플릿을 이용하면서,
 - 웹팩 2.x 버전을 기준으로,
-- Vue.js 2.x 버전과 TypeScript 2.x 버전을 이용한,
-- ASP.NET Core 웹 애플리케이션을 만들어 보려고 한다.
+- vue-js 2.x 버전과 TypeScript 2.x 버전을 이용한,
+- asp-net-core 웹 애플리케이션을 만들어 보려고 한다.
 
 > 이 포스트에서 사용한 예제 코드는 [이곳](https://github.com/devkimchi/Vue.js-with-ASP.NET-Core-Sample)에서 확인할 수 있다.
 

@@ -3,12 +3,12 @@ title: "Azure DevOps 시리즈 #4 - DNU Build"
 date: "2016-04-27"
 slug: azure-devops-4-dnu-build
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
+- visual-studio-alm
 - Azure
-- DevOps
-- ASP.NET Core
+- devops
+- asp-net-core
 - Continuous Build
 - DNU
 - DNVM
@@ -27,7 +27,7 @@ cover: ""
 7. [애플리케이션 패키지 자동화 - DNU Publish](http://blog.aliencube.org/ko/2016/04/30/azure-devops-7-dnu-publish)
 8. [애플리케이션 배포 자동화 - MSDeploy/WAWSDeploy](http://blog.aliencube.org/ko/2016/05/01/azure-devops-8-msdeploy-wawsdeploy)
 9. 데이터베이스 이전 자동화 1 - KUDU
-10. 데이터베이스 이전 자동화 2 - Azure Functions
+10. 데이터베이스 이전 자동화 2 - azure-functions
 
 [지난 포스트](http://blog.aliencube.org/ko/2016/04/26/azure-devops-3-versioning)에서는 빌드를 위한 준비절차로서 각각의 라이브러리 버전에 빌드 번호를 자동으로 포함시키는 방법에 대해 알아봤다면, 이 포스트에서는 실제로 어떻게 ASP.NET Core 애플리케이션을 커맨드 프롬프트 상에서 빌드할 수 있는지 알아보도록 한다.
 

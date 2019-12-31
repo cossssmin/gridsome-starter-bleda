@@ -3,9 +3,9 @@ title: "Text Encoding Converter"
 date: "2014-04-21"
 slug: text-encoding-converter
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Console App
 - Converter
 - Encoding

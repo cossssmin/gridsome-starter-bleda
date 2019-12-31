@@ -3,9 +3,9 @@ title: "ELMAH를 사용하여 웹사이트 에러 로그 구축하기"
 date: "2014-05-07"
 slug: logging-website-logs-with-elmah
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - ELMAH
 - Error Log
 - MVC

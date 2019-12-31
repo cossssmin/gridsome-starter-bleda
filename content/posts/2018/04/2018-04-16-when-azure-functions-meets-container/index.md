@@ -3,14 +3,14 @@ title: "애저 펑션과 도커 컨테이너가 만났을 때"
 date: "2018-04-16"
 slug: when-azure-functions-meets-container
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure Container Services
-- Azure CLI
-- Azure Functions
-- Container
-- Cross Platform
-- Docker
+- azure-container-services
+- azure-cli
+- azure-functions
+- container
+- cross-platform
+- docker
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/04/when-azure-functions-meets-container-00.png
 ---

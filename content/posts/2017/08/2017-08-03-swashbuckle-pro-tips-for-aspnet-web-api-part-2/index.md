@@ -3,13 +3,13 @@ title: "Swashbuckle 이용시 알아두면 좋을 소소한 팁 #2"
 date: "2017-08-03"
 slug: swashbuckle-pro-tips-for-aspnet-web-api-part-2
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- Web API
-- Open API
-- Swagger
-- Swashbuckle
+- asp-net-iis
+- web-api
+- open-api
+- swagger
+- swashbuckle
 fullscreen: false
 cover: ""
 ---

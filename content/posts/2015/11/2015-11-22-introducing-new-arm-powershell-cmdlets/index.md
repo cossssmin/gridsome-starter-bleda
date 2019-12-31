@@ -3,9 +3,9 @@ title: "새로와진 아주어 리소스 매니저 파워쉘 커맨들릿 소개
 date: "2015-11-22"
 slug: introducing-new-arm-powershell-cmdlets
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ARM & DevOps on Azure
+- arm-devops-on-azure
 - ARM
 - Azure
 - Cmdlet

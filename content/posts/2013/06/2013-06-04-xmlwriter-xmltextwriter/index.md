@@ -3,9 +3,9 @@ title: "XmlWriter 클라스와 XmlTextWriter 클라스의 차이"
 date: "2013-06-04"
 slug: xmlwriter-xmltextwriter
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - XmlNode
 - XmlTextWriter
 fullscreen: false

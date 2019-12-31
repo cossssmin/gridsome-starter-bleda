@@ -3,12 +3,12 @@ title: "이벤트로그 작성시 나타나는 System.Security.SecurityException
 date: "2014-02-27"
 slug: system-security-securityexception-on-writing-an-event-log
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - EventLog
 - IIS
-- Logging
+- logging
 - SecurityException
 - Web Application
 fullscreen: false

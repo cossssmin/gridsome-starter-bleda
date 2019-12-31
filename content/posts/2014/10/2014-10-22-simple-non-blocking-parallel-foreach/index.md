@@ -3,9 +3,9 @@ title: "초간단 병렬처리 Parallel ForEach 문"
 date: "2014-10-22"
 slug: simple-non-blocking-parallel-foreach
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - ForEach
 - Parallel
 fullscreen: false

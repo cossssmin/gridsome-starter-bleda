@@ -3,11 +3,11 @@ title: "Amazon 리눅스에 .NET Core 설치하고 실행시키기"
 date: "2016-05-22"
 slug: installing-dotnet-core-into-amazon-linux
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Amazon Linux
-- .NET Core
+- dotnet-core
 fullscreen: false
 cover: ""
 ---

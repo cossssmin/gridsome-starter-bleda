@@ -3,13 +3,13 @@ title: "ASP.NET MVC 4 Web API 에서 null값 해결하기"
 date: "2013-10-15"
 slug: avoiding-null-via-jquery-or-angularjs-ajax-call-to-web-api
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - AngularJs
 - jQuery
 - JSON
-- Web API
+- web-api
 fullscreen: false
 cover: ""
 ---

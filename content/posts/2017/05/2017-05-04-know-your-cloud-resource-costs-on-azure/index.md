@@ -3,13 +3,12 @@ title: "나는 얼마나 애저 클라우드 리소스를 사용했을까?"
 date: "2017-05-04"
 slug: know-your-cloud-resource-costs-on-azure
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure
-- Azure Functions
-- Azure Billing API
-- Azure WebJobs
+- azure-app-service
+- azure-functions
+- azure-billing-api
+- azure-webjobs
 fullscreen: false
 cover: ""
 ---

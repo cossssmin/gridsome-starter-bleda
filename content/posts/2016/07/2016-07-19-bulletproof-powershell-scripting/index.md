@@ -3,11 +3,11 @@ title: "방탄 파워셸 스크립팅"
 date: "2016-07-19"
 slug: bulletproof-powershell-scripting
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ARM & DevOps on Azure
-- PowerShell
-- Error Handling
+- arm-devops-on-azure
+- powershell
+- error-handling
 fullscreen: false
 cover: ""
 ---

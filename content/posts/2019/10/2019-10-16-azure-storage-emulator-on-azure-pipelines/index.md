@@ -3,13 +3,13 @@ title: "애저 데브옵스 파이프라인에서 애저 스토리지 에뮬레�
 date: "2019-10-16"
 slug: azure-storage-emulator-on-azure-pipelines
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
-- Azure DevOps
-- Azure Pipelines
-- Azure Storage Emulator
-- Azurite
+- visual-studio-alm
+- azure-devops
+- azure-pipelines
+- azure-storage-emulator
+- azurite
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/09/azure-storage-emulator-on-azure-pipelines-00.png
 ---

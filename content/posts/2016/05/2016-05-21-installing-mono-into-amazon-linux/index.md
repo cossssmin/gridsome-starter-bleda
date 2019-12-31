@@ -3,9 +3,9 @@ title: "Amazon 리눅스에 Mono 설치하기"
 date: "2016-05-21"
 slug: installing-mono-into-amazon-linux
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Amazon Linux
 - C#
 - Mono

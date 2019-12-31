@@ -3,20 +3,20 @@ title: "메시지 유효성 검사에 대한 다양한 관점"
 date: "2019-10-09"
 slug: many-meanings-of-message-validation
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Enterprise Integration
-- FluentValidation
-- Message
-- Open API
-- Payload
-- Publisher
-- Schema
-- Schema Registry
-- SOAP
-- Subscriber
-- Validation
-- WSDL
+- enterprise-integration
+- fluent-validation
+- message
+- open-api
+- payload
+- publisher
+- schema
+- schema-registry
+- soap
+- subscriber
+- validation
+- wsdl
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/10/many-meanings-of-message-validation-00.png
 ---

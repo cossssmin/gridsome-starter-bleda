@@ -3,11 +3,11 @@ title: "Azure DevOps 시리즈 #8 - MSDeploy/WAWSDeploy"
 date: "2016-05-01"
 slug: azure-devops-8-msdeploy-wawsdeploy
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
+- visual-studio-alm
 - Azure
-- DevOps
+- devops
 - MSDeploy
 - WAWSDeploy
 - Continuous Deployment
@@ -26,7 +26,7 @@ cover: ""
 > 7. [애플리케이션 패키지 자동화 - DNU Publish](http://blog.aliencube.org/ko/2016/04/30/azure-devops-7-dnu-publish)
 > 8. **애플리케이션 배포 자동화 - MSDeploy/WAWSDeploy**
 > 9. 데이터베이스 이전 자동화 1 - KUDU
-> 10. 데이터베이스 이전 자동화 2 - Azure Functions
+> 10. 데이터베이스 이전 자동화 2 - azure-functions
 
 [이전 포스트](http://blog.aliencube.org/ko/2016/04/30/azure-devops-7-dnu-publish)에서는 애플리케이션 배포를 위한 패키지 퍼블리싱 자동화에 대해 알아보았다. 이 단계까지 왔다면 이제 Continuous Delivery 까지는 완성된 것인데, 이 패키지 배포 마저도 자동화 시킨다면 이제 Continuous Deployment가 된다. 이 포스트에서는 바로 이 Continuous Deployment를 위한 배포 자동화에 대해 알아보도록 한다.
 

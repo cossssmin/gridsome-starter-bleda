@@ -3,15 +3,15 @@ title: "Vue.js + 타입스크립트 + ASP.NET Core 앱에서 핸드폰의 카메
 date: "2017-03-03"
 slug: accessing-to-camera-on-mobile-devices-from-vuejs-typescript-aspnetcore-apps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
-- ASP.NET Core
-- TypeScript
-- Vue.js
-- HTML5
-- GetUserMedia
-- WebCam
+- front-end-web-dev
+- asp-net-core
+- typescript
+- vue-js
+- html5
+- get-user-media
+- web-cam
 fullscreen: false
 cover: ""
 ---

@@ -3,12 +3,12 @@ title: "Azure 관점에서 본 AWS re:Invent 2016 관전기"
 date: "2016-12-08"
 slug: aws-reinvent-2016-recap-from-azure-perspective
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- AWS
-- Azure
-- re:Invent
+- azure-app-service
+- aws
+- azure
+- re-invent
 fullscreen: false
 cover: ""
 ---

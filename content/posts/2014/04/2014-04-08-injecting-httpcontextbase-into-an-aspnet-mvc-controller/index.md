@@ -3,10 +3,10 @@ title: "ASP.NET MVC 콘트롤러에 HttpContextBase 의존성 주입하기"
 date: "2014-04-08"
 slug: injecting-httpcontextbase-into-an-aspnet-mvc-controller
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- Dependency Injection
+- asp-net-iis
+- dependency-injection
 - HttpContextBase
 - MVC
 fullscreen: false

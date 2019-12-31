@@ -3,13 +3,13 @@ title: "핸드폰 웹 브라우저로 로컬 개발 환경에서 돌아가는 AS
 date: "2017-02-25"
 slug: remote-access-to-aspnet-core-apps-from-mobile-devices
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- ASP.NET Core
-- AirServer
-- Conveyor
-- Windows Firewall
+- asp-net-iis
+- asp-net-core
+- air-server
+- conveyor
+- windows-firewall
 fullscreen: false
 cover: ""
 ---

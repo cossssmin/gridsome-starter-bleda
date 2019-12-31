@@ -3,10 +3,10 @@ title: "Entity Context Library (ECL) 소개"
 date: "2015-03-13"
 slug: introducing-entity-context-library-ecl
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
-- Entity Framework
+- dotnet
+- entity-framework
 - Object-oriented Design
 - Repository Pattern
 - SOLID
@@ -30,7 +30,7 @@ cover: ""
 
 **ECL** 라이브러리는 NuGet과 GitHub을 통해 다운로드 받을 수 있다.
 
-- NuGet:[https://www.nuget.org/packages/Aliencube.EntityContextLibrary/](https://www.nuget.org/packages/Aliencube.EntityContextLibrary/)
+- nuget:[https://www.nuget.org/packages/Aliencube.EntityContextLibrary/](https://www.nuget.org/packages/Aliencube.EntityContextLibrary/)
 - GitHub: [https://github.com/aliencube/Entity-Context-Library](https://github.com/aliencube/Entity-Context-Library)
 
 **ECL** 라이브러리는 네 개의 독자적인 인터페이스를 제공한다. 바로 `IDbContextFactory`, `IBaseRepository`, `IUnitOfWork`, `IUnitOfWorkManager`와 같은 인터페이스들이다.

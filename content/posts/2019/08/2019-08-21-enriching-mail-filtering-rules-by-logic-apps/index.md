@@ -3,14 +3,13 @@ title: "로직앱/플로우를 이용해서 이메일 필터링 규칙 강화하
 date: "2019-08-21"
 slug: enriching-mail-filtering-rules-by-logic-apps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Enterprise Integration
-- Azure Logic Apps
-- Email
-- Filtering
-- Office 365
-- Outlook
+- enterprise-integration
+- azure-logic-apps
+- email-filtering
+- office-365
+- outlook
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/08/enriching-mail-filtering-by-logic-apps-00.png
 ---

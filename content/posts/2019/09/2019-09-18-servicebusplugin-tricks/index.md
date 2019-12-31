@@ -3,13 +3,13 @@ title: "ServiceBusPlugin 트릭"
 date: "2019-09-18"
 slug: servicebusplugin-tricks
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- SDK Support on Azure
-- Azure Service Bus
-- SDK
-- Plugin
-- Validation
+- sdk-support-on-azure
+- azure-service-bus
+- sdk
+- plugin
+- validation
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/09/servicebusplugin-tricks-00.png
 ---

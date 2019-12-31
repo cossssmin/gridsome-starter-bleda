@@ -3,14 +3,14 @@ title: "cmder에 Windows Subsystem for Linux (WSL) 연동하기"
 date: "2018-04-05"
 slug: wsl-bash-on-cmder
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
-- Bash
+- visual-studio-alm
+- bash
 - cmder
-- Linux
-- Windows Subsystem for Linux
-- WSL
+- linux
+- windows-subsystem-for-linux
+- wsl
 fullscreen: false
 cover: ""
 ---

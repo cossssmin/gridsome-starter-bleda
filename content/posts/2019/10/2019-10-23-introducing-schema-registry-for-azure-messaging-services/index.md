@@ -3,18 +3,17 @@ title: "애저 메시징 서비스를 위한 스키마 저장소 구현"
 date: "2019-10-23"
 slug: introducing-schema-registry-for-azure-messaging-services
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Enterprise Integration
-- Azure
-- Blob Storage
-- Event Grid
-- Event Hub
-- Eventing
-- Messaging
-- Queue Storage
-- Schema Registry
-- Service Bus
+- enterprise-integration
+- azure-blob-storage
+- azure-event-grid
+- azure-event-hub
+- eventing
+- messaging
+- azure-queue-storage
+- schema-registry
+- azure-service-bus
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/10/introduction-to-schema-registry-for-azure-messaging-service-01.png
 ---

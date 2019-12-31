@@ -3,14 +3,14 @@ title: "애저 펑션에서 Swagger 정의 문서 출력하기"
 date: "2019-01-04"
 slug: rendering-swagger-definitions-on-azure-functions-v2
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Dependency Injection
-- DI
-- Open API
-- Swagger
+- azure-app-service
+- azure-functions
+- dependency-injection
+- di
+- open-api
+- swagger
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/01/rendering-swagger-definitions-on-azure-functions-00.png
 ---

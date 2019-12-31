@@ -3,18 +3,18 @@ title: "오피스 365 그래프 API를 사용자 인증 없이 직접 애플리�
 date: "2015-12-17"
 slug: implementing-application-with-office-365-graph-api-in-app-only-mode
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Enterprise Integration
+- enterprise-integration
 - App-only
 - ASP.NET
 - ASP.NET 5
 - ASP.NET MVC 6
 - Graph API
 - Microsoft Graph
-- O365
-- Office 365
-- Web API
+- o365
+- office-365
+- web-api
 fullscreen: false
 cover: ""
 ---

@@ -3,14 +3,14 @@ title: "Azure DevOps 시리즈 #6 - Chutzpah"
 date: "2016-04-29"
 slug: azure-devops-6-chutzpah
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
+- visual-studio-alm
 - Azure
-- DevOps
+- devops
 - JavaScript
 - Chutzpah
-- Test
+- test
 fullscreen: false
 cover: ""
 ---
@@ -26,7 +26,7 @@ cover: ""
 7. [애플리케이션 패키지 자동화 - DNU Publish](http://blog.aliencube.org/ko/2016/04/30/azure-devops-7-dnu-publish)
 8. [애플리케이션 배포 자동화 - MSDeploy/WAWSDeploy](http://blog.aliencube.org/ko/2016/05/01/azure-devops-8-msdeploy-wawsdeploy)
 9. 데이터베이스 이전 자동화 1 - KUDU
-10. 데이터베이스 이전 자동화 2 - Azure Functions
+10. 데이터베이스 이전 자동화 2 - azure-functions
 
 [지난 포스트](http://blog.aliencube.org/ko/2016/04/28/azure-devops-5-dnx-test)에서 우리는 서버 사이드 테스트 자동화에 대해 알아 보았다. 웹 애플리케이션의 경우 클라이언트 사이드의 테스트, 즉 자바스크립트 역시도 테스트를 해야 한다. 다양한 자바스크립트 테스트 라이브러리들 중에는 [QUnit](http://qunitjs.com/), [Jasmine](http://jasmine.github.io/), [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/) 등이 있고, 이 테스트를 돌리기 위한 테스트 러너들도 다양해서 [Karma](https://karma-runner.github.io), [AVA](https://github.com/sindresorhus/ava), [Chutzpah](https://github.com/mmanela/chutzpah), [Wallaby](https://wallabyjs.com/) 등이 있다. 다양한 자바스크립트 테스트 프레임워크 및 테스트 러너들에 대해서는 [스택오버플로우의 이 글](http://stackoverflow.com/questions/300855/javascript-unit-test-tools-for-tdd)을 참고하도록 하자. 또한 [@haruair](https://twitter.com)님의 [커피 세 잔으로 BDD하기 – CoffeeScript, Mocha, Chai](http://haruair.com/blog/2621) 포스트를 읽어볼 것을 추천한다.
 

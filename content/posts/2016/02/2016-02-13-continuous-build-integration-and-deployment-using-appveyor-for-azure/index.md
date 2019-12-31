@@ -3,16 +3,16 @@ title: "AppVeyor를 이용하여 Azure에 지속적 통합 및 배포하기"
 date: "2016-02-13"
 slug: continuous-build-integration-and-deployment-using-appveyor-for-azure
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ARM & DevOps on Azure
+- arm-devops-on-azure
 - AppVeyor
-- ASP.NET Core
+- asp-net-core
 - Azure
-- Azure Website
+- azure-website
 - CB
-- CD
-- CI
+- cd
+- ci
 - Continuous Build
 - Continuous Delivery
 - Continuous Deployment

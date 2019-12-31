@@ -3,15 +3,15 @@ title: "유연한 코드를 위해 HttpContext 대신 HttpContextBase 사용하�
 date: "2013-08-07"
 slug: using-httpcontextbase-instead-of-httpcontext-for-better-code
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - Extendability
 - Flexibility
 - HttpContext.Current
 - HttpContextBase
 - HttpContextWrapper
-- Testability
+- testability
 fullscreen: false
 cover: ""
 ---

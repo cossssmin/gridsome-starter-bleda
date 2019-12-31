@@ -3,12 +3,12 @@ title: "영국 정부 클라우드 서비스 록인 관리 가이드"
 date: "2019-12-31"
 slug: managing-technical-lock-in-in-the-cloud
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Microsoft Azure
-- Multi-cloud
-- Lock-in
-- Guidance
+- microsoft-azure
+- multi-cloud
+- lock-in
+- guidance
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2020/01/managing-technical-lock-in-in-the-cloud-00.png
 ---

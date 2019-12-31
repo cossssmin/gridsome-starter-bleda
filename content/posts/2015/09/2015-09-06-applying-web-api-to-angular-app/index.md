@@ -3,12 +3,12 @@ title: "Angular 앱에 Web API 적용하기"
 date: "2015-09-06"
 slug: applying-web-api-to-angular-app
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - AngularJs
-- TypeScript
-- Web API
+- typescript
+- web-api
 fullscreen: false
 cover: ""
 ---

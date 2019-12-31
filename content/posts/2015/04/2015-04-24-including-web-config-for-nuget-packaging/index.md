@@ -3,10 +3,10 @@ title: "NuGet 패키지 작성시 Web.config 포함시키기"
 date: "2015-04-24"
 slug: including-web-config-for-nuget-packaging
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
-- NuGet
+- dotnet
+- nuget
 - Transformation
 - Web.Config
 - XDT

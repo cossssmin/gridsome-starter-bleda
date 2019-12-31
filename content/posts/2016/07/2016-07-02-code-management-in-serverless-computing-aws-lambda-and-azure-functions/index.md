@@ -3,12 +3,12 @@ title: "서버리스 코드 관리 - AWS 람다와 Azure 펑션"
 date: "2016-07-02"
 slug: code-management-in-serverless-computing-aws-lambda-and-azure-functions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
+- azure-app-service
+- azure-functions
 - AWS Lambda
-- Serverless
+- serverless
 - APEX
 fullscreen: false
 cover: ""

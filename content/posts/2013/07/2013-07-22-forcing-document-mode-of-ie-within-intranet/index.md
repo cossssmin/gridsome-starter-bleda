@@ -3,9 +3,9 @@ title: "인트라넷상에서 강제로 IE 문서모드 전환하기"
 date: "2013-07-22"
 slug: forcing-document-mode-of-ie-within-intranet
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - IE Document Mode
 - IIS Configuration
 - Intranet

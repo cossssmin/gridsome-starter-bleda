@@ -3,7 +3,7 @@ title: "Topshelf를 이용한 윈도우 서비스 개발"
 date: "2014-04-30"
 slug: developing-windows-service-with-topshelf
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
 - Windows App Development
 - Console App
@@ -65,7 +65,7 @@ static class Program
 
 우선 위와 같이 콘솔 애플리케이션 프로젝트를 하나 준비한다. 프로젝트가 만들어졌으면 NuGet 패키지를 다운로드 받는다.
 
-- NuGet 패키지 URL: [http://www.nuget.org/packages/Topshelf](http://www.nuget.org/packages/Topshelf)
+- nuget 패키지 URL: [http://www.nuget.org/packages/Topshelf](http://www.nuget.org/packages/Topshelf)
 - GitHub 소스코드 URL: [https://github.com/Topshelf/Topshelf](https://github.com/Topshelf/Topshelf)
 
 이제 기본적인 준비는 끝났고, 아래와 같이 샘플 윈도우 서비스를 만들어 보도록 하자.

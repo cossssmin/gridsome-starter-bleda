@@ -3,14 +3,14 @@ title: "테스트 가능한 Dynamics CRM 2015 엔티티 필터링"
 date: "2015-12-01"
 slug: filtering-entities-in-dynamics-crm-2015-with-testability
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - crmsvcutil.exe
 - Dynamics CRM 2015
 - Dynamics CRM 2015 Online
 - Entity Filtering
-- Testability
+- testability
 fullscreen: false
 cover: ""
 ---

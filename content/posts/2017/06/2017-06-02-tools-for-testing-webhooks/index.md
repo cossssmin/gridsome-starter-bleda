@@ -3,13 +3,13 @@ title: "웹훅 기능을 테스트 하기 좋은 도구들 소개"
 date: "2017-06-02"
 slug: tools-for-testing-webhooks
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- API
-- Test
-- Integration Test
-- Webhook
+- asp-net-iis
+- api
+- test
+- integration-testing
+- webhook
 fullscreen: false
 cover: ""
 ---

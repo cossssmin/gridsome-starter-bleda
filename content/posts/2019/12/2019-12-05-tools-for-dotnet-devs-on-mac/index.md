@@ -3,15 +3,15 @@ title: "맥을 쓰는 닷넷 개발자들을 위한 도구들 모음"
 date: "2019-12-05"
 slug: tools-for-dotnet-devs-on-mac
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
-- .NET Core
-- Cross Platform
-- Developer Environments
-- Developer Experience
-- Developer Tools
-- Mac OS
+- dotnet
+- dotnet-core
+- cross-platform
+- developer-environments
+- developer-experience
+- developer-tools
+- mac-os
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/12/tools-for-dotnet-developers-on-mac-00.png
 ---

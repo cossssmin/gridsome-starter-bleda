@@ -3,9 +3,9 @@ title: "Placeholders.js Monkey Patch 해설"
 date: "2013-07-27"
 slug: placeholders-js-monkey-patch-explanation
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - IE8
 - IE9
 - JavaScript

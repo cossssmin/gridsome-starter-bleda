@@ -3,9 +3,9 @@ title: "C# Coding Guidelines"
 date: "2014-03-12"
 slug: csharp-coding-guidelines
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - C#
 - Coding Guidelines
 fullscreen: false

@@ -3,16 +3,16 @@ title: "AWS Lambda를 이용해서 GitHub과 Slack 연동하기"
 date: "2016-05-15"
 slug: slack-github-integration-with-aws-lambda
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
+- azure-app-service
 - Amazon API Gateway
 - Amazon CloudWatch
 - AWA Lambda
 - GitHub
 - Integration
 - Slack
-- Webhook
+- webhook
 fullscreen: false
 cover: ""
 ---

@@ -1,15 +1,15 @@
 ---
-title: "ASP.NET Core 팁 & 트릭 - IoC 콘테이너로써 Autofac 사용하기"
+title: "ASP.NET Core 팁 & 트릭 - ioc 콘테이너로써 Autofac 사용하기"
 date: "2016-02-20"
 slug: aspnet-core-tips-and-tricks-using-autofac-as-ioc-container
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- ASP.NET Core
+- asp-net-iis
+- asp-net-core
 - Autofac
-- Dependency Injection
-- IoC
+- dependency-injection
+- ioc
 fullscreen: false
 cover: ""
 ---

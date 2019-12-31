@@ -3,14 +3,14 @@ title: "(번역) 서버리스 아키텍처"
 date: "2016-06-23"
 slug: serverless-architectures
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
+- azure-app-service
 - Translation
 - Architecture
-- Azure Functions
+- azure-functions
 - AWS Lambda
-- Serverless
+- serverless
 - FaaS
 fullscreen: false
 cover: ""

@@ -3,13 +3,13 @@ title: "ASP.NET Core 팁 & 트릭 - 요청과 응답 직렬화 및 비직렬화"
 date: "2016-02-21"
 slug: aspnet-core-tips-and-tricks-request-response-serialisation-deserialisation
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- ASP.NET Core
-- Deserialisation
-- Serialisation
-- Web API
+- asp-net-iis
+- asp-net-core
+- deserialisation
+- serialisation
+- web-api
 fullscreen: false
 cover: ""
 ---

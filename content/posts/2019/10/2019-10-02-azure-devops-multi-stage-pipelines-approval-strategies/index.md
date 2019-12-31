@@ -3,14 +3,14 @@ title: "애저 데브옵스 다단계 파이프라인 승인 전략"
 date: "2019-10-02"
 slug: azure-devops-multi-stage-pipelines-approval-strategies
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
-- Azure DevOps
-- Azure Pipelines
-- Approval
-- Environment
-- YAML
+- visual-studio-alm
+- azure-devops
+- azure-pipelines
+- approval
+- environment
+- yaml
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/09/approval-correct-diverse-1282270.jpg
 ---

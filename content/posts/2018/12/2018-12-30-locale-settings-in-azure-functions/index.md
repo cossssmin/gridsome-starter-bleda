@@ -3,13 +3,13 @@ title: "애저 펑션에서 로케일 변경하기"
 date: "2018-12-30"
 slug: locale-settings-in-azure-functions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Locale
-- L10N
-- Localisation
+- azure-app-service
+- azure-functions
+- locale
+- l10n
+- localisation
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/12/locale-settings-in-azure-functions-00.png
 ---

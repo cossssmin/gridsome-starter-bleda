@@ -3,14 +3,14 @@ title: "로직 앱에서 배열의 가장 최근 값을 받아오기"
 date: "2019-11-06"
 slug: getting-the-latest-array-item-in-logic-app
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Enterprise Integration
-- Azure Logic Apps
-- Array
-- Sort
-- WDL
-- Workflow Definition Language
+- enterprise-integration
+- azure-logic-apps
+- array
+- sort
+- wdl
+- workflow-definition-language
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/11/getting-the-latest-array-item-in-logic-app-00.png
 ---

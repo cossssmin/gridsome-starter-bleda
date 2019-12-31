@@ -3,14 +3,14 @@ title: "Windows Subsystem for Linux (WSL)에서 쿠버네이티즈 CLI 사용하
 date: "2018-06-04"
 slug: running-kubernetes-on-wsl
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure Container Services
-- Docker
-- Kubernetes
+- azure-container-services
+- docker
+- kubernetes
 - Windows
-- Windows Subsystem for Linux
-- WSL
+- windows-subsystem-for-linux
+- wsl
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/06/running-kubernetes-on-wsl-00.png
 ---

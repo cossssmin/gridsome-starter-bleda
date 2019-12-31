@@ -3,11 +3,11 @@ title: "엔티티 프레임워크 Code First 방법론 #3"
 date: "2013-10-18"
 slug: entity-framework-code-first-approach-part-3
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Code First
-- Entity Framework
+- entity-framework
 - ORM
 fullscreen: false
 cover: ""

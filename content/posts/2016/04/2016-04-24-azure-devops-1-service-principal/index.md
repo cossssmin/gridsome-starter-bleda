@@ -3,11 +3,11 @@ title: "Azure DevOps 시리즈 #1 - 서비스 계정 생성"
 date: "2016-04-24"
 slug: azure-devops-1-service-principal
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
+- visual-studio-alm
 - Azure
-- DevOps
+- devops
 - Service Principal
 fullscreen: false
 cover: ""
@@ -24,7 +24,7 @@ cover: ""
 7. [애플리케이션 패키지 자동화 - DNU Publish](http://blog.aliencube.org/ko/2016/04/30/azure-devops-7-dnu-publish)
 8. [애플리케이션 배포 자동화 - MSDeploy/WAWSDeploy](http://blog.aliencube.org/ko/2016/05/01/azure-devops-8-msdeploy-wawsdeploy)
 9. 데이터베이스 이전 자동화 1 - KUDU
-10. 데이터베이스 이전 자동화 2 - Azure Functions
+10. 데이터베이스 이전 자동화 2 - azure-functions
 
 Azure 리소스들을 사용하다보면 윈도우 환경에서는 파워셸을 사용한다거나, 리눅스 환경에서는 [xplat](https://github.com/Azure/azure-xplat-cli) 등을 사용할 수 밖에 없는데, 이럴 경우 Azure에 항상 로그인을 해야 한다. 내 계정으로 직접 로그인을 해서 사용하는 것 자체는 큰 문제가 없는데, 자동화의 관점에서 보자면 내 계정 로그인 정보를 입력하는 것은 반드시 피해야 할 일들 중 하나이다. 이런 경우에 쓰이는 방법이 바로 이 Service Principal 이라고 불리는 서비스 계정을 생성하는 것이다. 이를 이용하면 굳이 사용자 계정이 노출될 위험이 전혀 없다. 이 포스트에서는 어떻게 서비스 계정을 생성하는지에 대해 간략하게 논의해 보도록 하자.
 

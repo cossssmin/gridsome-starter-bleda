@@ -3,9 +3,9 @@ title: "데이터베이스에 ELMAH 로그 데이터 저장하기"
 date: "2014-05-08"
 slug: storing-error-logs-into-database-with-elmah
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - ELMAH
 - Error Log
 - MVC

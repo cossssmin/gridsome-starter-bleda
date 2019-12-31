@@ -3,14 +3,14 @@ title: ".editorconfig 파일을 활용한 정적 코드 분석"
 date: "2019-09-25"
 slug: static-code-analysis-with-editorconfig
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
-- Static Code Analysis
-- editorConfig
-- Roslyn
-- FxCop
-- StyleCop
+- dotnet
+- static-code-analysis
+- editor-config
+- roslyn
+- fx-cop
+- style-cop
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/09/static-code-analycis-with-editorconfig-00.png
 ---

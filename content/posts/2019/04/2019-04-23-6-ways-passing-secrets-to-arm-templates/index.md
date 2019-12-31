@@ -3,14 +3,14 @@ title: "ARM 템플릿으로 시크릿 값을 넘겨주는 여섯 가지 방법"
 date: "2019-04-23"
 slug: 6-ways-passing-secrets-to-arm-templates
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ARM & DevOps on Azure
-- ARM Templates
-- Azure DevOps
-- Azure Key Vault
-- Azure Pipelines
-- Linked Template
+- arm-devops-on-azure
+- steps
+- azure-devops
+- azure-key-vault
+- azure-pipelines
+- linked-template
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/04/6-ways-passing-secrets-to-arm-templates-00.png
 ---

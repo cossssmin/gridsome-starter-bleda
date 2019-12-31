@@ -3,11 +3,11 @@ title: "OWIN 기반 Web API 서비스 만들기"
 date: "2014-08-04"
 slug: developing-owin-based-web-api-service
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - OWIN
-- Web API
+- web-api
 fullscreen: false
 cover: ""
 ---

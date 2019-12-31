@@ -3,14 +3,14 @@ title: "Vue.js + TypeScript + ASP.NET Core 앱에서 핸드폰의 GPS 정보 이
 date: "2017-03-16"
 slug: accessing-to-geolocation-on-mobile-devices-from-vuejs-typescript-aspnetcore-app
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
-- ASP.NET Core
-- TypeScript
-- Vue.js
-- HTML5
-- GeoLocation
+- front-end-web-dev
+- asp-net-core
+- typescript
+- vue-js
+- html5
+- geo-location
 fullscreen: false
 cover: ""
 ---

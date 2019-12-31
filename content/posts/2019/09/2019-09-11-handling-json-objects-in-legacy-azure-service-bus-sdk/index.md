@@ -3,15 +3,15 @@ title: "레거시 애저 서비스 버스 SDK에서 JSON 객체를 다루는 방
 date: "2019-09-11"
 slug: handling-json-objects-in-legacy-azure-service-bus-sdk
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- SDK Support on Azure
-- Message Driven Architecture
-- Azure Service Bus
-- Legacy
-- SDK
-- Serialisation
-- Deserialisation
+- sdk-support-on-azure
+- message Driven Architecture
+- azure-service-bus
+- legacy
+- sdk
+- serialisation
+- deserialisation
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/09/handling-json-objects-in-azure-service-bus-00.png
 ---

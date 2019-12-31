@@ -3,14 +3,14 @@ title: "애저 펑션에 AutoMapper 의존성 주입 적용하기"
 date: "2019-01-01"
 slug: automapper-di-into-azure-functions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- ASP.NET Core
-- AutoMapper
-- Azure Functions
-- Dependency Injection
-- IoC
+- asp-net-iis
+- asp-net-core
+- auto-mapper
+- azure-functions
+- dependency-injection
+- ioc
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/01/automapper-in-azure-functions-00.png
 ---

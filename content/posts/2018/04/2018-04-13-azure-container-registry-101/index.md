@@ -3,15 +3,15 @@ title: "애저 컨테이너 레지스트리 기초"
 date: "2018-04-13"
 slug: azure-container-registry-101
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure Container Services
-- Azure Container Instances
-- Azure Container Registry
-- ACI
-- ACR
-- Container
-- Docker
+- azure-container-services
+- azure-container-instances
+- azure-container-registry
+- aci
+- acr
+- container
+- docker
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/04/azure-container-registry-101-00.png
 ---

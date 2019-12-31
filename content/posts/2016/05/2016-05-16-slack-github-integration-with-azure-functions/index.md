@@ -3,14 +3,14 @@ title: "Azure Functions를 이용해서 GitHub과 Slack 연동하기"
 date: "2016-05-16"
 slug: slack-github-integration-with-azure-functions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
+- azure-app-service
+- azure-functions
 - GitHub
 - Integration
 - Slack
-- Webhook
+- webhook
 fullscreen: false
 cover: ""
 ---
@@ -22,7 +22,7 @@ Azure Functions 서비스는 지난 3월 말 [Build 2016](https://channel9.msdn.
 이 포스트에서는 아래와 같은 내용을 다루고자 한다:
 
 - Slack 수신 웹훅 생성
-- Azure Functions에 펑션 생성
+- azure-functions에 펑션 생성
 - GitHub 송신 웹훅 연결
 
 > 관련 소스 코드는 [Azure Functions & AWS Lambda Sample](https://github.com/devkimchi/Azure-Functions-AWS-Lambda-Sample)에서 찾을 수 있다.

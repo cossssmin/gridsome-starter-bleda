@@ -3,12 +3,12 @@ title: "Application Insights 가용성 테스트를 C# 코드로 작성하기"
 date: "2016-06-20"
 slug: creating-web-tests-for-application-insights-programmatically
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
+- azure-app-service
 - Azure
 - Availability
-- Application Insights
+- azure-application-insights
 - WebTest
 fullscreen: false
 cover: ""

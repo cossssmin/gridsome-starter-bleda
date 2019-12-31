@@ -3,11 +3,11 @@ title: "Azure Functions에 Swagger 통합하기"
 date: "2017-06-12"
 slug: azure-functions-with-swagger
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Swagger
+- azure-app-service
+- azure-functions
+- swagger
 fullscreen: false
 cover: ""
 ---

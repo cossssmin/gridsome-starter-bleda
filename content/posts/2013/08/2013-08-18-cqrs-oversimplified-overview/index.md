@@ -3,9 +3,9 @@ title: "CQRS 초간단 정리"
 date: "2013-08-18"
 slug: cqrs-oversimplified-overview
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Azure
 - Cloud
 - CQRS

@@ -3,15 +3,15 @@ title: "지역 이중화로 구성된 애저 서비스 버스에 애저 펑션�
 date: "2019-10-30"
 slug: handling-messages-with-geo-redundant-azure-service-bus-via-azure-functions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Enterprise Integration
-- Azure Functions
-- Dependency Injection
-- Fan-in
-- Fan-out
-- Geo-redundancy
-- Azure Service Bus
+- enterprise-integration
+- azure-functions
+- dependency-injection
+- fan-in
+- fan-out
+- geo-redundancy
+- azure-service-bus
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/10/handling-messages-with-geo-redundant-azure-service-bus-via-azure-functions-00.png
 ---

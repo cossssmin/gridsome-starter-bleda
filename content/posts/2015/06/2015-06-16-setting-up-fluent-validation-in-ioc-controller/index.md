@@ -3,15 +3,15 @@ title: "FluentValidation 제어 역전 혹은 의존성 주입 설정"
 date: "2015-06-16"
 slug: setting-up-fluent-validation-in-ioc-controller
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Autofac
-- Dependency Injection
-- DI
-- FluentValidation
-- Inversion of Control
-- IoC
+- dependency-injection
+- di
+- fluent-validation
+- inversion-of-control
+- ioc
 fullscreen: false
 cover: ""
 ---

@@ -3,13 +3,13 @@ title: "FluentValidation 라이브러리 유닛 테스트"
 date: "2015-06-12"
 slug: unit-testing-validators-with-fluent-validation
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - FluentAssertions
-- FluentValidation
+- fluent-validation
 - NUnit
-- Unit Test
+- unit-testing
 fullscreen: false
 cover: ""
 ---

@@ -3,10 +3,10 @@ title: "ASP.NET Core 팁 & 트릭 – 글로벌 에러 핸들러 설정"
 date: "2016-03-21"
 slug: aspnet-core-tips-and-tricks-global-exception-handling
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- ASP.NET Core
+- asp-net-iis
+- asp-net-core
 - Global Exception Handling
 fullscreen: false
 cover: ""

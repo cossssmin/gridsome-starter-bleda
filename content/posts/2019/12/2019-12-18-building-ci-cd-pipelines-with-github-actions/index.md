@@ -3,17 +3,17 @@ title: "깃헙 액션으로 경계가 명확한 CI/CD 파이프라인 구현하�
 date: "2019-12-18"
 slug: building-ci-cd-pipelines-with-github-actions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
-- Azure Blob Storage
-- Azure CLI
-- CI
-- CD
-- GitHub Actions
-- Gridsome
-- Static Website
-- Vue.js
+- visual-studio-alm
+- azure-blob-storage
+- azure-cli
+- ci
+- cd
+- github-actions
+- gridsome
+- static-website
+- vue-js
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/12/building-ci-cd-with-github-actions-00.png
 ---

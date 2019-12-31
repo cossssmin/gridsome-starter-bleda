@@ -3,9 +3,9 @@ title: "T4MVC 패키지 및 확장 기능 소개"
 date: "2015-02-19"
 slug: introducing-t4mvc-package-and-extension
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - MVC
 - Razor
 - T4 Template

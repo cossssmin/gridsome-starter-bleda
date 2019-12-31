@@ -3,9 +3,9 @@ title: "웹사이트에서 중국어(간체), 중국어(번체) 및 일본어 �
 date: "2013-07-19"
 slug: displaying-fonts-for-chinese-simplified-chinese-traditional-and-japanese
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - Fonts
 - Chinese
 - Japanese

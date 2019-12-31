@@ -3,11 +3,11 @@ title: "TypeScript 라이브러리를 이용한 Angular 앱 만들기"
 date: "2015-09-05"
 slug: building-angular-app-using-typescript
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - AngularJs
-- TypeScript
+- typescript
 fullscreen: false
 cover: ""
 ---

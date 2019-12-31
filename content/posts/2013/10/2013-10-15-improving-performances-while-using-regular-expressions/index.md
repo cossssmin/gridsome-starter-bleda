@@ -3,9 +3,9 @@ title: "정규표현식 성능 향상 팁"
 date: "2013-10-15"
 slug: improving-performances-while-using-regular-expressions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Compile
 - Regular Expression
 - Runtime

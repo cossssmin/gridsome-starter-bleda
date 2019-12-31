@@ -3,14 +3,14 @@ title: "애저 펑션을 이용해서 애저 키 저장소 시크릿을 백업/�
 date: "2019-11-27"
 slug: backup-restore-key-vault-secrets-via-function-apps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Azure Key Vault
-- Azure Blob Storage
-- Backup
-- Restore
+- azure-app-service
+- azure-functions
+- azure-key-vault
+- azure-blob-storage
+- backup
+- restore
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/11/backup-restore-key-vault-secrets-with-function-apps-00.png
 ---

@@ -3,13 +3,13 @@ title: "REST API에 HAL(Hypertext Application Language) 적용하기"
 date: "2015-08-16"
 slug: applying-hal-to-rest-api
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - HAL
 - REST
-- Serialisation
-- Web API
+- serialisation
+- web-api
 fullscreen: false
 cover: ""
 ---

@@ -3,11 +3,11 @@ title: "애저 로직 앱의 웹훅 기능 사용시 알아두면 좋은 소소�
 date: "2017-05-30"
 slug: notes-for-logic-apps-when-using-webhook-actions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Logic Apps
-- Webhook
+- azure-app-service
+- azure-logic-apps
+- webhook
 fullscreen: false
 cover: ""
 ---

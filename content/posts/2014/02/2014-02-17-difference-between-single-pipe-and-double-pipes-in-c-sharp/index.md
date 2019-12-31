@@ -3,9 +3,9 @@ title: "C#에서 |와 ||, &와 &&의 차이"
 date: "2014-02-17"
 slug: difference-between-single-pipe-and-double-pipes-in-c-sharp
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - Bitwise Operator
 - Logical Operator
 fullscreen: false

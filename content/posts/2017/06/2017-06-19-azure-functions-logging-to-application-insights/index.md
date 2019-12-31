@@ -3,13 +3,13 @@ title: "애저 펑션에서 Application Insights로 로그 남기기"
 date: "2017-06-19"
 slug: azure-functions-logging-to-application-insights
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Application Insights
-- ILogger
-- Logging
+- azure-app-service
+- azure-functions
+- azure-application-insights
+- ilogger
+- logging
 fullscreen: false
 cover: ""
 ---

@@ -3,13 +3,13 @@ title: "데이터베이스 마이그레이션을 위한 엔티티 프레임워�
 date: "2018-12-13"
 slug: multi-targeting-entity-framework-core-for-database-migration
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
-- .NET Core
-- .NET Standard
-- Entity Framework Core
-- Multi-targeting
+- dotnet
+- dotnet-core
+- dotnet Standard
+- entity-framework-core
+- multi-targeting
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/12/entityframeworkcore-on-netcoreapp-and-netstandard-00.png
 ---

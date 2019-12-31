@@ -3,9 +3,9 @@ title: "XmlNode와 XElement간 상호 변환하기"
 date: "2013-07-17"
 slug: xmlnode-xelement
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - ASP.NET
 - XElement
 - XmlNode

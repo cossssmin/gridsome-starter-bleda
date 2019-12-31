@@ -3,9 +3,9 @@ title: "닷넷의 LINQ 기능을 자바스크립트로 이용하기"
 date: "2013-07-23"
 slug: linq-for-javascript-and-es5-shim
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - ES5-Shim
 - LINQ
 - LINQ-to-JavaScript

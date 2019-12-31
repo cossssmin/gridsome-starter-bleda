@@ -3,9 +3,9 @@ title: "SpecFlow와 FluentAssertions를 이용하여 BDD 적용하기 #1"
 date: "2014-04-02"
 slug: applying-bdd-with-specflow-and-fluentassertions-1
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
+- dotnet
 - BDD
 - C#
 - FluentAssertions

@@ -3,9 +3,9 @@ title: "HtmlHelper.ActionLink()에 이미지 삽입하기"
 date: "2015-04-29"
 slug: adding-image-to-html-actionlink
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - ActionLink
 - HtmlHelper
 - Image

@@ -3,13 +3,13 @@ title: "애저 로직앱에서 키 저장소로 직접 접근하기"
 date: "2018-10-24"
 slug: accessing-key-vault-from-logic-apps-with-managed-identity
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Logic Apps
-- Azure Key Vault
-- Managed Identity
-- Managed Service Identity
+- azure-app-service
+- azure-logic-apps
+- azure-key-vault
+- managed-identity
+- managed-service-identity
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/10/accessing-key-vault-from-logic-apps-with-managed-identity-00.png
 ---

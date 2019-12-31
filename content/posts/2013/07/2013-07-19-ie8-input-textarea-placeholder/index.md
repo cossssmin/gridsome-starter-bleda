@@ -3,13 +3,13 @@ title: "IE8 에서 input 태그와 textarea 태그에 placeholder 속성 적용�
 date: "2013-07-19"
 slug: ie8-input-textarea-placeholder
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Front-end Web Dev
+- front-end-web-dev
 - IE8
 - jQuery
 - Placeholder
-- Plugin
+- plugin
 fullscreen: false
 cover: ""
 ---

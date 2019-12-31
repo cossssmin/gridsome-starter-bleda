@@ -3,13 +3,13 @@ title: "FluentValidation 라이브러리를 이용한 ASP.NET MVC 모델 유효�
 date: "2015-06-04"
 slug: validating-asp-net-mvc-models-using-fluentvalidation-library
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - DataAnnotations
-- FluentValidation
+- fluent-validation
 - Model Binding
-- Validation
+- validation
 fullscreen: false
 cover: ""
 ---

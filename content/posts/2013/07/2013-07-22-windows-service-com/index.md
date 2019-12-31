@@ -3,7 +3,7 @@ title: "Windows Service 중지시 COM 객체 죽이기"
 date: "2013-07-22"
 slug: windows-service-com
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
 - Windows App Development
 - COM Object

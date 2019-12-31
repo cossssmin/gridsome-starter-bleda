@@ -3,9 +3,9 @@ title: "Grunt와 Bower를 Visual Studio 2013에 통합하기"
 date: "2015-01-06"
 slug: integrating-grunt-and-bower-with-visual-studio-2013
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - Bower
 - Grunt
 - Gulp

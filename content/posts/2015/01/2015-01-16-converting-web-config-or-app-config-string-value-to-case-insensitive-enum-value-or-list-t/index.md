@@ -3,9 +3,9 @@ title: "Web.config/App.config 설정값 문자열을 대소문자 구분 없는 
 date: "2015-01-16"
 slug: converting-web-config-or-app-config-string-value-to-case-insensitive-enum-value-or-list-t
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - App.Config
 - CaseInsensitiveEnumConverter
 - CommaDelimitedListConverter
@@ -95,7 +95,7 @@ public enum ProductStatus
 ## 참고
 
 - 소스코드: [https://github.com/aliencube/Configuration-Value-Converter](https://github.com/aliencube/Configuration-Value-Converter)
-- NuGet 패키지:
+- nuget 패키지:
     
     - Case Insensitive Enum Value Converter: [![](https://img.shields.io/nuget/v/Aliencube.CaseInsensitiveEnumConverter.svg)](https://www.nuget.org/packages/Aliencube.CaseInsensitiveEnumConverter/) [![](https://img.shields.io/nuget/dt/Aliencube.CaseInsensitiveEnumConverter.svg)](https://www.nuget.org/packages/Aliencube.CaseInsensitiveEnumConverter/)
     - Comma Delimited List Value Converter: [![](https://img.shields.io/nuget/v/Aliencube.CommaDelimitedListConverter.svg)](https://www.nuget.org/packages/Aliencube.CommaDelimitedListConverter/) [![](https://img.shields.io/nuget/dt/Aliencube.CommaDelimitedListConverter.svg)](https://www.nuget.org/packages/Aliencube.CommaDelimitedListConverter/)

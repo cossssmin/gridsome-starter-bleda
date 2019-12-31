@@ -3,14 +3,14 @@ title: "로직 앱에서 인라인 스크립트를 이용해 배열의 가장 �
 date: "2019-11-14"
 slug: getting-the-latest-array-item-with-inline-script-in-logic-app
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Enterprise Integration
-- Azure Logic Apps
-- Array
-- Sort
-- Integration Account
-- Inline JavaScript
+- enterprise-integration
+- azure-logic-apps
+- array
+- sort
+- integration-account
+- inline-javascript
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/11/getting-the-latest-array-item-with-inline-script-in-logic-app-00.png
 ---

@@ -3,11 +3,11 @@ title: "Azure DevOps 시리즈 #7 - DNU Publish"
 date: "2016-04-30"
 slug: azure-devops-7-dnu-publish
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
+- visual-studio-alm
 - Azure
-- DevOps
+- devops
 - DNU
 - DNVM
 - Continuous Delivery
@@ -26,7 +26,7 @@ cover: ""
 7. **애플리케이션 패키지 자동화 - DNU Publish**
 8. [애플리케이션 배포 자동화 - MSDeploy/WAWSDeploy](http://blog.aliencube.org/ko/2016/05/01/azure-devops-8-msdeploy-wawsdeploy)
 9. 데이터베이스 이전 자동화 1 - KUDU
-10. 데이터베이스 이전 자동화 2 - Azure Functions
+10. 데이터베이스 이전 자동화 2 - azure-functions
 
 [이전 포스트](http://blog.aliencube.org/ko/2016/04/29/azure-devops-6-chutzpah)에서는 [Chutzpah](https://github.com/mmanela/chutzpah)를 이용한 클라이언트 사이드 테스트, 즉 자바스크립트 테스트 자동화에 대해서 알아보았다. 지난 포스트까지 완료했다면 Continuous Build를 지나 Continuous Integration 단계까지 완성한 셈이다. 이 포스트에서는 Continuous Delivery 및 Deployment의 첫번째 단계인 애플리케이션 패키지 퍼블리싱에 대해 살펴보도록 한다.
 

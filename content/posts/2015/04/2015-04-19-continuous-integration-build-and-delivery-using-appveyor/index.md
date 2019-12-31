@@ -3,13 +3,13 @@ title: "AppVeyor를 이용한 지속적인 통합, 빌드 및 배포"
 date: "2015-04-19"
 slug: continuous-integration-build-and-delivery-using-appveyor
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ARM & DevOps on Azure
+- arm-devops-on-azure
 - AppVeyor
 - CB
-- CD
-- CI
+- cd
+- ci
 - Continuous Build
 - Continuous Delivery
 - Continuous Deployment

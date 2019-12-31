@@ -3,11 +3,11 @@ title: "게으른 MVP를 위한 컨트리뷰션 한 방 업로드 (feat. 애저 
 date: "2018-03-31"
 slug: uploading-contributions-via-logic-apps-for-super-duper-procrastinating-mvps
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Logic Apps
-- Microsoft MVP
+- azure-app-service
+- azure-logic-apps
+- microsoft-mvp
 fullscreen: false
 cover: ""
 ---

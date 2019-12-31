@@ -3,9 +3,9 @@ title: "Octokit을 이용하여 GitHub 앱 만들기"
 date: "2015-06-22"
 slug: developing-github-app-with-octokit
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - GitHub
 - OAuth
 - Octokit

@@ -3,13 +3,13 @@ title: "서버리스 애플리케이션 테스트하기 - 애저 펑션"
 date: "2017-07-20"
 slug: testing-serverless-applications-part-1
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Design Patterns
-- Unit Test
-- Testability
+- azure-app-service
+- azure-functions
+- design-patterns
+- unit-testing
+- testability
 fullscreen: false
 cover: ""
 ---

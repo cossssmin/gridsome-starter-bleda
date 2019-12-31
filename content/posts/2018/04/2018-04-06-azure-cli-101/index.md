@@ -3,10 +3,10 @@ title: "애저 CLI 시작하기"
 date: "2018-04-06"
 slug: azure-cli-101
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ARM & DevOps on Azure
-- Azure CLI
+- arm-devops-on-azure
+- azure-cli
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/04/azure-cli-101-00.png
 ---

@@ -3,14 +3,14 @@ title: "HtmlHelper 객체 유닛 테스트"
 date: "2015-04-28"
 slug: unit-testing-htmlhelper-objects
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - ASP.NET MVC
 - HtmlHelper
 - Moq
 - NSubstitute
-- Unit Test
+- unit-testing
 fullscreen: false
 cover: ""
 ---

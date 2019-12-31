@@ -3,14 +3,14 @@ title: "애저 펑션으로 통합 어카운트를 대체하는 XSL 매퍼 만�
 date: "2019-01-07"
 slug: building-xsl-mapper-with-azure-functions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Azure Logic Apps
-- Integration Account
-- XML Transformation
-- XSL Mapping
+- azure-app-service
+- azure-functions
+- azure-logic-apps
+- integration-account
+- xml-transformation
+- xsl-mapping
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/01/building-xsl-mapper-with-azure-functions-00.png
 ---

@@ -3,7 +3,7 @@ title: "윈도우 사용자를 위한 애플 키보드 레지스트리 설정"
 date: "2016-07-05"
 slug: changing-apple-keyboard-layout-for-windows-users
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
 - Windows for IT
 - Windows

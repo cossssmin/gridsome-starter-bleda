@@ -3,15 +3,15 @@ title: "이벤트 소싱 패턴과 CQRS 패턴을 적용해서 클라우드상�
 date: "2015-11-12"
 slug: auto-generating-rest-api-service-contract-by-swagger-hal-and-autorest
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
+- asp-net-iis
 - AngularJs
 - Cloud Design Pattern
-- CQRS Pattern
+- cqrs-patterns
 - Event Sourcing Pattern
-- TypeScript
-- Web API
+- typescript
+- web-api
 fullscreen: false
 cover: ""
 ---

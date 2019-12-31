@@ -3,12 +3,12 @@ title: "25일간의 서버리스 챌린지"
 date: "2019-11-30"
 slug: 25-days-of-serverless
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Functions
-- Serverless
-- '25 Days of Serverless'
+- azure-app-service
+- azure-functions
+- serverless
+- '25-days-of-serverless'
 fullscreen: true
 cover: https://s5.gifyu.com/images/advent-of-serverless.gif
 ---

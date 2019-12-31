@@ -3,18 +3,18 @@ title: "개발자를 위한 API 목킹"
 date: "2017-05-16"
 slug: api-mocking-for-developers
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- ASP.NET/IIS
-- AWS
-- API Gateway
-- Azure
-- API Management
-- MuleSoft
-- API Manager
-- Mocking
-- Swagger
-- RAML
+- asp-net-iis
+- aws
+- api-gateway
+- azure
+- api-management
+- mulesoft
+- api-manager
+- mocking
+- swagger
+- raml
 fullscreen: false
 cover: ""
 ---

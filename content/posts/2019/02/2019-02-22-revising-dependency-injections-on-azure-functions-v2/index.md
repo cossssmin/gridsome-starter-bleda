@@ -3,12 +3,12 @@ title: "새롭게 톺아보는 애저 펑션 의존성 관리"
 date: "2019-02-22"
 slug: revising-dependency-injections-on-azure-functions-v2
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
-- Azure Functions
-- Dependency Injection
-- Instance Method
+- dotnet
+- azure-functions
+- dependency-injection
+- instance-method
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/02/getting-rid-of-static-modifier-from-azure-functions-00.png
 ---

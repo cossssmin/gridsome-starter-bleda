@@ -3,13 +3,13 @@ title: "Windows Subsystem for Linux (WSL)에서 Docker와 애저 CLI 사용하�
 date: "2018-04-11"
 slug: running-docker-and-azure-cli-from-wsl
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure Container Services
-- Azure CLI
-- Docker
-- Windows Subsystem for Linux
-- WSL
+- azure-container-services
+- azure-cli
+- docker
+- windows-subsystem-for-linux
+- wsl
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/04/running-docker-and-azure-cli-from-wsl-00.png
 ---

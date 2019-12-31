@@ -3,13 +3,13 @@ title: "애저 웹 앱과 애저 MySQL 데이터베이스를 사용해서 워드
 date: "2017-11-13"
 slug: installing-wordpress-to-azure-webapp-and-azure-mysql
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Azure App Service
-- Azure Web App
-- Azure Database
-- MySQL
-- Wordpress
+- azure-app-service
+- azure-web-app
+- azure-database
+- mysql
+- wordpress
 fullscreen: false
 cover: ""
 ---

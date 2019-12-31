@@ -3,11 +3,11 @@ title: "홀로렌즈 영상 스트리밍"
 date: "2016-08-19"
 slug: hololens-streaming
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Windows Mixed Reality
-- Hololens
-- Streaming
+- windows-mixed-reality
+- hololens
+- streaming
 fullscreen: false
 cover: ""
 ---
@@ -92,7 +92,7 @@ cover: ""
 
 홀로렌즈 시연과 관련한 발표자료 및 동영상은 아래에서 확인할 수 있다.
 
-[HoloLens Demo](https://docs.com/justinyoo/3623/hololens-demo?c=hdG1Ym "HoloLens Demo")—[Justin Yoo](https://docs.com/justinyoo)
+[HoloLens Demo](https://docs.com/justinyoo/3623/hololens-demo?c=hdG1Ym "HoloLens Demo")—[Justin-Yoo](https://docs.com/justinyoo)
 
 <iframe src="https://docs.com/d/embed/D25193094-6183-4959-0170-001214257308%7eMf910d383-aadc-c64c-94a1-34aacea1c31b" frameborder="0" scrolling="no" width="608px" height="378px" style="max-width:100%" allowfullscreen="False"></iframe>
 

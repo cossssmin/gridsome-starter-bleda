@@ -3,14 +3,14 @@ title: "애저 펑션 Swagger UI 소개"
 date: "2019-02-02"
 slug: introducing-swagger-ui-on-azure-functions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- .NET
-- Azure Functions
-- NuGet
-- Open API
-- Swagger
-- Swagger UI
+- dotnet
+- azure-functions
+- nuget
+- open-api
+- swagger
+- swagger-ui
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/02/rendering-swagger-ui-via-azure-functions-00.png
 ---

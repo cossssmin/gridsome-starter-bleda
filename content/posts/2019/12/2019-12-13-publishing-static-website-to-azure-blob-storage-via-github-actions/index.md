@@ -3,17 +3,17 @@ title: "깃헙 액션을 사용해서 애저 블롭 저장소에 정적 웹사�
 date: "2019-12-13"
 slug: publishing-static-website-to-azure-blob-storage-via-github-actions
 description: ""
-author: Justin Yoo
+author: Justin-Yoo
 tags:
-- Visual Studio ALM
-- Azure Blob Storage
-- Azure CLI
-- CI
-- CD
-- GitHub Actions
-- Gridsome
-- Static Website
-- Vue.js
+- visual-studio-alm
+- azure-blob-storage
+- azure-cli
+- ci
+- cd
+- github-actions
+- gridsome
+- static-website
+- vue-js
 fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2019/12/publishing-static-website-to-azure-blob-storage-via-github-actions-00.png
 ---
