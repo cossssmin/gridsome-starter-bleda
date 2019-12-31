@@ -75,7 +75,7 @@ User Story는 고객의 요구사항을 조금 더 기술적으로 표현한 것
 
 `Login.feature` 파일을 열어서 기본으로 들어있는 내용을 모두 삭제하고 위에 기술한 User Story와 Functional Specification을 바탕으로 아래와 같이 입력한다.
 
-```
+```bat
 Feature: Login
     As an existing customer
     I want to login by providing email and password

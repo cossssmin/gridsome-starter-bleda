@@ -16,7 +16,7 @@ cover: ""
 
 LINQ (Language Integrated Query)는 닷넷 개발시 가장 강력한 기능들 중의 하나이다. LINQ-to-SQL, LINQ-to-XML, LINQ-to-OBJECT 등 거의 모든 상황에서 LINQ를 사용할 수 있다. LINQ는 보통 아래와 같은 형태로 많이 쓰인다.
 
-```
+```csharp
 var products = (from p in context.Products
                 where p.ProductName.Contains("ABC")
                 select p).ToList();
@@ -25,7 +25,7 @@ var products = (from p in context.Products
 
 또는
 
-```
+```csharp
 var products = context.Products
                       .SingleOrDefault(p => p.ProductId == 123);
 
@@ -39,7 +39,7 @@ var products = context.Products
 
 이 `linq.js`를 사용하기 위해서는 우선 라이브러리를 불러들여야 한다. 기왕이면 jQuery를 호출한 후에 이 `linq.js`를 호출하도록 하자.
 
-```
+```html
 <script src="/path/to/linq.js"></script>
 <script src="/path/to/linq.jquery.js"></script>
 
@@ -47,7 +47,7 @@ var products = context.Products
 
 이렇게 호출해 놓으면 그냥 사용이 가능하다. 대략의 사용 방법은 아래와 같다.
 
-```
+```js
 var jsonArray = [
   { "user": { "id": 100, "screen_name": "d_linq" }, "text": "to objects" },
   { "user": { "id": 130, "screen_name": "c_bill" }, "text": "g" },
@@ -66,7 +66,7 @@ var queryResult = Enumerable.From(jsonArray)
 
 조금 더 편하게 람다 함수를 이용한다면 아래와 같이 사용할 수도 있다. 위와 아래는 동일한 결과를 가져온다.
 
-```
+```js
 // shortcut! string lambda selector
 var queryResult2 = Enumerable.From(jsonArray)
                              .Where("$.user.id < 200")
@@ -78,7 +78,7 @@ var queryResult2 = Enumerable.From(jsonArray)
 
 마찬가지로 jQuery 플러그인을 사용한다면 더욱 간결한 표현을 쓸 수 있다.
 
-```
+```js
 // $.Enumerable:
 // 알럿 메시지로 짝수만 보여준다. 총 다섯번.
 $.Enumerable.Range(1, 10).Where("$%2==0").ForEach("alert($)");
@@ -109,7 +109,7 @@ var sum = $("#select1").children()
 
 만약 `html5shiv`를 사용한다면, 바로 밑에 이 `es5-shim` 라이브러리를 추가하도록 하자. 아니라면 `modernizr` 바로 밑에 추가해도 된다.
 
-```
+```html
 <script src="/path/to/es5-shim.min.js"></script>
 
 ```

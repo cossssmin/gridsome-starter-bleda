@@ -14,21 +14,27 @@ cover: ""
 
 C#에서 코딩을 하다보면 `AND` 조건을 위해서는 `&&`, `OR` 조건을 위해서는 `||`를 쓴다. 하지만 종종 `&` 또는 `|` 이런 식으로 하나씩만 쓰는 경우를 볼 때가 있다. 주로 정규식 객체를 초기화하는 경우 혹은 리플렉션을 이용하여 프라이빗 멤버에 접근하려고 하는 경우가 될텐데, 아래 코드를 살짝 들여다 보도록 하자
 
+```csharp
 // Initialiseing a regular expression instance.
 var regex = new Regex("pattern", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
 // Accessing a private method via reflection.
 var mi = this.GetType().GetMethod("MethodName", BindingFlags.NonPublic | BindingFlags.Instance);
+```
 
 위의 코드에서 볼 수 있다시피 정규식 초기화 또는 리플렉션을 통해 프라이빗 메소드에 접근하려는 경우에서는 `|`를 흔히 볼 수 있다. 그렇다면 `||`와 `|`의 차이는 무엇일까? 프로젝트 내 초급 개발자들이 흔히 물어보곤 하는데, 그냥 이걸 Bitwise 연산자이다! 라고만 하면 전공자가 아닌 이상 사실 잘 와닿지 않는다. 그래서 조금 더 풀어 쓰자면 아래와 같다고 할 수 있다.
 
+```csharp
 var result1 = condition1 || condition2 || condition3;
 var result2 = condition1 | condition2 | condition3;
+```
 
 `result1`의 값은 `condition1`이 참이라면 더이상 `condition2`와 `condition3`를 수행하지 않고 `TRUE`가 된다. 이미 `OR` 연산에서 첫번째 조건이 참이 됐기 때문에 더이상 그 이후를 수행할 의미가 없기 때문이다. 반면 `result2`의 값은 `condition1`이 참/거짓인것과 상관 없이 `condition2`, `condition3`를 모두 확인하고 그 세 결과값을 통해 하나라도 참이면 `TRUE`를 갖게 된다. 당연히 `result2`를 수행하는 것이 비용이 높을 것이다.
 
+```csharp
 var result3 = condition1 && condition2 && condition3;
 var result4 = condition1 & condition2 & condition3;
+```
 
 마찬가지로 `result3`의 값은 `condition1`의 값이 거짓이라면 곧바로 `FALSE`를 반환하고 `condition2`, `condition3`를 수행하지 않는다. 반면에 `result4`의 값은 모든 `condition1`, `condition2`, `condition3`를 수행하고 하나라도 거짓값이 있으면 `FALSE`를 반환하게 된다.
 
@@ -47,6 +53,7 @@ var result4 = condition1 & condition2 & condition3;
 
 반면 `&`와 `|`는 논리 연산자 logical operator[3](#fn-109:3) 라고 부른다. 즉 `&&`와 `||`보다 좀 더 넓은 범위를 가진 연산자인 셈이다. 이 논리 연산자는 크게 세가지 형태의 미리 정의된 형태를 볼 수 있는데, 정수형 논리 연산자 integer logical operator[4](#fn-109:4), 열거형 논리 연산자 enumeration logical operator[5](#fn-109:5), 불린형 논리 연산자 boolean logical operator[6](#fn-109:6)가 있다. 정수형 논리 연산자는 비트 연산을 수행하고 열거형 논리 연산자 역시 비트 연산을 수행하는데 이는 열거형 내부적으로 정수형으로 변환이 가능하기 때문이다. 단, 이 경우 열거형은 `[Flag]` 속성 클라스와 더불어 2^n 형태의 값을 가져야 한다. 마지막으로 불린형 논리 연산자는 제시된 피연산자를 모두 검사한 후 결과를 반환한다.
 
+```csharp
 // integer logical operator
 var operand1 = 6;                      // 0110
 var operand2 = 10;                     // 1010
@@ -62,6 +69,7 @@ var operand1 = true;                   // 1
 var operand2 = false;                  // 0
 var result1 = operand1 | operand2      // 1
 var result2 = operand1 & operand2      // 0
+```
 
 위의 코드에서 알 수 있다시피 `&`와 `|`는 모두 비트 연산을 수행하고 그 결과를 반환시킨다.
 

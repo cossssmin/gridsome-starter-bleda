@@ -12,7 +12,7 @@ tags:
 - ACR
 - Container
 - Docker
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/04/azure-container-registry-101-00.png
 ---
 

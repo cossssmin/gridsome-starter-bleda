@@ -51,7 +51,7 @@ cover: ""
 
 애저 웹 앱 인스턴스를 생성하면 이를 관리하는 KUDU 서비스도 함께 사용할 수 있다. 워드프레스는 이 KUDU에서 직접 다운로드 받아 설치하면 된다. 먼저 KUDU 서비스로 접속한다. 만약 웹 앱 인스턴스의 이름이 `my-wordpress.azurewebsites.net` 이라면 KUDU 접속을 위한 주소는 `my-wordpress.scm.azurewebsites.net`이 된다. 여기에서 Debug console > CMD 메뉴로 이동한 후 `wwwroot` 디렉토리까지 이동한다. 그 후 워드프레스 설치 파일을 다운로드 받기 위해 아래 명령어를 실행한다.
 
-```
+```bat
 curl -L https://wordpress.org/latest.zip > wordpress.zip
 
 ```
@@ -62,7 +62,7 @@ curl -L https://wordpress.org/latest.zip > wordpress.zip
 
 파일 다운로드가 끝나면 아래 명령어를 실행시켜 압축을 푼다.
 
-```
+```bat
 unzip wordpress.zip
 
 ```
@@ -75,7 +75,7 @@ unzip wordpress.zip
 
 이제 워드프레스에 애저 MySQL 데이터베이스를 연결할 차례이다. 여기서 애저 웹 앱을 곧바로 실행시킨다면 바로 데이터베이스 설정 마법사 화면이 나오면서 필요한 값을 입력하면 된다. 하지만, 이 경우에는 MySQL 인스턴스가 SSL 커넥션을 요구하는 상황에 대한 고려가 없기 때문에 결국 실패하게 된다. 따라서 수동으로 설정해주는 것이 좋다. 이럴 땐 아래 명령어를 실행해서 `wp-config.php` 파일을 준비한다.
 
-```
+```bat
 copy wp-config-sample.php wp-config.php
 
 ```
@@ -86,7 +86,7 @@ copy wp-config-sample.php wp-config.php
 
 이제 `wp-config.php` 파일을 아래와 같이 수정한다.
 
-```
+```php
 ...
 
 /** The name of the database for WordPress */
@@ -131,7 +131,7 @@ define('NONCE_SALT',       '[HASHED_SALT_VALUE]');
 
 만약 애저 웹 앱 인스턴스의 URL을 그대로 이용할 경우 웹 앱에 대한 기본적인 SSL 커넥션을 제공하므로 보안을 위해 HTTP 연결 요청도 자동으로 HTTPS 연결로 넘어가게끔 리디렉션을 강제하는 것이 좋다. 이는 `web.config` 파일을 아래와 같이 수정하면 된다.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <system.webServer>

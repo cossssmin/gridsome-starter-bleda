@@ -18,14 +18,14 @@ IE8은 공식적으로 HTML5 태그들을 지원하지 않는다. 따라서, 하
 
 그럼에도 불구하고 `placeholder` 속성은 IE8에서 사용할 수 없는데, 이럴 때 사용할 수 있는 jQuery 플러그인이 있다. 이름하여 [jquery.placeholder](https://github.com/mathiasbynens/jquery-placeholder). 사용법도 간단하다.
 
-```
+```html
 <script src="/path/jquery.placeholder.js"></script>
 
 ```
 
 먼저 jQuery를 로딩한 다음 `jquery.placeholder.js`를 로딩한다. 그 다음에 다음과 같이 선언하면 끝.
 
-```
+```js
 (function ($) {
   $(document).ready(function () {
     $("input, textarea").placeholder();
@@ -40,7 +40,7 @@ IE8은 공식적으로 HTML5 태그들을 지원하지 않는다. 따라서, 하
 
 이건 사용방법이 더 쉽다. jQuery 플러그인이 아니기 때문에 독립적으로 작동하는데 아래와 같이 스크립트만 불러오면 끝.
 
-```
+```html
 <script src="/path/Placeholders.js"></script>
 
 ```

@@ -15,7 +15,7 @@ cover: ""
 
 데이터 웨어하우징에 ETL 프로세스는 반드시 필요하다. 이 과정에서 데이터 클렌징을 포함한 텍스트 프로세싱을 진행하게 되는데, 정규표현식은 이 텍스트 프로세싱의 핵심 요소들 중 하나이다. 일반적인 상황에서 정규표현식은 아래와 같은 형태로 사용한다.
 
-```
+```csharp
 var value = "abcdefg";
 var pattern = @"^abc";
 if (Regex.IsMatch(value, pattern))
@@ -27,7 +27,7 @@ if (Regex.IsMatch(value, pattern))
 
 위의 예제와 같이 정규표현식은 정적 메소드인 `Regex.Ismatch()`의 형태로 쓰였다. 물론 아래와 같은 형태로 쓰일 수도 있다.
 
-```
+```csharp
 var value = "abcdefg";
 var pattern = @"^abc";
 var regex = new Regex(pattern);
@@ -42,7 +42,7 @@ if (regex.IsMatch(value))
 
 `Regex.IsMatch()` 메소드는 정적 메소드로서 내부적으로 아래와 같은 형태로 구현된다.
 
-```
+```csharp
 public static IsMatch(string input, string pattern)
 {
     var regex = new Regex(pattern);
@@ -57,9 +57,9 @@ public static IsMatch(string input, string pattern)
 
 참조:
 
-- [](http://stackoverflow.com/questions/5854063/how-to-optimize-regular-expression-performance)[http://stackoverflow.com/questions/5854063/how-to-optimize-regular-expression-performance](http://stackoverflow.com/questions/5854063/how-to-optimize-regular-expression-performance)
-- [](http://stackoverflow.com/questions/414328/using-static-regex-ismatch-vs-creating-an-instance-of-regex)[http://stackoverflow.com/questions/414328/using-static-regex-ismatch-vs-creating-an-instance-of-regex](http://stackoverflow.com/questions/414328/using-static-regex-ismatch-vs-creating-an-instance-of-regex)
-- [](http://www.dotnetperls.com/regex-performance)[http://www.dotnetperls.com/regex-performance](http://www.dotnetperls.com/regex-performance)
-- [](http://blogs.msdn.com/b/bclteam/archive/2010/06/25/optimizing-regular-expression-performance-part-i-working-with-the-regex-class-and-regex-objects.aspx)[http://blogs.msdn.com/b/bclteam/archive/2010/06/25/optimizing-regular-expression-performance-part-i-working-with-the-regex-class-and-regex-objects.aspx](http://blogs.msdn.com/b/bclteam/archive/2010/06/25/optimizing-regular-expression-performance-part-i-working-with-the-regex-class-and-regex-objects.aspx)
-- [](http://blogs.msdn.com/b/bclteam/archive/2010/08/03/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking.aspx)[http://blogs.msdn.com/b/bclteam/archive/2010/08/03/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking.aspx](http://blogs.msdn.com/b/bclteam/archive/2010/08/03/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking.aspx)
-- [](http://blogs.msdn.com/b/bclteam/archive/2011/03/28/optimizing-regex-performance-part-3-ron-petrusha.aspx)[http://blogs.msdn.com/b/bclteam/archive/2011/03/28/optimizing-regex-performance-part-3-ron-petrusha.aspx](http://blogs.msdn.com/b/bclteam/archive/2011/03/28/optimizing-regex-performance-part-3-ron-petrusha.aspx)
+- [http://stackoverflow.com/questions/5854063/how-to-optimize-regular-expression-performance](http://stackoverflow.com/questions/5854063/how-to-optimize-regular-expression-performance)
+- [http://stackoverflow.com/questions/414328/using-static-regex-ismatch-vs-creating-an-instance-of-regex](http://stackoverflow.com/questions/414328/using-static-regex-ismatch-vs-creating-an-instance-of-regex)
+- [http://www.dotnetperls.com/regex-performance](http://www.dotnetperls.com/regex-performance)
+- [http://blogs.msdn.com/b/bclteam/archive/2010/06/25/optimizing-regular-expression-performance-part-i-working-with-the-regex-class-and-regex-objects.aspx](http://blogs.msdn.com/b/bclteam/archive/2010/06/25/optimizing-regular-expression-performance-part-i-working-with-the-regex-class-and-regex-objects.aspx)
+- [http://blogs.msdn.com/b/bclteam/archive/2010/08/03/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking.aspx](http://blogs.msdn.com/b/bclteam/archive/2010/08/03/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking.aspx)
+- [http://blogs.msdn.com/b/bclteam/archive/2011/03/28/optimizing-regex-performance-part-3-ron-petrusha.aspx](http://blogs.msdn.com/b/bclteam/archive/2011/03/28/optimizing-regex-performance-part-3-ron-petrusha.aspx)

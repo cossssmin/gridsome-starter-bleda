@@ -10,7 +10,7 @@ tags:
 - Azure Key Vault
 - Managed Identity
 - Managed Service Identity
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/10/accessing-key-vault-from-logic-apps-with-managed-identity-00.png
 ---
 

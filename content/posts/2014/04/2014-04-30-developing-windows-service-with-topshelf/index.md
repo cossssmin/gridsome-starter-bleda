@@ -21,10 +21,9 @@ cover: ""
 
 디버깅을 하려고 하면 항상 위와 같은 경고창이 나타나기 때문에 보통은 아래와 같은 형태의 꼼수를 써서 디버깅을 하게 된다.
 
+```csharp
 static class Program
 {
-    /// /// The main entry point for the application.
-    /// 
     static void Main()
     {
 #if DEBUG
@@ -40,6 +39,7 @@ static class Program
 #endif
     }
 }
+```
 
 위와 같이 `#if DEBUG` ... `#else` ... `#endif` 전처리기 디렉티브를 사용하여 디버깅을 시도하게 된다[1](#fn-169-1). 이 방법이 틀린 것은 아니다. 여전히 실무에서도 이런 방식으로 접근을 많이 한다. 하지만 최선의 방법은 아니다.
 
@@ -70,6 +70,7 @@ static class Program
 
 이제 기본적인 준비는 끝났고, 아래와 같이 샘플 윈도우 서비스를 만들어 보도록 하자.
 
+```csharp
 using Topshelf;
 
 namespace TopshelfWindowsService
@@ -87,9 +88,11 @@ namespace TopshelfWindowsService
         }
     }
 }
+```
 
 Topshelf가 제공하는 `ServiceControl` 인터페이스를 상속받아 클라스를 생성하게 되면 위와 같이 `Start(hostControl)`, `Stop(hostControl)` 메소드를 구현해야 한다. 일단은 위와 같은 상태로 놓고 콘솔 애플리케이션을 아래와 같이 구현한다.
 
+```csharp
 using System;
 using System.Reflection;
 using Topshelf;
@@ -127,7 +130,8 @@ namespace TopshelfWindowsService
             }
         }
     }
-} 
+}
+```
 
 이렇게 하면 윈도우 서비스는 다 만들어졌다. 참 쉽죠?
 
@@ -157,6 +161,7 @@ namespace TopshelfWindowsService
 
 위와 같이 윈도우 서비스 개발을 완료했다. 하지만 실제 `SampleService`의 `Start()` 메소드와 `Stop()` 메소드는 현재 구현되어 있지 않기 때문에, 이부분을 구현해 보도록 하자. 여기서는 간단하게 매 10초마다 콘솔에 `Hello World`를 찍어주게끔 해보도록 한다.
 
+```csharp
 using System;
 using System.Timers;
 using Topshelf;
@@ -201,6 +206,7 @@ namespace TopshelfWindowsService
         }
     }
 }
+```
 
 1. `#1`: `SampleService` 인스턴스 생성시 타이머를 매 10초마다 실행시키게끔 설정한다.
 2. `#2`: 타이머를 실행시킨다.

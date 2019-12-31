@@ -11,7 +11,7 @@ tags:
 - Container
 - Cross Platform
 - Docker
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/04/when-azure-functions-meets-container-00.png
 ---
 
@@ -41,15 +41,15 @@ cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/04/when-azure-funct
 
 애저 펑션 CLI를 이용해서 우선 애저 펑션 프로젝트를 하나 만들어 보자. 현재 디렉토리에 바로 프로젝트를 생성하려면 `func init . --docker` 명령어를 입력하면 된다. 여기서 `--docker` 옵션을 주게 되면 도커 컨테이너 관련 `DockerFile` 파일도 함께 추가된다. 이 파일을 열어 보면 대략 다음과 같이 생겼다.
 
-https://gist.github.com/justinyoo/6290b23a2d180c06b2f6a5ab9cfb5706#file-dockerfile-original-txt
+https://gist.github.com/justinyoo/6290b23a2d180c06b2f6a5ab9cfb5706?file=dockerfile-original.txt
 
 하지만 여기서 참조하는 기본 이미지는 꽤 오래된 것이라서 최근 애저 펑션 SDK가 제대로 작동하지 않기 때문에 아래와 같이 수정해서 최신 기본 이미지를 참조하게끔 한다.
 
-https://gist.github.com/justinyoo/6290b23a2d180c06b2f6a5ab9cfb5706#file-dockerfile-updated-txt
+https://gist.github.com/justinyoo/6290b23a2d180c06b2f6a5ab9cfb5706?file=dockerfile-updated.txt
 
 이제 `.dockerignore` 파일을 만들 차례이다. 이 파일을 이용하면 커스텀 도커 이미지를 만들 때 포함시키지 않아도 될 불필요한 파일을 정리할 수 있다. 이 파일의 내용은 대략 아래와 비슷하다.
 
-https://gist.github.com/justinyoo/6290b23a2d180c06b2f6a5ab9cfb5706#file-dockerignore-txt
+https://gist.github.com/justinyoo/6290b23a2d180c06b2f6a5ab9cfb5706?file=dockerignore.txt
 
 여기까지 애저 펑션 도커 프로젝트를 만들었다.
 
@@ -61,7 +61,7 @@ https://gist.github.com/justinyoo/6290b23a2d180c06b2f6a5ab9cfb5706#file-dockerig
 
 여기서 `function.json` 파일을 열어 인풋 바인딩 섹션에 `"route": "test"` 값을 추가한다. 그리고, `authLevel` 값을 기존의 `function`에서 `anonymous`로 수정한다. 그 이유는 이유는 나중에 다시 설명하도록 한다.
 
-https://gist.github.com/justinyoo/6290b23a2d180c06b2f6a5ab9cfb5706#file-function-json
+https://gist.github.com/justinyoo/6290b23a2d180c06b2f6a5ab9cfb5706?file=function.json
 
 ## 도커 커스텀 이미지 생성하기
 

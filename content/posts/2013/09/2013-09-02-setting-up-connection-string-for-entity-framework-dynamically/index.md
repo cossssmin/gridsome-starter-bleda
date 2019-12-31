@@ -15,7 +15,7 @@ cover: ""
 
 Entity Framework (EF) 은 닷넷 어플리케이션 개발시 사용할 수 있는 ORM 도구들 중 하나이다. 다른 ORM 도구들에 비해 러닝커브도 적을 뿐 아니라 사용이 꽤 직관적이기 때문이다. 다만, 한가지 불편한 점이 있다면 데이터베이스 커넥션 스트링이 너무 길다는 것. 보통 `web.config` 혹은 `app.config`에 들어가는 EF 커넥션 스트링은 대략 아래와 같은 형태이다.
 
-```
+```xml
 <connectionStrings>
   <add name="ApplicationDataContext"
        connectionString="metadata=res://*/ApplicationDataContext.csdl|res://*/ApplicationDataContext.ssdl|res://*/ApplicationDataContext.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDB)v11.0;attachdbfilename=|Data Directory|AdventureWorks.mdf;UserId=username;Password=passwordintegrated security=False;connect timeout=30;MultipleActiveResultSets=True;App=EntityFramework&quot;"
@@ -26,7 +26,7 @@ Entity Framework (EF) 은 닷넷 어플리케이션 개발시 사용할 수 있�
 
 이렇게 너무 커넥션 스트링 부분이 너무 길다보니 한눈에 들어오지도 않을 뿐더러, 상황에 따라 적절하게 서버가 바뀐다거나 데이터베이스가 바뀐다거나 하는 경우에는 수정하기가 쉽지 않다. 하지만, `.edmx` 파일을 이용해 EF를 구성할 경우 세 가지의 서로 다른 인자를 받아들이는 생성자가 생기는데, 그중 하나는 이 커넥션 스트링을 유연하게 구성할 수 있는 방법을 제시한다. 아래는 `.edmx` 파일을 이용하여 생성한 EF 데이터 콘텍스트의 생성자들이다.
 
-```
+```csharp
 public partial class ApplicationDataContext : DbContext
 {
   // Initialises a new instance of the ApplicationDataContext object.
@@ -54,7 +54,7 @@ public partial class ApplicationDataContext : DbContext
 
 맨 아래 생성자를 보면 `EntityConnection` 인스턴스를 인자로 받아 EF 데이터 콘텍스트를 생성하는 것을 볼 수 있다. 바로 이 생성자를 이용하여 상황에 따라 유연하게 커넥션 스트링을 작성할 수 있다. 아래 코드는 이 방법을 이용하는 테스트 케이스 메소드이다.
 
-```
+```csharp
 [Test]
 [TestCase("serverName", "dbName", "username", "password", "System.Data.SqlClient", true)]
 public void TestDatabaseConnection_SendParameters_GetDatabaseConnected(string serverName, string dbName, string username, string password, string provider, bool connected)

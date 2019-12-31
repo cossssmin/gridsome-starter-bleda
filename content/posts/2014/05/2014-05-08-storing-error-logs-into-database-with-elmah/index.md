@@ -36,6 +36,7 @@ cover: ""
 
 스크립트를 실행시키면 MS-SQL 서버 버전이 2000이 아닌 이상 아래와 같은 에러메시지를 볼 수 있을 것이다.
 
+```sql
 \===========================================================================
 WARNING! 
 ---------------------------------------------------------------------------
@@ -45,8 +46,8 @@ database is set up for compatibility with version 11.0. Although
 the script should work with later versions of Microsoft SQL Server, 
 you can ensure compatibility by executing the following statement:
 
-ALTER DATABASE \[LogDatabase\] 
-SET COMPATIBILITY\_LEVEL = 80
+ALTER DATABASE [LogDatabase] 
+SET COMPATIBILITY_LEVEL = 80
 
 If you are hosting ELMAH in the same database as your application 
 database and do not wish to change the compatibility option then you 
@@ -59,11 +60,14 @@ issues you encounter over at:
 http://code.google.com/p/elmah/issues/list
 
 ===========================================================================
+```
 
 위 메시지에 따르면 현재 데이터베이스 버전은 하일라이트 쳐진 라인에서 확인할 수 있다시피 11.0, 즉 MS-SQL 서버 2012이다. 하위 호환성을 위해 MS-SQL 서버 버전의 호환성을 아래와 같이 설정하라고도 되어 있다.
 
-ALTER DATABASE \[LogDatabase\] 
+```sql
+ALTER DATABASE [LogDatabase] 
 SET COMPATIBILITY\_LEVEL = 80
+```
 
 위에서 언급한 `80`이 바로 MS-SQL 서버 2000을 의미한다. 하지만, MS-SQL 서버 2012의 경우 하위 호환성모드 설정이 2005까지, 즉 `90`까지만 가능하므로 위의 스크립트를 실행시키게 되면 아래와 같은 에러메시지를 확인할 수 있다.
 

@@ -38,15 +38,11 @@ First of all, `App.config` needs to be setup for `Atlas`.
 
 Now, have a look at the following code snippet.
 
-/// /// This represents the Windows Service application entity.
-/// 
+```csharp
 internal class Program
 {
     private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 
-    /// /// This represents the main entry point of the Windows Service application.
-    /// 
-    /// List of arguments.
     static void Main(string\[\] args)
     {
         try
@@ -66,6 +62,7 @@ internal class Program
         }
     }
 } 
+```
 
 - `#1`: Let `Atlas` know that `SampleService` is run as a Windows Service.
 - `#2`: Let `Atlas` allow to run multiple instances. Comment or remove this, if not necessary.
@@ -81,26 +78,17 @@ Both `#1` and `#3` are the most crucial part of the post. `#1` defines the actua
 
 This value tells the scheduler to run the job per every 10 seconds. Now, let's implement the `SampleService` class for the actual Windows Service.
 
-/// /// This represents an entity for Windows Service hosted by Atlas.
-/// 
+```csharp
 internal class SampleService : IAmAHostedProcess
 {
     private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 
-    /// /// Gets or sets the scheduler instance.
-    /// 
     public IScheduler Scheduler { get; set; }           // #1
 
-    /// /// Gets or sets the job factory instance.
-    /// 
     public IJobFactory JobFactory { get; set; }         // #2
 
-    /// /// Gets or sets the job listener instance.
-    /// 
     public IJobListener JobListener { get; set; }       // #3
 
-    /// /// Starts the Windows Service.
-    /// 
     public void Start()
     {
         Log.Info("Sample Windows Service starting");
@@ -123,8 +111,6 @@ internal class SampleService : IAmAHostedProcess
         Log.Info("Sample Windows Service started");
     }
 
-    /// /// Stops the Windows Service.
-    /// 
     public void Stop()
     {
         Log.Info("Sample Windows Service stopping");
@@ -134,8 +120,6 @@ internal class SampleService : IAmAHostedProcess
         Log.Info("Sample Windows Service stopped");
     }
 
-    /// /// Resumes the Windows Service.
-    /// 
     public void Resume()
     {
         Log.Info("Sample Windows Service resuming");
@@ -145,8 +129,6 @@ internal class SampleService : IAmAHostedProcess
         Log.Info("Sample Windows Service resumed");
     }
 
-    /// /// Pauses the Windows Service.
-    /// 
     public void Pause()
     {
         Log.Info("Sample Windows Service pausing");
@@ -156,6 +138,7 @@ internal class SampleService : IAmAHostedProcess
         Log.Info("Sample Windows Service paused");
     }
 } 
+```
 
 - `#1`: `IScheduler` instance is injected through the IoC container.
 - `#2`: `IJobFactory` instance is injected through the IoC container.
@@ -174,13 +157,9 @@ internal class SampleService : IAmAHostedProcess
 
 `SampleModule` works as an IoC container with `Autofac`. With this, all instances used in this Windows Service are registered and resolved. `SampleModule` inherits the `Autofac.Module` class.
 
-/// /// This represents an entity for Autofac module.
-/// 
+```csharp
 internal class SampleModule : Module
 {
-    /// /// Override to add registrations to the container.
-    /// 
-    /// The builder through which components can be registered.
     protected override void Load(ContainerBuilder builder)
     {
         this.LoadQuartz(builder);
@@ -188,9 +167,6 @@ internal class SampleModule : Module
         this.LoadLogicLayers(builder);
     }
 
-    /// /// Loads the quartz scheduler instance.
-    /// 
-    /// The builder through which components can be registered.
     private void LoadQuartz(ContainerBuilder builder)
     {
         builder.Register(c => new StdSchedulerFactory().GetScheduler())
@@ -205,9 +181,6 @@ internal class SampleModule : Module
                .As();         // #4
     }
 
-    /// /// Loads the service instance.
-    /// 
-    /// The builder through which components can be registered.
     private void LoadServices(ContainerBuilder builder)
     {
         builder.RegisterType()
@@ -215,15 +188,13 @@ internal class SampleModule : Module
                .PropertiesAutowired();      // #5
     }
 
-    /// /// Loads the logic layers.
-    /// 
-    /// The builder through which components can be registered.
     private void LoadLogicLayers(ContainerBuilder builder)
     {
         builder.RegisterType()
                .As();    // #6
     }
 } 
+```
 
 - `#1`: Registers the `IScheduler` instance.
 - `#2`: Registers the `IJobFactory` instance.
@@ -238,17 +209,13 @@ When `#5` is resolved, its properties will get `IScheduler`, `IJobFactory` and `
 
 The `SampleJob` class actually runs the business logic instance resolved from the IoC container.
 
-/// /// This represents an entity for the job that actually performs for the schedule.
-/// 
+```csharp
 internal class SampleJob : IJob
 {
     private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 
     public ISampleLogicLayer SampleLogicLayer { get; set; }
 
-    /// /// Called by the Quartz.IScheduler when a Quartz.ITrigger fires that is associated with the Quartz.IJob.
-    /// 
-    /// JobExecutionContext instance
     public void Execute(IJobExecutionContext context)
     {
         Log.Info("Application executing");
@@ -258,37 +225,30 @@ internal class SampleJob : IJob
         Log.Info("Application executed");
     }
 }
+```
 
 And the `SampleJob` needs the `ISampleLogicLayer` instance.
 
-/// /// This provides interfaces to the SampleLogicLayer class.
-/// 
+```csharp
 internal interface ISampleLogicLayer : IDisposable
 {
-    /// /// Runs the business logic here.
-    /// 
     void Run();
 }
 
-/// /// This represents an entity that performs the actual business logic.
-/// 
 internal class SampleLogicLayer : ISampleLogicLayer
 {
     private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 
-    /// /// Runs the business logic here.
-    /// 
     public void Run()
     {
         Log.Info("This has been run");
     }
 
-    /// /// Disposes resources not being used any more.
-    /// 
     public void Dispose()
     {
     }
 }
+```
 
 Therefore, when the `SampleJob` instance is executed, it calls the method `Run()` of the `ISampleLogicLayer` instance. The `Run()` method writes a log into the logger instance. So far, we've implemented the **core** logics. However, `Quartz.NET` needs to know whether all necessary instances are resolved or not. Let's move onto the next section to let `Quartz.NET` know the IoC container is ready for use.
 
@@ -296,15 +256,11 @@ Therefore, when the `SampleJob` instance is executed, it calls the method `Run()
 
 In order to let the `IScheduler` know all necessary instances are ready for use, an `IJobFactory` instance needs to be injected. Here's a code snippet for the class implementing the `IJobFactory` interface.
 
-/// /// This represents an entity to let IScheduler know the IoC container is ready for use.
-/// 
+```csharp
 internal class SampleJobFactory : IJobFactory
 {
     private readonly IContainer \_container;
 
-    /// /// Initialises a new instance of the SampleJobFactory class.
-    /// 
-    /// IoC container instance.
     public SampleJobFactory(IContainer container)
     {
         if (container == null)
@@ -313,11 +269,6 @@ internal class SampleJobFactory : IJobFactory
         this.\_container = container;
     }
 
-    /// /// Creates a new job resolved from the IoC container.
-    /// 
-    /// Trigger fired bundle instance.
-    /// Scheduler instance.
-    /// Returns a new job resolved from the IoC container.
     public IJob NewJob(TriggerFiredBundle bundle, IScheduler scheduler)
     {
         if (bundle == null)
@@ -326,13 +277,11 @@ internal class SampleJobFactory : IJobFactory
         return (IJob)this.\_container.Resolve(bundle.JobDetail.JobType); // #1
     }
 
-    /// /// Allows the the job factory to destroy/cleanup the job if needed.
-    /// 
-    /// Job instance.
     public void ReturnJob(IJob job)
     {
     }
 }
+```
 
 - `#1`: Returns the resolved job instance. In our example, it returns the `SampleJob` instance resolved from the IoC container.
 
@@ -342,17 +291,13 @@ Let's move back to the `SampleService` section above. The `SampleService` gets t
 
 `SampleJobListener` makes sure the job instance gets all necessary instances injected before executing the job and disposes all relevant resources after being executed.
 
-/// /// This represents an entity for event handling while a job is running.
-/// 
+```csharp
 internal class SampleJobListener : IJobListener
 {
     private readonly IContainerProvider \_provider;
 
     private IUnitOfWorkContainer \_container;
 
-    /// /// Initialises a new instance of the SampleJobListener class.
-    /// 
-    /// Container provider instance.
     public SampleJobListener(IContainerProvider provider)
     {
         if (provider == null)
@@ -362,40 +307,24 @@ internal class SampleJobListener : IJobListener
         this.Name = "SampleJobListener";
     }
 
-    /// /// Gets the name of the job listener.
-    /// 
     public string Name { get; private set; }
 
-    /// /// Called by the Quartz.IScheduler when a Quartz.IJobDetail is about to be executed
-    /// (an associated Quartz.ITrigger has occurred).
-    /// 
-    /// JobExecutionContext instance.
-    /// /// This method will not be invoked if the execution of the Job was vetoed by a Quartz.ITriggerListener.
-    /// 
     public void JobToBeExecuted(IJobExecutionContext context)
     {
         this.\_container = this.\_provider.CreateUnitOfWork();
         this.\_container.InjectUnsetProperties(context.JobInstance);
     }
 
-    /// /// Called by the Quartz.IScheduler when a Quartz.IJobDetail was about to be executed
-    /// (an associated Quartz.ITrigger has occurred), but a Quartz.ITriggerListener vetoed it's execution.
-    /// 
-    /// JobExecutionContext instance.
     public void JobExecutionVetoed(IJobExecutionContext context)
     {
     }
 
-    /// /// Called by the Quartz.IScheduler after a Quartz.IJobDetail has been executed,
-    /// and be for the associated Quartz.Spi.IOperableTrigger's Quartz.Spi.IOperableTrigger.Triggered(Quartz.ICalendar) method has been called.
-    /// 
-    /// JobExecutionContext instance.
-    /// JobExecutionException instance.
     public void JobWasExecuted(IJobExecutionContext context, JobExecutionException jobException)
     {
         this.\_container.Dispose();
     }
 }
+```
 
 As above, all the implementations have been completed. It's now time to run this. In order to debug this application on the console mode, simple put the parameter of `console` on the debug mode.
 

@@ -20,14 +20,14 @@ cover: ""
 
 이 `HttpContextBase`라는 추상 클라스를 통해 단위 테스트라든가 테스트 주도 개발 방법론(TDD)에서 주로 사용하는 Mocking을 자유롭게 구현할 수 있다. 아래 코드를 보면 대략의 감을 잡을 수 있을 것이다.
 
-```
+```csharp
 HttpContextBase contextBase = new HttpContextWrapper(HttpContext.Current);
 
 ```
 
 위의 예제 코드는 `HttpContextWrapper` 클라스를 이용하여 `HttpContextBase` 객체를 리턴하는 것이다. 실제 동작하는 코드는 이렇게 작성할 수 있고, 단위 테스트에서는 아래와 같이 작성할 수도 있다. `Nunit`과 `NSubstitue`를 사용한다고 가정하자.
 
-```
+```csharp
 public class HomeControllerTest
 {
     private HttpContextBase _context;

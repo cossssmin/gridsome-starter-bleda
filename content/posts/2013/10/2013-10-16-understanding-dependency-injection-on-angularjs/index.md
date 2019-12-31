@@ -15,7 +15,7 @@ cover: ""
 
 객체지향 프로그래밍에서 Dependency Injection (DI) 개념은 아주 중요한데, 개별 객체들 사이에 의존성이 줄어들어야 – 다른 말로 느슨한 결합 (loosely coupled)을 이루거나 – 유지보수 및 확장성, 그리고 테스트 가용성 측면에서 많은 이득을 볼 수 있다. 일반적으로 Java 또는 C# 프로그래밍에서는 아래와 같은 형태로 DI를 구성한다.
 
-```
+```csharp
 public class ProductController : ApiController
 {
     public ProductController(IProductService service)
@@ -38,7 +38,7 @@ public class ProductController : ApiController
 
 이런 식으로 DI를 구성하는 것이 일반적인데, AngularJS에서는 독특한 방식으로 DI를 생성한다. 아무래도 자바스크립트라는 스크립트 언어의 특성 때문이 아닐까 싶기도 한데, 이부분은 여기서 논의할 것은 아니니 다른 기회를 이용하도록 하자. AngularJS에서 DI를 구현하는 방법은 상당히 다양하다. 우선 간단한 HTML 코드를 작성해 보자.
 
-```
+```html
 <html ng-app="diSample">
     <body>
         <div ng-controller="sampleController">
@@ -61,7 +61,7 @@ public class ProductController : ApiController
 
 `diSample`이라는 모듈의 `sampleController`를 통해 총 아홉개의 데이터를 바인딩 시키는 모델이다. 저 콘트롤러를 담은 자바스크립트는 아래와 같다.
 
-```
+```js
 (function(angular) {
     var module = angular.module("diSample", []);
 
@@ -74,7 +74,7 @@ public class ProductController : ApiController
 
 이렇게 하면 `{{text}}` 부분이 `TEXT`로 바뀌어 나오게 된다. 여기서 DI를 적용시켜보자. 우선 `$provide` 서비스를 이용하는 방법이다.
 
-```
+```js
 module.config(function ($provide) {
     $provide.provider("di1", function(){
         this.$get = function(){
@@ -90,7 +90,7 @@ module.config(function ($provide) {
 
 `$provide` 서비스를 이용해서 `di1`이라는 인스턴스를 생성한다. 그리고 콘트롤러 선언부분을 아래와 같이 수정해 준다.
 
-```
+```js
 module.controller("sampleController", function($scope, di1) {
     $scope.text = "TEXT";
     $scope.di1text1 = di1($scope, "DI1 TEXT 1");
@@ -100,7 +100,7 @@ module.controller("sampleController", function($scope, di1) {
 
 이렇게 하면 콘트롤러에서 `di1()` 인스턴스를 호출하게 되면 그 결과가 `$scope.di1text1`과 `$scope.di1text2`에 반영되어 화면에 나타난다. 하지만, 이것보다 좀 더 간단한 방법으로 동일한 결과를 얻을 수 있다. 위의 `module.config()` 안쪽에 아래와 같은 코드를 넣는다.
 
-```
+```js
 $provide.factory("di2", function(){
     return function(text) {
         return text;
@@ -111,7 +111,7 @@ $provide.factory("di2", function(){
 
 이것은 위의 `$provide.provider()` 펑션을 좀 더 간단하게 한 것으로 `$provide.factory()` 펑션을 쓰고 있다. 이것을 더욱 간단하게 하면 아래와 같이 `$provide.value()` 형태로도 쓸 수 있다.
 
-```
+```js
 $provide.value("di3", function(text) {
     return text;
 });
@@ -120,7 +120,7 @@ $provide.value("di3", function(text) {
 
 이제 콘트롤러를 아래와 같이 바꾸어보자.
 
-```
+```js
 module.controller("sampleController", function($scope, di1, d2, d3) {
     $scope.text = "TEXT";
     $scope.di1text1 = di1($scope, "DI1 TEXT 1");
@@ -132,7 +132,7 @@ module.controller("sampleController", function($scope, di1, d2, d3) {
 
 이렇게 콘트롤러를 변경한 후에 결과를 확인해 보면`di1`, `di2`, `di3` 객체가 어떻게 쓰였는지 알 수 있다. 심지어 이보다 더 간단하게 DI를 적용시킬 수도 있다. 위의 예제 코드는 모두 `module.config()` 안에 `$provide` 서비스를 포함시킨 후 그 스코프 안에서 DI를 위한 객체들을 생성시켜 놓는 것이었다면, 이것을 좀 더 간단하게 해서 `module.provider()`, `module.factory()`, `module.value()` 형태로도 사용할 수 있다. 아래 코드를 살펴보도록 하자.
 
-```
+```js
 // Using "provider" shortcut
 module.provider("di4", function(){
     this.$get = function(){
@@ -158,7 +158,7 @@ module.value("di6", function(text) {
 
 차이점을 발견할 수 있는가? 이렇게 만들어 놓은 객체들을 다시 콘트롤러를 수정하여 적용시켜 보자.
 
-```
+```js
 module.controller("sampleController", function($scope, di1, d2, d3, d4, d5, d6) {
     $scope.text = "TEXT";
     $scope.di1text1 = di1($scope, "DI1 TEXT 1");
@@ -173,7 +173,7 @@ module.controller("sampleController", function($scope, di1, d2, d3, d4, d5, d6) 
 
 이렇게 콘트롤러를 수정한 후 결과를 보면 어떻게 달라졌는지 확인할 수 있을 것이다. 마지막으로 `$injector` 서비스를 이용하여 DI를 구현하는 방법이다. 위의 콘트롤러를 아래와 같이 수정하자.
 
-```
+```js
 module.controller("sampleController", function($scope, $injector, di1, d2, d3, d4, d5, d6) {
     $scope.text = "TEXT";
     $scope.di1text1 = di1($scope, "DI1 TEXT 1");

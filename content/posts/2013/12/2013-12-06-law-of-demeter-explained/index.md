@@ -35,7 +35,7 @@ cover: ""
 
 아래 예제 코드를 보자. ASP.NET MVC 웹사이트를 개발하다보면 콘트롤러에서 흔히 볼 수 있는 상황이다.
 
-```
+```csharp
 public class ProductController : Controller
 {
     private IProductService _service;
@@ -67,7 +67,7 @@ public class ProductService : IProductService
 
 위의 코드에서 `Index` 액션을 보면 대략 예상이 가능하겠지만 `ProductService`라는 서비스 레이어 안에서 `ProductRepository`라는 데이터 리포지토리 패턴을 통해 CRUD를 구현하고 있다. `Index` 액션은 전체 제품 리스트를 보여주는 뷰를 갖고 있어서 전체 제품 리스트는 서비스 안에 구현된 리포지토리의 `Get` 메소드를 통해 가져오게 된다. 이렇게 메소드 체이닝을 하는 것이 바로 데메테르의 법칙을 위반하는 것이 된다. `ProductController` 객체는 생성자를 통해 변수로 받은 `ProductService` 객체의 메소드 또는 속성을 호출해야 하지 그 내부에 있는 `ProductRepository` 객체의 `Get` 메소드를 직접 호출해서는 안된다. `ProductRepository` 객체의 현재 상태가 `null`이라면 해당 코드는 `NullReferenceException`을 던지기 때문이다. 따라서 `ProductService` 클라스 안에 추가적인 메소드를 선언해주는 방식으로 리팩토링을 해야 한다.
 
-```
+```csharp
 public class ProductController : Controller
 {
     private IProductService _service;
@@ -108,7 +108,7 @@ public class ProductService : IProductService
 
 단, LINQ를 쓰는 상황이라면 얘기가 달라진다. LINQ에서는 특성상 메소드 체이닝이 필수일 수 밖에 없는지라, 이 데메테르의 법칙에서 벗어날 수 있는데, 그 이유는 메소드 체이닝을 하는 것과 상관없이 항상 리턴타입이 동일하기 때문이다. 위의 예제 코드에 나온 `ProductRepository` 클라스의 `Get` 메소드는 아마도 내부적으로 아래와 같이 구현이 되어 있을 것이다.
 
-```
+```csharp
 public class ProductRepository : IProductRepository
 {
     private CompanyDataContext _context;

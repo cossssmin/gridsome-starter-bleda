@@ -28,7 +28,7 @@ cover: ""
 
 우선 `web.config` 혹은 `app.config` 파일의 `<connectionStrings>` 섹션을 아래와 같이 작성한다.
 
-```
+```xml
 <connectionStrings>
     <clear />
     <add name="ApplicationDataContext"
@@ -44,7 +44,7 @@ cover: ""
 
 Connection String 설정이 끝났다면, 새로운 `ApplicationDataContext` 클라스를 하나 생성한다. 이 클라스는 [`DbContext`](http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.103).aspx) 클라스를 상속받아 사용한다.
 
-```
+```csharp
 public partial class ApplicationDataContext : DbContext
 {
     #region Constructors
@@ -68,7 +68,7 @@ public partial class ApplicationDataContext : DbContext
 
 이렇게 작성한 `ApplicationDataContext`는 아래와 같이 사용할 수 있다.
 
-```
+```csharp
 using (var context = new ApplicationDataContext())
 {
    ...
@@ -78,7 +78,7 @@ using (var context = new ApplicationDataContext())
 
 Constructor 파라미터 없이 직접 Context를 생성하는 것과, Connection String 파라미터를 받아 생성하는 것, 이렇게 두가지가 있다. 파라미터 없이 직접 Context를 생성하는 경우, 디폴트로 `ApplicationDataBase`를 이용한다. 만약, 지정한 데이터베이스 서버에 해당하는 이름이 없을 경우 새롭게 데이터베이스를 생성하게 된다.
 
-```
+```csharp
 public partial class ApplicationDataContext : DbContext
 {
     ...
@@ -100,7 +100,7 @@ public partial class ApplicationDataContext : DbContext
 
 데이터베이스 설정이 끝났다면, 실제로 사용할 테이블을 지정해 주어야 한다. 위와 같이 `Products` 테이블과 `Orders` 테이블, 그리고 `ProductOrders` 테이블이 있다고 가정한다면 해당 엔티티 클라스를 아래와 같이 추가한다.
 
-```
+```csharp
 public partial class Product
 {
     public int ProductId { get; set; }

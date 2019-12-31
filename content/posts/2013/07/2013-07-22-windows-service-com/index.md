@@ -19,14 +19,14 @@ COM 객체는 기본적으로 닷넷 프레임웍 바깥에서 만들어진 것�
 
 이럴 경우 그나마 이들 자식 프로세스를 자동으로 죽이는 방법은 서비스 종료 이벤트시 프로세스를 죽이는 로직을 추가하는 것이다.
 
-```
+```csharp
 Marshal.ReleaseComObject(instance);
 
 ```
 
 보통은 이 명령어 한줄로 충분한데, 그래도 죽지 않고 살아 있다면 아래와 같은 로직을 추가한다.
 
-```
+```csharp
 var processName = "MyProcess";
 var processes = Process.GetProcessesByName(processName);
 foreach (var process in processes)

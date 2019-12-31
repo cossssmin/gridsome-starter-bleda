@@ -28,55 +28,59 @@ cover: ""
 
 우선 아래와 같이 private field를 세 개 생성한다.
 
-private HomeController \_home;
-private ActionResult \_login;
-private NameValueCollection \_form;
+```csharp
+private HomeController _home;
+private ActionResult _login;
+private NameValueCollection _form;
+```
 
 그 다음 아래와 같이 각각의 테스트 메소드를 정리한다.
 
-\[Given(@"the email and password")\]
+```csharp
+[Given(@"the email and password")]
 public void GivenTheEmailAndPassword(Table table)
 {
-    this.\_home = new HomeController();
+    this._home = new HomeController();
 }
 
-\[Given(@"I have entered ""(.\*)"" into the email field")\]
+[Given(@"I have entered ""(.*)"" into the email field")]
 public void GivenIHaveEnteredIntoTheEmailField(string email)
 {
-    if (this.\_form == null)
-        this.\_form = new FormCollection();
-    this.\_form.Add("email", email);
+    if (this._form == null)
+        this._form = new FormCollection();
+    this._form.Add("email", email);
 }
 
-\[Given(@"I have entered ""(.\*)"" into the password field")\]
+[Given(@"I have entered ""(.*)"" into the password field")]
 public void GivenIHaveEnteredIntoThePasswordField(string password)
 {
-    if (this.\_form == null)
-        this.\_form = new FormCollection();
-    this.\_form.Add("password", password);
+    if (this._form == null)
+        this._form = new FormCollection();
+    this._form.Add("password", password);
 }
 
-\[When(@"I press Login")\]
+[When(@"I press Login")]
 public void WhenIPressLogin()
 {
-    this.\_login = this.\_home.Login(this.\_form as FormCollection);
+    this._login = this._home.Login(this._form as FormCollection);
 }
 
-\[Then(@"I should be redirected to the dashboard page")\]
+[Then(@"I should be redirected to the dashboard page")]
 public void ThenIShouldBeRedirectedToTheDashboardPage()
 {
-    this.\_login.Should().NotBeNull();
-    this.\_login.Should().BeOfType();
-    this.\_login.As().Url.Should().BeEquivalentTo("/dashboard");
+    this._login.Should().NotBeNull();
+    this._login.Should().BeOfType();
+    this._login.As().Url.Should().BeEquivalentTo("/dashboard");
 }
 
-\[Then(@"I should be redirected to the login page displaying an error message of ""(.\*)""")\]
+[Then(@"I should be redirected to the login page displaying an error message of ""(.*)""")]
 public void ThenIShouldBeRedirectedToTheLoginPageDisplayingAnErrorMessageOf(string errorMessage)
 {
-    this.\_login.Should().NotBeNull();
-    this.\_login.Should().BeOfType();
-    AssertionExtensions.ShouldBeEquivalentTo((object) this.\_login.As().ViewBag.ErrorMessage, errorMessage);
+    this._login.Should().NotBeNull();
+    this._login.Should().BeOfType();
+    AssertionExtensions.ShouldBeEquivalentTo((object) this._login.As().ViewBag.ErrorMessage, errorMessage);
 } 
+```
 
 - `Given` 메소드들에서는 각각의 private field들에 대한 인스턴스를 생성하여 필요한 값을 적용시킨다.
 - `When` 메소드에서는 `HomeController`의 `Login` 액션을 실행시킨다.

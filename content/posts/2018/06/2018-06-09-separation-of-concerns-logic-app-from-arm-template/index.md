@@ -9,7 +9,7 @@ tags:
 - ARM Templates
 - Azure Logic Apps
 - Separation of Concerns
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/06/separate-of-concerns-logic-app-from-arm-template-00.jpg
 ---
 
@@ -23,7 +23,7 @@ cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/06/separate-of-conc
 
 ARM 템플릿과 그 안에 존재하는 로직 앱의 구조는 대략 아래와 같다.
 
-https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317#file-logic-app-json
+https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317?file=logic-app.json
 
 `properties` 속성 값의 JSON 객체가 바로 로직 앱에 해당하는 부분이다. 이 JSON 객체의 속성 중 `parameters`는 ARM 템플릿에서 만들어진 여러 값들을 로직 앱으로 전달하는 일종의 관문 역할을 한다. 실제 워크플로우는 바로 `definition` 속성에서 정의한다. 따라서, 이론적으로는 이 두 속성만 별도로 ARM 템플릿에서 분리할 수 있다면 문제가 해결되는 셈이다. 실제로 한 번 분리해 보도록 하자.
 
@@ -35,23 +35,23 @@ https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317#file-logic-ap
 
 위 워크플로우를 정의한 ARM 템플릿은 대략 아래와 비슷한 형태가 될 것이다.
 
-https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317#file-azuredeploy-full-json
+https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317?file=azuredeploy-full.json
 
 ## 로직 앱 분리
 
 이제 이 ARM 템플릿에서 `parameters`와 `definition`을 분리해 별도의 파일로 저장한다.
 
-https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317#file-parameters-json
+https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317?file=parameters.json
 
 여기서 `parameters.json` 파일 안에 보면 `{subscriptionId}`와 같은 문자열을 볼 수 있다. 이는 향후 해당 로직 앱이 CI/CD 파이프라인을 거치면서 다양한 값들을 받아들일 수 있도록 조치해 놓은 것이다.
 
 아래는 실제 로직 앱 워크플로우 정의 부분이다. 여기서는 절대로 워크플로우 안에서 ARM 템플릿의 `parameters` 또는 `varibles` 값을 참조하는 형식으로 작성하면 안된다. 이미 별도의 파일로 분리가 되어 있기 때문에 ARM 템플릿과는 독립적으로 작동하기 때문이다. 다만, `parameters.json` 파일에 정의해 놓은 값들은 사용할 수 있다.
 
-https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317#file-definition-json
+https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317?file=definition.json
 
 이후 남은 ARM 템플릿은 아래와 같은 모양이 될 것이다.
 
-https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317#file-azuredeploy-json
+https://gist.github.com/justinyoo/6245ade21d62982180a29f26ba4e7317?file=azuredeploy.json
 
 여기까지 왔다면 이제 ARM 템플릿은 순수한 로직앱 인스턴스만 설치하는 형태로, 이 상태에서 이 ARM 템플릿을 배포하면 빈 껍데기만 있는 로직 앱 인스턴스가 만들어진다. 실제로 애저 포탈에서 학인해 보면 아래와 같이 워크플로우를 작성하라는 화면이 나오는 것을 알 수 있다.
 

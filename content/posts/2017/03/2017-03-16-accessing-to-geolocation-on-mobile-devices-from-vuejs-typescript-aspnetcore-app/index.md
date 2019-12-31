@@ -27,7 +27,7 @@ cover: ""
 
 따라서 간단한 타입스크립트 코드를 이용하면 손쉽게 이용할 수 있다.
 
-> \*\*참고\*\*: `geolocation` API를 이용하기 위해서는 반드시 인터넷에 연결되어 있어야 한다. 또한 각 브라우저 제조사마다 동일한 데이터를 이용하지 않기 때문에 오차가 생길 수 있다. 좀 더 자세한 내용은 이 [블로그 포스트](http://www.andygup.net/html5-geolocation-api-%E2%80%93-how-accurate-is-it-really/)를 참고하도록 하자.
+> **참고**: `geolocation` API를 이용하기 위해서는 반드시 인터넷에 연결되어 있어야 한다. 또한 각 브라우저 제조사마다 동일한 데이터를 이용하지 않기 때문에 오차가 생길 수 있다. 좀 더 자세한 내용은 이 [블로그 포스트](http://www.andygup.net/html5-geolocation-api-%E2%80%93-how-accurate-is-it-really/)를 참고하도록 하자.
 
 ## 사전 준비 사항
 

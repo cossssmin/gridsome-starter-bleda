@@ -7,7 +7,7 @@ author: Justin Yoo
 tags:
 - ARM & DevOps on Azure
 - Azure CLI
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/04/azure-cli-101-00.png
 ---
 

@@ -17,7 +17,7 @@ cover: ""
 
 HTML5 Boilerplate는 이 문서모드를 HTML5에 맞추기 위해 가급적이면 아래 `<meta>` 태그를 `<head>` 태그 바로 밑에 위치시키는 것을 추천하고 있다.
 
-```
+```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 
 ```

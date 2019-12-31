@@ -23,14 +23,14 @@ cover: ""
 
 시스템에서 기본적으로 제공하는 중국어 글꼴은 가장 이쁘지 않다. 그래서 보통은 영문 글꼴을 먼저 제공하고, Fallback 글꼴로써 중국어 글꼴을 제공하는 경우가 많다.
 
-```
+```css
 font-family: Helvetica, Arial, "Microsoft MingLiU", 新細明體, sans-serif;
 
 ```
 
 위는 중국어(번체) 글꼴을 선언하는 방법이다.
 
-```
+```css
 font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 
 ```
@@ -41,7 +41,7 @@ font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华�
 
 일본어 글꼴 역시도 중국어 글꼴 보다는 용량이 작지만, 그래도 큰 편이기 때문에 시스템 글꼴을 사용하는 편인데, 그래도 중국어 글꼴들 보다는 이쁜 것들이 많다.
 
-```
+```css
 font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, Meiryo, "メイリオ", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
 
 ```

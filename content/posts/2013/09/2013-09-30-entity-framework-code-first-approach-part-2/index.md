@@ -43,7 +43,7 @@ cover: ""
 
 Data Annotation을 위해서는 각각의 클라스명 또는 프로퍼티명에 속성 클라스를 지정해 준다. 앞서 생성했던 엔티티들을 아래와 같이 바꾸어 보도록 하자.
 
-```
+```csharp
 [Table("ProductInfo")]
 public class Product
 {

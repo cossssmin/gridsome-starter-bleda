@@ -23,7 +23,7 @@ cover: ""
 
 현재 `Products` 테이블과 `Orders` 테이블은 각각 상품 정보, 주문 정보를 가지고 있다. 이 둘은 many-to-many 관계이므로, 정규화를 거쳐 one-to-many 관계로 바꾸어 주어야 하는데, 그 결과로 `ProductOrders` 테이블이 만들어졌다. 따라서, 이 `ProductOrders` 테이블에 있는 `ProductId`와 `OrderId`가 Forein Key 로서 역할을 해야 한다. 아래와 같이 `ProductOrder` 클라스를 수정해 보자.
 
-```
+```csharp
 public class ProductOrder
 {
     [Key]

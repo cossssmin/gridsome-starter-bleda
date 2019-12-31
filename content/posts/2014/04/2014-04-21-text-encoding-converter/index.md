@@ -36,7 +36,7 @@ For the console application, there is no need to install. Instead, [download the
 
 Here is a sample command:
 
-```
+```bat
 Aliencube.TextEncodingConverter.ConsoleApp.exe /d /ie:949 /oe:utf-8 /i:sample /o:output
 
 ```

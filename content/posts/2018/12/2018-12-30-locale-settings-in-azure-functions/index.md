@@ -10,7 +10,7 @@ tags:
 - Locale
 - L10N
 - Localisation
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/12/locale-settings-in-azure-functions-00.png
 ---
 
@@ -40,19 +40,19 @@ cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/12/locale-settings-
 
 위와 같은 payload를 애저 펑션으로 보낸다고 가정할 때 아래 코드에서는 어떻게 처리를 할까?
 
-https://gist.github.com/justinyoo/f98f86536560c9b99cedbdcf48cadb4c#file-locale-default-cs
+https://gist.github.com/justinyoo/f98f86536560c9b99cedbdcf48cadb4c?file=locale-default.cs
 
 만약 개발 머신의 기본 로케일이 `ko-KR` 이라면 아래와 같은 결과를 낼 것이다.
 
 ```json
-Input: 2011-12-13T00:00:00.0000000+11:00
+Input: 2011-12-13T00:00:00.0000000+09:00
 
 ```
 
 만약 개발 머신의 기본 로케일이 `en-AU` 이라면 아래와 같은 결과가 나올 것이다.
 
 ```json
-Input: 2013-12-11T00:00:00.0000000+00:00
+Input: 2013-12-11T00:00:00.0000000+11:00
 
 ```
 
@@ -65,12 +65,12 @@ Input: 2013-11-12T00:00:00.0000000+00:00
 
 그렇다. 어찌 보면 당연(?)하게도 미국 로케일(`en-US`)를 따른 결과를 보여준다. 하지만 우리가 다루는 데이터는 모두 한국 로케일 (`ko-KR`)을 따르고 있다면 어떻게 해야 할까? 애저 펑션 인스턴스 자체로 로케일을 바꿀 수 있는 방법은 없다. 즉, 다른 말로 코드 상에서 이 문제를 해결해야 한다는 말이 된다. 이 때 바로 [`Thread.CurrentThread.CurrentCulture`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread.currentculture?view=netcore-2.2) 값을 변경해 주면 된다. 아래 코드를 보도록 하자.
 
-https://gist.github.com/justinyoo/f98f86536560c9b99cedbdcf48cadb4c#file-locale-ko-kr-cs
+https://gist.github.com/justinyoo/f98f86536560c9b99cedbdcf48cadb4c?file=locale-ko-kr.cs&highlights=7
 
 맨 위에 현재 로케일을 애저 펑션 인스턴스의 기본 설정(`en-US`)에서 한국어(`ko-KR`)로 바꿔주면 된다. 이 펑션 코드를 실행시킨 결과는 아래와 같다.
 
 ```json
-Input: 2011-12-13T00:00:00.0000000+11:00
+Input: 2011-12-13T00:00:00.0000000+09:00
 
 ```
 

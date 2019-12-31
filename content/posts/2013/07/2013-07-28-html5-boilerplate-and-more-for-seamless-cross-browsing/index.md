@@ -30,7 +30,7 @@ cover: ""
 
 우선, 기본적인 H5BP에서 제안하는 HTML 문서의 골격구조부터 살펴보자. 아래의 내용은 H5BP 리포지토리의 `index.html`이다. ([](https://raw.github.com/h5bp/html5-boilerplate/master/index.html)[https://raw.github.com/h5bp/html5-boilerplate/master/index.html](https://raw.github.com/h5bp/html5-boilerplate/master/index.html))
 
-```
+```html
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -80,7 +80,7 @@ cover: ""
 
 ### 기본 문자셋
 
-```
+```html
 <meta charset="utf-8" />
 
 ```
@@ -89,14 +89,14 @@ cover: ""
 
 ### IE 호환성 모드 메타 태그
 
-```
+```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 ```
 
 이 내용은 사용자가 IE를 사용해서 페이지를 열었을 때, 해당 IE가 지원할 수 있는 최신의 호환성 모드로 페이지를 렌더링하게끔 하는 것이다. 하지만, 이 메타 태그는 인트라넷 상에서는 해석할 수가 없기 때문에 웹서버에서도 자체적으로 커스텀 헤더 안에 위의 호환성 모드를 뿌려주는 것이 좋다. 이에 덧붙여 만약 사용자가 IE 크롬 익스텐션을 사용할 경우에는 아래와 같이 수정하여 크롬 익스텐션으로 렌더링하는 것을 강제하게끔 할 수도 있다.
 
-```
+```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 
 ```
@@ -107,7 +107,7 @@ cover: ""
 
 ### CSS 정규화
 
-```
+```html
 <link rel="stylesheet" href="css/normalize.css" />
 
 ```
@@ -130,7 +130,7 @@ IE9 이하의 브라우저에서는 HTML5에서 새롭게 제공하는 `<input>`
 
 ### EcmaScript 5 지원
 
-```
+```html
 <!--[if lte IE 8]>
     <script type="text/javascript" src="js/es5-shim.min.js"></script>
 <![endif]-->
@@ -141,7 +141,7 @@ IE8에서 사용하는 자바스크립트 엔진은 오래된 것이라서 EcmaS
 
 ### linq.js
 
-```
+```html
 <script type="text/javascript" src="js/linq.min.js"></script>
 
 ```

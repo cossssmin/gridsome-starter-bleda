@@ -63,7 +63,7 @@ cover: ""
     
 6. 콜백 URL이 호출될 때 받은 페이로드를 웹훅이 받은 응답 메시지로 간주한다. 예를 들어 로직 앱에서 아래 애저 펑션을 섭스크립션한다고 가정하자. 애저 펑션은 그대로 콜백 URL로 페이로드를 실어 보낸다. 아래 코드만 놓고 보면 웹훅은 최초 로직 앱에서 보내온 페이로드를 그대로 반환하는 것처럼 보이지만 실제로는 `productId` 대신 `objectId`로 바뀐 다른 페이로드를 선택한다.
     
-    ```
+    ```csharp
     dynamic data = await req.Content.ReadAsAsync<object>();
     var serialised = JsonConvert.SerializeObject((object)data);
     

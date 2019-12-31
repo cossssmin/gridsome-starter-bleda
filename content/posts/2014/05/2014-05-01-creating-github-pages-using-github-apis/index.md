@@ -34,7 +34,7 @@ cover: ""
 
 `gh-pages`에 있는 `index.html` 파일을 텍스트 에디터로 열어보면 아래와 같은 부분을 발견할 수 있다.
 
-```
+```html
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
@@ -50,7 +50,7 @@ cover: ""
 
 우리는 `<section>` 태그 안쪽의 내용을 모두 `README.md`의 내용으로 바꿀 예정이다. 우선 `<section>` 태그와 `</section>` 태그 사이의 모든 내용을 삭제한다. 그리고 AJAX를 이용하여 깃헙 API 데이터를 호출하기 위해 `</body>` 태그 바로 앞에 jQuery를 로딩한다.
 
-```
+```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="javascripts/index.js"></script>
 
@@ -58,7 +58,7 @@ cover: ""
 
 그리고 `index.js` 파일에 아래의 내용을 추가한다.
 
-```
+```js
 ;"use strict";
 
 (function ($) {
@@ -121,7 +121,7 @@ cover: ""
 
 `gh-pages` 브랜치를 만들게 되면 기본적으로 들어있는 이미지 파일이 몇 개 있다. 이들 이미지 파일을 리스트로 표현하는 `images.html` 페이지를 만들어 보자. 앞서 작성한 `index.html` 파일을 복사하여 `images.html` 파일을 하나 준비한다. 그리고 `images.html` 파일의 `</body>` 태그 바로 앞에 있는 자바스크립트 호출 구문을 아래와 같이 수정한다.
 
-```
+```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.min.js"></script>
 <script src="javascripts/images.js"></script>
@@ -130,7 +130,7 @@ cover: ""
 
 그리고 `images.js` 파일에 아래의 내용을 추가한다.
 
-```
+```js
 ;"use strict";
 
 (function ($) {

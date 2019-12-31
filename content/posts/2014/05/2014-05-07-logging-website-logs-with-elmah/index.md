@@ -64,6 +64,7 @@ cover: ""
 
 이번엔 실제 콘트롤러/액션에서 발생하는 에러를 확인해 보도록 하자. 아래와 같이 `HomeController`를 작성한다.
 
+```csharp
 public class HomeController : Controller
 {
     public ActionResult Confused()
@@ -71,6 +72,7 @@ public class HomeController : Controller
         throw new NotImplementedException();
     }
 }
+```
 
 이제 `http://elmah.aliencube.local/home/confused` 페이지로 접속하게 되면 아래와 같은 에러페이지를 볼 수 있다.
 
@@ -84,7 +86,7 @@ public class HomeController : Controller
 
 이상으로, `ELMAH` 라이브러리를 이용하여 에러 로그 페이지를 작성해 보았다. `ELMAH`가 가진 강력한 점들 중 하나는 위에서 진행한 바와 같이 라이브러리를 추가하고 `Web.config`파일을 약간 손봐준 것 만으로도 훌륭한 로그 시스템이 만들어진다는 것이다. 하지만, 이 방법의 문제점이라면, 위의 마지막 이미지에서 볼 수 있다시피 모든 로그의 내용이 서버의 메모리에 저장된다는 것이다. 즉, 서버를 재시작한다거나, 심지어 `Web.config` 파일을 수정만 해도 기존에 저장됐던 모든 로그들이 사라지게 된다. 따라서 별도의 파일 시스템 혹은 데이터베이스를 이용하여 로그들을 저장해야 하는데, [다음 포스트](http://blog.aliencube.org/ko/2014/05/08/storing-error-logs-into-database-with-elmah)에서는 이렇게 작성된 에러 로그들을 데이터베이스에 저장하는 방법에 대해 논의해 보도록 하자.
 
-\*\*참고\*\*
+**참고**
 
 - [How to get ELMAH to work with ASP.NET MVC \[HandleError\] attribute?](http://stackoverflow.com/questions/766610/how-to-get-elmah-to-work-with-asp-net-mvc-handleerror-attribute)
 - [Logging in MVC Part 1- Elmah](http://dotnetdarren.wordpress.com/2010/07/27/logging-on-mvc-part-1)

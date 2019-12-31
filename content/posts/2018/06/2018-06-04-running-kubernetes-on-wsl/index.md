@@ -11,7 +11,7 @@ tags:
 - Windows
 - Windows Subsystem for Linux
 - WSL
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/06/running-kubernetes-on-wsl-00.png
 ---
 
@@ -45,7 +45,7 @@ cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/06/running-kubernet
 
 실제로 윈도우 환경에서 잘 돌아가는지 확인해 보려면 아래 명령어를 입력해 본다.
 
-```
+```bat
 kubectl cluster-info
 
 ```
@@ -58,7 +58,7 @@ kubectl cluster-info
 
 WSL 환경 바깥에서 일단 K8S 클러스터가 돌아가긴 한다. 이걸 WSL 안으로 끌고 들어와야 하는데, 그러려면 우선 [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/)을 WSL 안에 설치해야 한다. 아래 명령어를 WSL 배시 화면에서 입력한다.
 
-```
+```bash
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl \
 && chmod +x ./kubectl \
 && sudo mv ./kubectl /usr/local/bin/kubectl
@@ -71,7 +71,7 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 
 하지만 아직 K8S 환경 설정이 끝나지 않았다. 이미 윈도우에 설치한 환경 설정 파일이 있기 때문에 그것을 그대로 가져다 쓰면 된다. 아래 명령어를 입력해서 윈도우의 K8S 설정 파일을 가져온다.
 
-```
+```bash
 mkdir ~/.kube \
 && cp /mnt/c/Users/[USERNAME]/.kube/config ~/.kube
 
@@ -81,14 +81,14 @@ mkdir ~/.kube \
 
 환경 설정 파일을 복사했다면 이번엔 `kubectl`이 Docker for Windows 컨텍스트를 사용하게끔 한다.
 
-```
+```bash
 kubectl config use-context docker-for-desktop
 
 ```
 
 이제 모든 설정이 다 끝났다. 아래 명령어를 입력해서 확인해 보도록 한다.
 
-```
+```bash
 kubectl cluster-info
 
 ```
@@ -99,7 +99,7 @@ kubectl cluster-info
 
 `kubectl`이 잘 돌아가는 것 같긴 한데, 실제로 앱을 올려서 돌려보면 더욱 확실하게 알 수 있을 것이다. 아래 명령어를 입력해 보자. 원래 `minikube`를 설치하고 잘 작동하는지 확인해 보는 앱인데, 여기서 사용해도 상관 없다.
 
-```
+```bash
 kubectl run hello-minikube --image k8s.gcr.io/echoserver:1.10 --port 8080
 kubectl expose deployment hello-minikube --type NodePort
 
@@ -107,7 +107,7 @@ kubectl expose deployment hello-minikube --type NodePort
 
 앱이 외부에서도 접근 가능하게끔 포트를 열어줬다. 이 포트는 무작위로 할당되므로 아래 명령어를 통해 포트 번호를 확인한다.
 
-```
+```bash
 kubectl describe service hello-minikube
 
 ```

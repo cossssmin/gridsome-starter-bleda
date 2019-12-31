@@ -10,7 +10,7 @@ tags:
 - Docker
 - Windows Subsystem for Linux
 - WSL
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/04/running-docker-and-azure-cli-from-wsl-00.png
 ---
 

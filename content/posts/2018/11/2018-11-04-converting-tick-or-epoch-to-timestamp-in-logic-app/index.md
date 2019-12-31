@@ -10,7 +10,7 @@ tags:
 - Epoch
 - Ticks
 - Timestamp
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/11/converting-tick-or-epoch-to-timestamp-in-logic-app-00.png
 ---
 
@@ -30,7 +30,7 @@ cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/11/converting-tick-
 
 이 변환은 로직앱에서 자체 제공하는 함수인 [`ticks()`](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#ticks)를 쓰면 쉽게 해결할 수 있다. 따라서 아래와 같이 함수를 구성해 보도록 하자:
 
-https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145#file-get-timestamp-in-ticks-yaml
+https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145?file=get-timestamp-in-ticks.yaml
 
 이 액션의 실행 결과 값은 `636721400960000000`이 될 것이다.
 
@@ -45,19 +45,19 @@ https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145#file-get-time
 3. 이 두 tick 값의 차이를 계산한다.
 4. 이 차이 값을 1천만(1000 0000)으로 나누어 초 단위로 변경한다.
 
-https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145#file-get-timestamp-in-epoch-yaml
+https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145?file=get-timestamp-in-epoch.yaml
 
 위 로직 앱 워크플로우의 마지막 액션이 반환하는 결과는 `1536543296`이다.
 
-## 유닉스 시간값 eopch 에서 타임스탬프로 변경하기
+## 유닉스 시간값 epoch 에서 타임스탬프로 변경하기
 
 많은 API들이 날짜/시간 값을 유닉스 타임스탬프 값으로 반환하는 경우가 많다. 예를 들어서 애저 AD를 OAuth 서버로 사용할 때 액세스 토큰 값을 요청하면 그 응답 객체는 만료 시각을 유닉스 타임스탬프 형태로 반환한다:
 
-https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145#file-aad-response-json
+https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145?file=aad-response.json
 
 이 `expires_on` 값과 `not_before` 값은 epoch 형식을 나타내는데, 사실 이 값은 그다지 사람이 한 눈에 읽기 편한 값은 아니다. 따라서 이 값들을 읽기 편하게 포맷을 바꿔달라는 요청이 왕왕 있는 편이다. 이를 위한 직접적인 로직 앱 액션 또는 내장 함수가 없으므로 직접 변환하기 보다는 [`addToTime()`](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#addToTime) 또는 [`addSeconds()`](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#addSeconds)와 같은 내장 함수를 이용하면 편하다. 사실 epoch 값은 `1970-01-01T00:00:00Z` 이래로 몇 초나 흘렀는지를 알아볼 수 있다. 따라서 `addSeconds()` 혹은 `addToTime()` 함수를 이용해서 로직 앱을 직접 만들 수 있다:
 
-https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145#file-convert-epoch-to-timestamp-yaml
+https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145?file=convert-epoch-to-timestamp.yaml
 
 이 변환 결과에 따르면 타임스탬프 값은 바로 `2018-09-10T12:34:56+11:00`이 된다.
 
@@ -67,7 +67,7 @@ https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145#file-convert-
 
 로직 앱 내장 함수인 `addToTime()`, `addSeconds()` 같은 함수는 날짜/시간 값을 표현하는 데 있어 초단위 까지만 변환 가능하다는 단점(?)이 있다. 반면에 tick 값은 1초를 1천만회 쪼개서 사용하므로 이 부분에 대한 조심만 하면 크게 문제될 것은 없다. tick 값에서 타임스탬프로 변경하는 방법은 위에 서술한 두 가지 방법을 조합하면 된다. 먼저 tick 값에서 epoch 값으로, 이어서 epoch 값에서 타임스탬프로 바꾸면 된다. 이미 우리는 `1970-01-01T00:00:00Z`에 대한 tick 값이 `621355968000000000` 라는 것을 알고 있다. 이를 바탕으로 `636721400967890200` 와 같이 아무런 tick 값이라도 주어진다면 아래와 같이 바꿀 수 있다:
 
-https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145#file-convert-ticks-to-timestamp-yaml
+https://gist.github.com/justinyoo/8d3dcf352682ca73c34d98d7601f1145?file=convert-ticks-to-timestamp.yaml
 
 위 로직 앱 워크플로우에서 마지막 액션이 반환하는 타임스탬프 값은 `2018-09-10T01:34:56.0000000Z`이 된다. 정확하게는 `636721400967890200` 값은 로컬 타임스탬프로 `2018-09-10T12:34:56.789012+11:00`, UTC로 `2018-09-10T01:34:56.789012Z` 을 나타내지만, 이 변환의 결과로 소수점 이하 자리는 놓치게 된다. 이것은 로직 앱 함수가 갖는 치명적(?)인 단점이라 할 수 있다. 하지만, 그 정도까지 정확성이 필요하지 않다면 이 변환 방법은 굉장히 유용할 것이다.
 

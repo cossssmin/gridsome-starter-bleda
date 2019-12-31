@@ -10,7 +10,7 @@ tags:
 - .NET Standard
 - Entity Framework Core
 - Multi-targeting
-fullscreen: false
+fullscreen: true
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2018/12/entityframeworkcore-on-netcoreapp-and-netstandard-00.png
 ---
 

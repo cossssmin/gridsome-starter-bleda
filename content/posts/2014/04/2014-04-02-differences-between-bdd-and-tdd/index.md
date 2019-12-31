@@ -24,7 +24,7 @@ StackExchange의 [이 질문과 대답](http://programmers.stackexchange.com/que
 
 좀 더 간략하게 BDD에 대해 설명을 하자면, BDD는 테스트 케이스를 작성함에 있어서 좀 더 자연어에 가깝게 작성한다는 것이다. 대표적인 것이 바로 [User Story](http://en.wikipedia.org/wiki/User_story) 기법이 있다. [여기](http://stackoverflow.com/questions/2509/what-are-the-primary-differences-between-tdd-and-bdd#2548)글을 참고하여 아래 User Story를 살펴보도록 하자.
 
-```
+```bat
 Story: User logging in
   As a user
   I want to login with my details
@@ -34,7 +34,7 @@ Story: User logging in
 
 위와 같이 User Story를 작성한다고 하면 전형적인 `As a ...`, `I want ...`, `So that ...` 구문을 따르고 있다. 이렇게 비즈니스 요구사항이 만들어진다면 이것을 바탕으로 시나리오를 아래와 같이 만들 수 있다.
 
-```
+```bat
 Scenario: User uses wrong password
 
   Given a username &#039;jdoe&#039;
