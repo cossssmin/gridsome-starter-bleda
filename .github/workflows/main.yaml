@@ -23,6 +23,11 @@ jobs:
       run: |
         npm install
 
+    - name: Monkey patch npm package (Interim)
+      shell: bash
+      run: |
+        cp patches/Gist.js node_modules/@noxify/gridsome-plugin-remark-embed/src/providers
+
     - name: Build app
       shell: bash
       run: |
@@ -31,4 +36,4 @@ jobs:
     - name: Publish app
       shell: bash
       run: |
-        netlify deploy -s ${{ secrets.NETLIFY_SITE_ID }} -a ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        netlify deploy -p -s ${{ secrets.NETLIFY_SITE_ID }} -a ${{ secrets.NETLIFY_AUTH_TOKEN }}
