@@ -1,0 +1,8 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://aliencube.org/* https://blog.aliencube.org/:splat 301!
+https://www.aliencube.org/* https://blog.aliencube.org/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://priceless-williams-2ac45a.netlify.com/* https://blog.aliencube.org/:splat 301!

@@ -33,6 +33,11 @@ jobs:
       run: |
         npm run build
 
+    - name: Apply redirects
+      shell: bash
+      run: |
+        cp _redirects dist
+
     - name: Publish app
       shell: bash
       run: |
