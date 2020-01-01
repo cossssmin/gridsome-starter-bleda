@@ -1,4 +1,8 @@
 .markdown {
+  p {
+    @apply font-sans;
+  }
+
   p, ul, ol {
     @apply mb-4;
   }
