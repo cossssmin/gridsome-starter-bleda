@@ -3,6 +3,9 @@
     <div class="mx-auto max-w-3xl px-6">
       <div class="py-8 sm:py-20 border-b border-gray-300">
         <header class="text-center mb-8">
+          <div v-if="post.cover">
+            <g-link :to="`${post.path}/`" class="text-black font-bold"><img :src="`${post.cover}`" /></g-link>
+          </div>
           <time :datetime="post.datetime" class="text-gray-700 text-xs mb-2 uppercase">{{ formatPublishDate(post.datetime) }}</time>
           <h2 class="text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
             <g-link :to="`${post.path}/`" class="text-black font-bold">{{ post.title }}</g-link>
@@ -14,7 +17,7 @@
             <span>{{ post.timeToRead }} min read</span>
           </p>
         </header>
-        <p class="leading-normal text-gray-700 text-lg px-2 sm:px-4 md:px-10" v-html="excerpt(post, 280, ' ...')"></p>
+        <p class="leading-normal font-sans text-gray-700 text-lg px-2 sm:px-4 md:px-10" v-html="excerpt(post, 280, ' ...')"></p>
       </div>
     </div>
   </article>
