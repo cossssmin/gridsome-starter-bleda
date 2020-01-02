@@ -96,6 +96,7 @@ query Author ($path: String!, $page: Int) {
             excerpt
             description
             timeToRead
+            cover
             tags {
               id
               title
