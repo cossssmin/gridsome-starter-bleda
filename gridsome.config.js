@@ -57,7 +57,7 @@ module.exports = {
       options: {
         contentTypeName: 'Post',
         feedOptions: {
-          title: 'Bleda, a Gridsome blog starter',
+          title: 'Aliencube',
           feed_url: 'https://blog.aliencube.org/feed.xml',
           site_url: 'https://blog.aliencube.org',
         },
