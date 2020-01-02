@@ -43,8 +43,8 @@ export default {
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: this.$static.metadata.siteName },
         { name: "twitter:description", content: this.$static.metadata.siteDescription },
-        { name: "twitter:site", content: "@cossssmin" },
-        { name: "twitter:creator", content: "@cossssmin" },
+        { name: "twitter:site", content: "@aliencubeorg" },
+        { name: "twitter:creator", content: "@aliencubeorg" },
         { name: "twitter:image", content: this.ogImageUrl },
       ],
     }
@@ -54,7 +54,7 @@ export default {
       return config
     },
     ogImageUrl () {
-      return `${this.config.siteUrl}/images/bleda-card.png`
+      return `${this.config.siteUrl}/images/twitter-card.png`
     }
   },
 }
