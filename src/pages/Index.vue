@@ -54,7 +54,7 @@ export default {
       return config
     },
     ogImageUrl () {
-      return `${this.config.siteUrl}/images/bleda-card.png`
+      return `${this.config.siteUrl}/images/twitter-card.png`
     }
   },
 }

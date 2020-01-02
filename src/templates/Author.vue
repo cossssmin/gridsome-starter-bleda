@@ -51,8 +51,8 @@ export default {
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: `Posts written by ${this.titleCase(this.$page.author.title)}` },
         { name: "twitter:description", content: `Browse posts written by ${this.titleCase(this.$page.author.title)}` },
-        { name: "twitter:site", content: "@cossssmin" },
-        { name: "twitter:creator", content: "@cossssmin" },
+        { name: "twitter:site", content: "@devkimchi" },
+        { name: "twitter:creator", content: "@devkimchi" },
         { name: "twitter:image", content: this.ogImageUrl },
       ],
     }
@@ -67,7 +67,7 @@ export default {
       return config
     },
     ogImageUrl () {
-      return `${this.config.siteUrl}/images/bleda-card.png`
+      return `${this.config.siteUrl}/images/twitter-card.png`
     }
   },
 }
