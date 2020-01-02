@@ -1,0 +1,44 @@
+name: Publish Static Web App to Netlify
+
+on:
+  push:
+    branches:
+    - dev
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v1
+
+    - name: Install Netlify CLI
+      shell: bash
+      run: |
+        sudo npm install -g netlify-cli
+
+    - name: Install npm packages
+      shell: bash
+      run: |
+        npm install
+
+    - name: Monkey patch npm package (Interim)
+      shell: bash
+      run: |
+        cp patches/Gist.js node_modules/@noxify/gridsome-plugin-remark-embed/src/providers
+
+    - name: Build app
+      shell: bash
+      run: |
+        npm run build
+
+    - name: Apply redirects
+      shell: bash
+      run: |
+        cp _redirects dist
+
+    - name: Publish app
+      shell: bash
+      run: |
+        netlify deploy -p -s ${{ secrets.NETLIFY_SITE_ID }} -a ${{ secrets.NETLIFY_AUTH_TOKEN }}

@@ -45,21 +45,21 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: 'Introduction to the Bleda blog starter for Gridsome.'
+          content: this.ogDescription
         },
 
         { property: "og:type", content: 'article' },
         { property: "og:title", content:'About' },
         { property: "og:description", content: 'Introduction to the Bleda blog starter for Gridsome.' },
         { property: "og:url", content: `${this.config.siteUrl}/about/` },
-        { property: "og:image", content: '/images/twitter-card.png' },
+        { property: "og:image", content: this.ogImageUrl },
 
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: 'About' },
         { name: "twitter:description", content: 'Introduction to Dev Kimchi' },
         { name: "twitter:site", content: "@devkimchi" },
         { name: "twitter:creator", content: "@devkimchi" },
-        { name: "twitter:image", content: '/images/twitter-card.png' },
+        { name: "twitter:image", content: this.ogImageUrl },
       ],
     }
   },
@@ -67,6 +67,12 @@ export default {
     config () {
       return config
     },
+    ogDescription () {
+      return 'Introduction to Dev Kimchi'
+    },
+    ogImageUrl () {
+      return `${this.config.siteUrl}/images/twitter-card.png`
+    }
   },
 }
 </script>
