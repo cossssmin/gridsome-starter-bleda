@@ -5,10 +5,10 @@ class TailwindExtractor {
 }
 
 module.exports = {
-  siteName: 'A blog starter for Gridsome',
-  siteDescription: "Bleda is a blog starter kit for Gridsome, the Vue.js static site generator. It's inspired by Attila for Ghost, and styled with Tailwind CSS.",
-  siteUrl: 'https://gridsome-starter-bleda.netlify.com',
-  titleTemplate: `%s | Bleda`,
+  siteName: 'Dev Kimchi',
+  siteDescription: "Fermentation: Turning .NET, Web and Cloud into Something",
+  siteUrl: 'https://devkimchi.com',
+  titleTemplate: `%s | DevKimchi`,
   icon: 'src/favicon.png',
 
   transformers: {
@@ -37,13 +37,13 @@ module.exports = {
             typeName: 'Author',
             create: true,
           },
-        },
+        }
       },
     },
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-135446199-1',
+        id: 'UA-54189949-1',
       },
     },
     {
@@ -57,14 +57,14 @@ module.exports = {
       options: {
         contentTypeName: 'Post',
         feedOptions: {
-          title: 'Bleda, a Gridsome blog starter',
-          feed_url: 'https://gridsome-starter-bleda.netlify.com/feed.xml',
-          site_url: 'https://gridsome-starter-bleda.netlify.com',
+          title: 'Dev Kimchi',
+          feed_url: 'https://devkimchi.com/feed.xml',
+          site_url: 'https://devkimchi.com',
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.description,
-          url: 'https://gridsome-starter-bleda.netlify.com/' + node.slug,
+          url: 'https://devkimchi.com' + node.path,
           author: node.author,
           date: node.date,
         }),
@@ -77,7 +77,7 @@ module.exports = {
   ],
 
   templates: {
-    Post: '/:title',
+    Post: '/:year/:month/:day/:slug',
     Tag: '/tag/:id',
     Author: '/author/:id',
   },
