@@ -1,4 +1,4 @@
-name: Publish Static Web App to Azure Blob Storage
+name: Publish Static Web App to Netlify
 
 on:
   push:
