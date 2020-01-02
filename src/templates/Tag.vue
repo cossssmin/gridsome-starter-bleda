@@ -97,6 +97,7 @@ query Tag ($path: String!, $page: Int) {
             excerpt
             description
             timeToRead
+            cover
             author {
               id
               title
