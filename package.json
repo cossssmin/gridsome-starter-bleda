@@ -18,6 +18,7 @@
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "gridsome-plugin-rss": "^1.2.0",
     "medium-zoom": "^1.0.5",
+    "vue-disqus": "^3.0.5",
     "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {
