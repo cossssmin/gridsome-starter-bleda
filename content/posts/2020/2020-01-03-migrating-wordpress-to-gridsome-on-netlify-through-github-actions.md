@@ -65,7 +65,17 @@ https://gist.github.com/justinyoo/53cefa22732c8bc33348aa99e0674a37?file=frontmat
 
 ## gridsome 플러그인 준비 ##
 
-기본적인 플러그인은 이미 스타터에 다 들어 있기 때문에 [소셜미디어 연동 플러그인][gs plugin embed]만 하나 추가했다. 그런데, 이 플러그인의 gist 연동 쪽 코드에 오류가 있어서 [PR][gs plugin embed pr]을 날려 수정했고 릴리즈를 기다리는 중이다. 그동안 사용하지 않을 수는 없으니 별도의 `patches` 디렉토리에 `Gist.js` 파일을 복사해서 향후 배포시 사용할 수 있게 해 놓았다.
+기본적인 플러그인은 이미 스타터에 다 들어 있기 때문에 딱히 추가로 설정할 일은 없었다. 다만...
+
+
+### gridsome-plugin-remark-embed ###
+
+[소셜미디어 연동 플러그인][gs plugin embed]을 추가했다. 그런데, 이 플러그인의 gist 연동 쪽 코드에 오류가 있어서 [PR][gs plugin embed pr]을 날려 수정했고 릴리즈를 기다리는 중이다. 그동안 사용하지 않을 수는 없으니 별도의 `patches` 디렉토리에 `Gist.js` 파일을 복사해서 향후 배포시 사용할 수 있게 해 놓았다.
+
+
+### vue-disqus ###
+
+또한 [코멘트 기능][gs plugin comments] 기능을 추가했다. 이미 [Disqus][disqus] 서비스를 몇 년째 쓰고 있기도 했고, 무엇보다도 찰진 코멘트들이 많아서 포기하지는 못하겠더라. 그래서 당분간은 붙여두고 상황을 볼 생각이다.
 
 
 ## gridsome 환경 설정 ##
@@ -190,6 +200,7 @@ https://gist.github.com/justinyoo/53cefa22732c8bc33348aa99e0674a37?file=github-a
 [reactjs]: https://reactjs.org/
 [vuejs]: https://vuejs.org/
 [netlify]: https://www.netlify.com/
+[disqus]: https://disqus.com/
 
 [blog wordpress]: https://wordpress.org/
 [blog jekyll]: https://jekyllrb.com/
@@ -220,6 +231,7 @@ https://gist.github.com/justinyoo/53cefa22732c8bc33348aa99e0674a37?file=github-a
 [gs starter bleda]: https://gridsome.org/starters/bleda/
 [gs plugin embed]: https://gridsome.org/plugins/@noxify/gridsome-plugin-remark-embed
 [gs plugin embed pr]: https://github.com/noxify/gridsome-plugin-remark-embed/pull/33
+[gs plugin comments]: https://gridsome.org/docs/guide-comments/
 
 [google webfonts]: https://fonts.google.com/
 [google webfonts nanumgothic]: https://fonts.google.com/specimen/Nanum+Gothic
