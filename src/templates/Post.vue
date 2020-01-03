@@ -122,9 +122,9 @@ export default {
     },
     postUrl () {
       let siteUrl = this.config.siteUrl
-      let postSlug = this.$page.post.slug
+      let postPath = this.$page.post.path
 
-      return postSlug ? `${siteUrl}/${postSlug}/` : `${siteUrl}/${slugify(this.$page.post.title)}/`
+      return postPath ? `${siteUrl}/${postPath}/` : `${siteUrl}/${slugify(this.$page.post.title)}/`
     },
     ogImageUrl () {
       return this.$page.post.cover || `${this.config.siteUrl}/images/twitter-card.png`
@@ -137,6 +137,7 @@ export default {
 query Post ($path: String) {
   post (path: $path) {
     title
+    path
     slug
     datetime: date (format: "YYYY-MM-DD HH:mm:ss")
     content
