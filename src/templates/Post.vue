@@ -35,7 +35,7 @@
           </div>
         </footer>
 
-        <vue-disqus shortname="mygridsomesite" :identifier="$page.post.title"></vue-disqus>
+        <vue-disqus shortname="aliencubeorg" :identifier="$page.post.title"></vue-disqus>
       </article>
 
       <site-footer class="pb-8 sm:pb-10" />
