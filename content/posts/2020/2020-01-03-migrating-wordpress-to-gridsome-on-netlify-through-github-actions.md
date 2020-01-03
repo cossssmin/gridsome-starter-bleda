@@ -65,7 +65,17 @@ Therefore, except `title` and `date`, every other attribute were manually update
 
 ## Preparing Gridsome Plugins ##
 
-As mentioned earlier, the starter contains everything I need. I only added the plugin to [embed social media][gs plugin embed] for Twitter, YouTube and GitHub gist. However, as it has a bug on the gist embedding script, I raised a [PR][gs plugin embed pr] to fix the bug and have been waiting for the official release. Instead, while I'm waiting for the official release, I locally copied the updated script so that it can be used later on in the GitHub Actions.
+As mentioned earlier, the starter contains almost everything I needed, except...
+
+
+### gridsome-plugin-remark-embed ###
+
+This plugin is to [embed social media][gs plugin embed] for Twitter, YouTube and GitHub gist. However, as it has a bug on the gist embedding script, I raised a [PR][gs plugin embed pr] to fix the bug and have been waiting for the official release. Instead, while I'm waiting for the official release, I locally copied the updated script so that it can be used later on in the GitHub Actions.
+
+
+### vue-disqus ###
+
+This plugin is to [add comment feature][gs plugin comments]. I've already been using [Disqus][disqus] for a while and reviewing whether I keep using it or not after the migration. But as I've already got many valuable comments there, I decided to keep it for now.
 
 
 ## Configuring Gridsome ##
@@ -179,6 +189,7 @@ We all complete the blog migration from Wordpress to gridsome. Now, I don't have
 [reactjs]: https://reactjs.org/
 [vuejs]: https://vuejs.org/
 [netlify]: https://www.netlify.com/
+[disqus]: https://disqus.com/
 
 [blog wordpress]: https://wordpress.org/
 [blog jekyll]: https://jekyllrb.com/
@@ -209,6 +220,7 @@ We all complete the blog migration from Wordpress to gridsome. Now, I don't have
 [gs starter bleda]: https://gridsome.org/starters/bleda/
 [gs plugin embed]: https://gridsome.org/plugins/@noxify/gridsome-plugin-remark-embed
 [gs plugin embed pr]: https://github.com/noxify/gridsome-plugin-remark-embed/pull/33
+[gs plugin comments]: https://gridsome.org/docs/guide-comments/
 
 [google webfonts]: https://fonts.google.com/
 [google webfonts nanumgothic]: https://fonts.google.com/specimen/Nanum+Gothic
