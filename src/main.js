@@ -1,6 +1,8 @@
+import VueDisqus from 'vue-disqus'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { head }) {
+  Vue.use(VueDisqus)
   Vue.component('Layout', DefaultLayout)
 
   head.htmlAttrs = { lang: 'ko', class: 'h-full' }
