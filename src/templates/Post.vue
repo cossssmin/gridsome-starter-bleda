@@ -124,7 +124,7 @@ export default {
       let siteUrl = this.config.siteUrl
       let postPath = this.$page.post.path
 
-      return postPath ? `${siteUrl}/${postPath}/` : `${siteUrl}/${slugify(this.$page.post.title)}/`
+      return postPath ? `${siteUrl}${postPath}` : `${siteUrl}/${slugify(this.$page.post.title)}/`
     },
     ogImageUrl () {
       return this.$page.post.cover || `${this.config.siteUrl}/images/twitter-card.png`
