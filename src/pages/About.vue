@@ -56,7 +56,7 @@ export default {
 
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: 'About' },
-        { name: "twitter:description", content: 'Introduction to Dev Kimchi' },
+        { name: "twitter:description", content: this.ogDescription },
         { name: "twitter:site", content: "@devkimchi" },
         { name: "twitter:creator", content: "@devkimchi" },
         { name: "twitter:image", content: this.ogImageUrl },
