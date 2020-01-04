@@ -56,7 +56,7 @@ export default {
 
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: 'About' },
-        { name: "twitter:description", content: 'Introduction to the Bleda blog starter for Gridsome.' },
+        { name: "twitter:description", content: this.ogDescription },
         { name: "twitter:site", content: "@aliencubeorg" },
         { name: "twitter:creator", content: "@aliencubeorg" },
         { name: "twitter:image", content: this.ogImageUrl },
