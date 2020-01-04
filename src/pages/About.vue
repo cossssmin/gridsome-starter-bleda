@@ -50,7 +50,7 @@ export default {
 
         { property: "og:type", content: 'article' },
         { property: "og:title", content:'About' },
-        { property: "og:description", content: 'Introduction to the Bleda blog starter for Gridsome.' },
+        { property: "og:description", content: this.ogDescription },
         { property: "og:url", content: `${this.config.siteUrl}/about/` },
         { property: "og:image", content: this.ogImageUrl },
 
