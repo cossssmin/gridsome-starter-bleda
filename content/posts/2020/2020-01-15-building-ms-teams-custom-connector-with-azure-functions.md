@@ -23,7 +23,7 @@ First of all, we need to register the custom connector on our preferred [Microso
 
 ## Building Actionable Message Card ##
 
-As discussed in [my previous post][prev post], [Microsoft Teams][ms teams] custom connectors currently, at the time of this writing, only support the [Actionable Message Card)][ms teams amc] format, instead of the [Adaptive Card][ms teams ac] format. Either way, they are basically a massive JSON object, which is a bit tricky to build the object from scratch. Fortunately, there's a community effort that makes our lives easier at [NuGet][nuget amc]. We just use it. With this library, the card generation part might look like:
+As discussed in [my previous post][prev post], [Microsoft Teams][ms teams] custom connectors currently, at the time of this writing, only support the [Actionable Message Card][ms teams amc] format, instead of the [Adaptive Card][ms teams ac] format. Either way, they are basically a massive JSON object, which is a bit tricky to build the object from scratch. Fortunately, there's a community effort that makes our lives easier at [NuGet][nuget amc]. We just use it. With this library, the card generation part might look like:
 
 https://gist.github.com/justinyoo/f5208618f8a06d8b15e048094b8bafcb?file=build-message-card.cs
 
