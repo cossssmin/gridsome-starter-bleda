@@ -1,9 +1,3 @@
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-  }
-}
-
 module.exports = {
   siteName: 'A blog starter for Gridsome',
   siteDescription: "Bleda is a blog starter kit for Gridsome, the Vue.js static site generator. It's inspired by Attila for Ghost, and styled with Tailwind CSS.",
@@ -102,12 +96,7 @@ module.exports = {
                 'src/**/*.vue',
                 'src/**/*.js'
               ],
-              extractors: [
-                {
-                  extractor: TailwindExtractor,
-                  extensions: ['css', 'vue', 'js']
-                }
-              ],
+              defaultExtractor: content => content.match(/[\w-/:%]+(?<!:)/g) || [],
               whitelistPatterns: [/shiki/]
             }),
           ])
