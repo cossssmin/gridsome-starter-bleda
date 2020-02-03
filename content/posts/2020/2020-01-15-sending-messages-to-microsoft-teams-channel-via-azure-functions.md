@@ -13,7 +13,7 @@ cover: https://sa0blogs.blob.core.windows.net/aliencube/2020/01/sending-messages
 fullscreen: true
 ---
 
-[지난 포스트][prev post]에서는 [애저 로직 앱][az log app]으로 [마이크로소프트 팀즈][ms teams]에 메시지를 보낼 수 있는 커스텀 커넥터를 만드는 방법에 대해 소개했었다. 많은 경우에는 [로직 앱][az log app]을 사용해도 크게 문제가 되진 않지만, 만약 메시지 구조가 복잡해진다거나 하면 [애저 펑션][az func]을 쓰면 좀 더 효과적일 수도 있다. 이 포스트에서는 [애저 펑션][az func]을 통해 [MS 팀즈][ms teams]에 메시지를 보낼 수 있는 [커스텀 커넥터][ms teams cus con]를 만드는 방법에 대해 알아본다.
+[자난 포스트][prev post]에서는 [애저 로직 앱][az log app]으로 [마이크로소프트 팀즈][ms teams]에 메시지를 보낼 수 있는 커스텀 커넥터를 만드는 방법에 대해 소개했었다. 많은 경우에는 [로직 앱][az log app]을 사용해도 크게 문제가 되진 않지만, 만약 메시지 구조가 복잡해진다거나 하면 [애저 펑션][az func]을 쓰면 좀 더 효과적일 수도 있다. 이 포스트에서는 [애저 펑션][az func]을 통해 [MS 팀즈][ms teams]에 메시지를 보낼 수 있는 [커스텀 커넥터][ms teams cus con]를 만드는 방법에 대해 알아본다.
 
 
 ## 커스텀 커넥터 등록 ##
