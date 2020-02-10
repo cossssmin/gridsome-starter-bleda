@@ -24,6 +24,6 @@
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
     "tailwindcss": "^1.1.4",
-    "tailwindcss-transitions": "^2.1.0"
+    "tailwindcss-transitions": "^2.2.0"
   }
 }
