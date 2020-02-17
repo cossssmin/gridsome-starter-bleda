@@ -515,7 +515,5 @@ module.exports = {
     zIndex: ['responsive'],
   },
   corePlugins: {},
-  plugins: [
-    require('tailwindcss-transitions')(),
-  ],
+  plugins: [],
 }
