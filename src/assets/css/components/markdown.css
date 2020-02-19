@@ -96,6 +96,15 @@
     padding: 5px;
     border-width: 2px;
   }
+
+  .gist table {
+    margin-bottom: 0px;
+  }
+
+  .gist th, .gist td {
+    padding: inherit;
+    border-width: inherit;
+  }
 }
 
 @screen sm {
