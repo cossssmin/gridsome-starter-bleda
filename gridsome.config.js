@@ -1,9 +1,3 @@
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-  }
-}
-
 module.exports = {
   siteName: 'Aliencube',
   siteDescription: "cloud-native open source developers community",
@@ -112,12 +106,7 @@ module.exports = {
                 'src/**/*.vue',
                 'src/**/*.js'
               ],
-              extractors: [
-                {
-                  extractor: TailwindExtractor,
-                  extensions: ['css', 'vue', 'js']
-                }
-              ],
+              defaultExtractor: content => content.match(/[\w-/:%]+(?<!:)/g) || [],
               whitelistPatterns: [/shiki/]
             }),
           ])
