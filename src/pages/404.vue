@@ -6,7 +6,7 @@
         <section class="bg-gray-100 mx-auto px-8 py-6 rounded shadow-xl relative">
           <h1 class="text-2xl font-sans font-bold mb-4">Page Not Found</h1>
           <p class="font-serif mb-4 leading-normal text-gray-700">Looks like you've followed a broken link or entered a URL that doesn't exist on this site.</p>
-          <g-link to="/" class="text-sm text-teal-400 hover:text-teal-600 font-sans transition-color">&larr; Back to our site</g-link>
+          <g-link to="/" class="text-sm text-teal-400 hover:text-teal-600 font-sans transition-color duration-300">&larr; Back to our site</g-link>
         </section>
       </div>
     </main>

@@ -38,7 +38,7 @@
   }
 
   a {
-    @apply text-blue-500 transition-color;
+    @apply text-blue-500 transition-colors duration-300;
 
     &:hover {
       @apply text-blue-700;
@@ -86,6 +86,24 @@
 
   hr {
     @apply h-px bg-gray-300 my-8;
+  }
+
+  table {
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    padding: 5px;
+    border-width: 2px;
+  }
+
+  .gist table {
+    margin-bottom: 0px;
+  }
+
+  .gist th, .gist td {
+    padding: inherit;
+    border-width: inherit;
   }
 }
 
