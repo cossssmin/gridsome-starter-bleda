@@ -87,6 +87,15 @@
   hr {
     @apply h-px bg-gray-300 my-8;
   }
+
+  table {
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    padding: 5px;
+    border-width: 2px;
+  }
 }
 
 @screen sm {
