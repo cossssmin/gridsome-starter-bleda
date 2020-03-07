@@ -74,7 +74,7 @@ Send messages to [Microsoft Teams][ms teams] through [GitHub Actions][gh actions
 
 ## ChatOps on GitHub Actions ##
 
-Can a [GitHub Actions][gh action] workflow take the event raised from [Microsoft Teams][ms teams]? Of course, it can. There are many events that trigger [GitHub Actions] workflows, including push and pull request. There are other different event types, including [`Repository Dispatch`][gh actions events dispatch]. Therefore, if we build a workflow that takes this event, then it will work! Let's have a look at the workflow below:
+Can a [GitHub Actions][gh actions] workflow take the event raised from [Microsoft Teams][ms teams]? Of course, it can. There are many events that trigger [GitHub Actions] workflows, including push and pull request. There are other different event types, including [`Repository Dispatch`][gh actions events dispatch]. Therefore, if we build a workflow that takes this event, then it will work! Let's have a look at the workflow below:
 
 https://gist.github.com/justinyoo/5d12d5df5c569df921ff614001bb48d2?file=workflow.yaml&highlights=3,8
 
