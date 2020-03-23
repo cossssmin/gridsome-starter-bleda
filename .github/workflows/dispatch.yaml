@@ -1,0 +1,27 @@
+name: Merge PR
+
+on: repository_dispatch
+
+jobs:
+  merge-pr:
+    name: Merge PR
+    if: github.event.action == 'merge-pr'
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # - name: Check payload
+    #   shell: bash
+    #   run: |
+    #     echo ${{ ToJSON(github.event) }}
+    - name: Merge PR
+      uses: justinyoo/github-pr-merge-action@v0.8.0
+      with:
+        authToken: ${{ secrets.GITHUB_TOKEN }}
+        owner: ${{ github.event.client_payload.owner }}
+        repository:  ${{ github.event.client_payload.repository }}
+        issueId: '${{ github.event.client_payload.issueId }}'
+        mergeMethod: Squash
+        commitTitle: ''
+        commitDescription: ''
+        deleteBranch: 'true'
