@@ -13,6 +13,8 @@ cover: https://sa0blogs.blob.core.windows.net/aliencube/2020/03/scheduling-posts
 fullscreen: true
 ---
 
+...
+
 [Gridsome][gridsome]과 같은 정적 웹사이트 생성기를 이용해 블로그를 쓰다보면 가장 불편한 점이 예약 포스팅이다. [워드프레스][wordpress]와 같은 전문 블로그 플랫폼을 쓴다면 예약 포스팅 기능은 기본으로 갖춰져 있기 때문에 큰 문제가 없다지만, 정적 웹사이트 생성기에는 그런 기능이 없다. 따라서, 예약 포스팅 기능 같은 경우는 깔끔하게 포기하고 실제 포스트하고자 하는 날에 맞춰 포스트를 올리거나 해야 한다. 그렇다면 예약 포스팅 기능을 한 번 만들어서 사용해 보면 어떨까? 이 포스트에서 [애저 Durable Functions][az func durable] 기능과 [GitHub Actions][gh actions] 기능을 활용해서 예약 포스팅을 하는 방법에 대해 논의해 보자.
 
 > 1. 이 포스트에서는 [애저 Durable Functions][az func durable]을 사용했는데, 이는 직장 동료인 [Todd][todd]가 개발한 [PublishTo.Dev][todd publishtodev]에서 아이디어를 가져왔다.
