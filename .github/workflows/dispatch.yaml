@@ -28,12 +28,6 @@ jobs:
         commitTitle: ''
         commitDescription: ''
         deleteBranch: 'true'
-    # - name: Send dispatch event for publish
-    #   uses: peter-evans/repository-dispatch@v1
-    #   with:
-    #     token: ${{ secrets.GITHUB_TOKEN }}
-    #     repository: aliencube/blog
-    #     event-type: publish
     - name: Send dispatch event for publish
       shell: bash
       run: |

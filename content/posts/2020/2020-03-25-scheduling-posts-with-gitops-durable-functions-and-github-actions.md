@@ -13,8 +13,6 @@ cover: https://sa0blogs.blob.core.windows.net/aliencube/2020/03/scheduling-posts
 fullscreen: true
 ---
 
-...
-
 [Gridsome][gridsome]과 같은 정적 웹사이트 생성기를 이용해 블로그를 쓰다보면 가장 불편한 점이 예약 포스팅이다. [워드프레스][wordpress]와 같은 전문 블로그 플랫폼을 쓴다면 예약 포스팅 기능은 기본으로 갖춰져 있기 때문에 큰 문제가 없다지만, 정적 웹사이트 생성기에는 그런 기능이 없다. 따라서, 예약 포스팅 기능 같은 경우는 깔끔하게 포기하고 실제 포스트하고자 하는 날에 맞춰 포스트를 올리거나 해야 한다. 그렇다면 예약 포스팅 기능을 한 번 만들어서 사용해 보면 어떨까? 이 포스트에서 [애저 Durable Functions][az func durable] 기능과 [GitHub Actions][gh actions] 기능을 활용해서 예약 포스팅을 하는 방법에 대해 논의해 보자.
 
 > 1. 이 포스트에서는 [애저 Durable Functions][az func durable]을 사용했는데, 이는 직장 동료인 [Todd][todd]가 개발한 [PublishTo.Dev][todd publishtodev]에서 아이디어를 가져왔다.
@@ -70,17 +68,27 @@ https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=04-activ
 맨 처음 [Durable Functions][az func durable] 엔드포인트를 호출했을 때 받아온 페이로드는 한 번 더 [`repository_dispatch` API][gh api repository dispatch]를 위해 감싸준다 (line #16). 이 액티비티 펑션이 [GitHub API][gh api]를 호출하면 실제로 [GitHub Actions 워크플로우가 실행][gh actions repository dispatch]된다.
 
 
+### 웹훅 펑션 ###
+
+이 펑션은 기본적으로 위에 언급한 액티비티 펑션과 동일하다. 단지, 이벤트 타입을 `publish`로 다르게 줄 뿐이다 (line #18). 이 웹훅 펑션의 용도는 아래에서 설명하기로 하자.
+
+https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=05-webhook.cs&highlights=18
+
+
+
 ## GitHub Actions 설계 ##
 
 그렇다면, [GitHub Actions][gh actions] 워크플로우는 어떻게 만들 수 있을까? 아래 그림을 통해 간단하게 설명을 해 보자. 아래 그림은 전체 워크플로우를 설명한 것이다. 가장 먼저 새 포스트를 작성하면 그에 따른 PR을 준비한다. PR 번호가 생기면 이 번호와 예정 출판 날짜를 정한 후 [애저 Durable Functions][az func durable]를 호출한다.
 
 ![][image-02]
 
-[애저 펑션][az func] 부분은 바로 위에서 설명을 했고, 두번째 [GitHub Actions][gh actions] 부분은 [이전 포스트][post prev]에서 설명했다. 이 포스트에서 설명할 부분은 첫번째 [`repository dispatch` 이벤트][gh actions repository dispatch]로 실행되는 [GitHub Actions][gh actions]이다. 아래 워크플로우 정의 문서를 보자. 이 워크플로우는 오직 [`repository_dispatch` 이벤트][gh actions repository dispatch]에 의해서만 실행된다 (line #3). 또한, `if` 조건절에 따라 오직 이벤트 타입이 `merge-pr`일 경우에만 실행된다 (line #8). 이 워크플로우가 하는 일은 무척이나 간단하다. 앞서 PR을 생성했고, 이 워크플로우에서는 [`github-pr-merge-action` 액션][gh actions merge]을 이용해서 이 PR을 머지하기만 한다 (line #14). 이렇게 머지가 되면 이 머지 이벤트에 의해 다음 배포를 위한 워크플로우가 실행이 되고, 머지된 포스트는 자동으로 발행이 되는 것이다.
+[애저 펑션][az func] 부분은 바로 위에서 설명을 했고, 두번째 [GitHub Actions][gh actions] 부분은 [이전 포스트][post prev]에서 설명했다. 이 포스트에서 설명할 부분은 첫번째 [`repository dispatch` 이벤트][gh actions repository dispatch]로 실행되는 [GitHub Actions][gh actions]이다. 아래 워크플로우 정의 문서를 보자. 이 워크플로우는 오직 [`repository_dispatch` 이벤트][gh actions repository dispatch]에 의해서만 실행된다 (line #3). 또한, `if` 조건절에 따라 오직 이벤트 타입이 `merge-pr`일 경우에만 실행된다 (line #8). 이 워크플로우가 하는 일은 무척이나 간단하다. 앞서 PR을 생성했고, 이 워크플로우에서는 [`github-pr-merge-action` 액션][gh actions merge]을 이용해서 이 PR을 머지한다 (line #14).
 
-https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=05-workflow.yaml&highlights=3,8,14
+https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=06-workflow.yaml&highlights=3,8,14,24-27
 
 > **NOTE**: [GitHub PR Merge 액션][gh actions merge]은 내가 만들어서 배포한 것이다. 🙈 써보고 좋으면 별표좀... 굽신
+
+여기서 중요한 것이 하나 있다. 예상대로라면 머지가 끝난 후에 자동으로 그다음 워크플로우가 실행이 되어야 하지만, 실제로는 그렇지 않다. 따라서 그다음 배포 워크플로우를 수동으로 직접 실행시켜야 한다. 그런데, 배포 워크플로우를 수동으로 실행시킬 방법은 현재는 제공되지 않는다. 대신 앞서 언급한 [`repository_dispatch` 이벤트][gh actions repository dispatch]를 이용해서 외부에서 이벤트를 걸어주는 방식으로 실행시키면 된다 (line #24-27). 여기서는 앞서 언급한 [애저 펑션][az func]의 웹훅 엔드포인트를 호출해서 그 펑션 안에서 `publish` 이벤트를 발생시키게 했다.
 
 여기까지 한 후 이 [Durable Functions][az func durable] 앱을 애저로 배포한 후, 실행시켜 보자. 그러면 정해진 날짜에 정확하게 실행이 되어 포스트를 발행하게 된다. 이 포스트 역시 이 절차에 따라 발행이 된 것이다.
 
