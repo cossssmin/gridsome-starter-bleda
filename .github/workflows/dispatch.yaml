@@ -37,7 +37,7 @@ jobs:
     - name: Send dispatch event for publish
       shell: bash
       run: |
-        curl -X POST https://api.github.com/repos/aliencube/blog/dispatches -d '{ "event_type": "publish" }' -H "Authorization: ${{ secrets.GITHUB_TOKEN }}" -H "User-Agent: GitHubActions" -H "Accept: application/vnd.github.v3+json"
+        curl -X POST 'https://${{ secrets.AZURE_FUNCTIONS_NAME }}.azurewebsites.net/api/events/publish' -d '{ "owner": "aliencube", "repository": "blog" }' -H "x-functions-key: ${{ secrets.AZURE_FUNCTIONS_KEY }}" -H "Content-Type: application/json"
 
   build_and_publish:
     name: Build and publish
