@@ -13,10 +13,6 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-    # - name: Check payload
-    #   shell: bash
-    #   run: |
-    #     echo ${{ ToJSON(github.event) }}
     - name: Merge PR
       uses: justinyoo/github-pr-merge-action@v0.8.0
       with:
