@@ -28,12 +28,16 @@ jobs:
         commitTitle: ''
         commitDescription: ''
         deleteBranch: 'true'
+    # - name: Send dispatch event for publish
+    #   uses: peter-evans/repository-dispatch@v1
+    #   with:
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+    #     repository: aliencube/blog
+    #     event-type: publish
     - name: Send dispatch event for publish
-      uses: peter-evans/repository-dispatch@v1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        repository: aliencube/blog
-        event-type: publish
+      shell: bash
+      run: |
+        curl -X POST https://api.github.com/repos/aliencube/blog/dispatches -d '{ "event_type": "publish" }' -H '{ "Authorization": "Bearer ${{ secrets.GITHUB_TOKEN }}", "User-Agent": "GitHubActions", "Accept": "application/vnd.github.v3+json" }'
 
   build_and_publish:
     name: Build and publish
