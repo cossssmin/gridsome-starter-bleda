@@ -103,7 +103,7 @@ So, we got the workflow on the Durable Functions side, which sends a scheduled e
 
 You got the [Durable Functions][az func durable] covered above. The second [GitHub Actions][gh actions] was handled by [the other post][post prev]. This section takes the first [GitHub Actions][gh actions] using the [`repository dispatch` event][gh actions repository dispatch]. Let's take a look at the following YAML definition. This workflow is only triggered by the [`repository_dispatch` event][gh actions repository dispatch] (line #3). In addition to the trigger, it runs the workflow only if the `if` statement meets &ndash; the event type MUST match with `merge-pr` (line #8). The workflow itself is pretty straightforward. We've previously got the PR, and the workflow uses the [`github-pr-merge-action` action][gh actions merge] to merge the PR (line #14).
 
-https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=05-workflow.yaml&highlights=3,8,14,24-27
+https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=06-workflow.yaml&highlights=3,8,14,24-27
 
 > **NOTE**: The [GitHub PR Merge action][gh actions merge] is that I contribute. 🙈
 
