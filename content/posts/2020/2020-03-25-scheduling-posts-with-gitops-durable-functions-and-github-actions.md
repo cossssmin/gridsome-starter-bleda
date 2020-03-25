@@ -28,7 +28,7 @@ fullscreen: true
 
 ## 워크플로우 설계 ##
 
-대략의 워크플로우를 아래 그림과 같이 구성해 보자.
+[Durable Functions][az func durable]에서 구현하는 대략의 워크플로우는 아래와 같다.
 
 ![][image-01]
 
@@ -138,4 +138,3 @@ https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=05-workf
 
 [weaveworks]: https://www.weave.works/
 [weaveworks gitops]: https://www.weave.works/blog/gitops-operations-by-pull-request
-
