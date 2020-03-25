@@ -56,7 +56,7 @@ https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=02-entry
 
 그리고 실제 입력받은 스케줄을 검토해서 앱에서 지정한 최대 저장 주기보다 짧은지 확인한다 (line #25-28). 그런 다음에 타이머를 실행시켜 예약을 걸어둔다 (line #30). 이 시점에서 이 오케스트레이션 펑션은 잠시 동작을 멈추고 타이머가 종료되는 시점까지 대기한다. 그리고 실제 타이머가 종료되는 시점에 다시 활성화가 된 후 세번째 펑션을 실행시킨다 (line #32).
 
-https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=03-orchestrator.cs&highlights=9-13,25-28,30,32
+https://gist.github.com/justinyoo/0516447045d0ef3c606d7e84f0ecd872?file=03-orchestrator.cs&highlights=6,9-13,25-28,30,32
 
 
 ### 액티비티 펑션 ###
