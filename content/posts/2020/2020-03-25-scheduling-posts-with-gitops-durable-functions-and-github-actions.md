@@ -28,7 +28,7 @@ fullscreen: true
 
 ## 워크플로우 설계 ##
 
-[Durable Functions][az func durable]에서 구현하는 대략의 워크플로우는 아래와 같다.
+[Durable Functions][az func durable]에서 구현하는 대략의 워크플로우는 아래와 같다...
 
 ![][image-01]
 
