@@ -1,5 +1,5 @@
 ---
-title: "애저 펑션을 이용해서 브라우저에서 애저 Blob 저장소로 스크린샷 이미지 저장하기"
+title: "[COVID-19 시리즈 #1] 애저 펑션을 이용해서 브라우저에서 애저 Blob 저장소로 스크린샷 이미지 저장하기"
 slug: capturing-images-from-browser-to-azure-blob-storage-via-azure-functions
 description: "이 포스트에서는 웹사이트에서 캡쳐한 카메라 이미지를 애저 펑션을 통해 애저 블롭 저장소로 저장하는 방법에 대해 알아봅니다."
 date: "2020-04-01"
