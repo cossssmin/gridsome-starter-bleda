@@ -16,7 +16,7 @@ fullscreen: true
 > This is the first post of the series to let teachers and lecturers build an online students' check-in app, using [Power Apps][power apps], [Azure Functions][az func], and [Azure Face API][az cog faceapi].
 
 1. **Capturing Face Images from Browser to Azure Blob Storage via Azure Functions**
-2. Identifying Students' Face with Azure Functions and Azure Face API
+2. [Identifying Students' Face with Azure Functions and Azure Face API][post series 2]
 3. Building Students' Check-in App with Power Apps, Azure Functions and Azure Face API
 
 ---
@@ -82,6 +82,8 @@ So far, as the first step of the blog series, we take a photo on a web browser a
 
 [image-01]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/04/capturing-images-from-browser-to-azure-blob-storage-via-azure-functions-01.png
 [image-02]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/04/capturing-images-from-browser-to-azure-blob-storage-via-azure-functions-02.jpeg
+
+[post series 2]: /2020/04/08/identifying-faces-through-azure-functions-using-face-api
 
 [gh sample]: https://github.com/devkimchi/Azure-Functions-Face-Recognition-Sample
 [gh photocapture]: https://github.com/devkimchi/Azure-Functions-Face-Recognition-Sample/blob/master/src/FaceApiSample.FunctionApp/photo-capture.html
