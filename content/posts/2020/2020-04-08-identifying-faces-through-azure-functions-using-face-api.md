@@ -8,7 +8,7 @@ tags:
 - azure-functions
 - face-api
 - azure-blob-storage
-- azure-table-storage
+- covid-19
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2020/04/identifying-faces-through-azure-functions-using-face-api-00.png
 fullscreen: true
 ---
@@ -17,7 +17,7 @@ fullscreen: true
 
 1. [애저 펑션을 이용해서 브라우저에서 애저 블롭 저장소로 스크린샷 이미지 저장하기][post series 1]
 2. **애저 펑션과 안면 인식 API를 이용해서 본인 인증하기**
-3. 파워 앱과 얼굴 인식 API를 이용해서 출석 체크 앱 만들기
+3. [파워 앱과 얼굴 인식 API를 이용해서 출석 체크 앱 만들기][post series 3]
 
 ---
 
@@ -112,7 +112,7 @@ https://gist.github.com/justinyoo/840f71acbc16a767c23e90b16c06a323?file=05-confi
 
 ---
 
-지금까지 [애저 펑션][az func]과 [애저 안면 인식 API][az cog faceapi]를 사용해서 본인 인증을 하는 방법에 대해 알아 보았다. 사실 안면 인식 알고리즘이 굉장히 복잡할텐데, 우리는 그런 부분은 모두 애저에 맏겨놓고 단순히 API만 사용하면 되는 것이 바로 이 포스트의 핵심이다. 다음 포스트에서는 이를 바탕으로 실제 [파워 앱][power apps]을 통해 이를 어떻게 구현하는지에 대해 알아보기로 한다.
+지금까지 [애저 펑션][az func]과 [애저 안면 인식 API][az cog faceapi]를 사용해서 본인 인증을 하는 방법에 대해 알아 보았다. 사실 안면 인식 알고리즘이 굉장히 복잡할텐데, 우리는 그런 부분은 모두 애저에 맏겨놓고 단순히 API만 사용하면 되는 것이 바로 이 포스트의 핵심이다. [다음 포스트][post series 3]에서는 이를 바탕으로 실제 [파워 앱][power apps]을 통해 이를 어떻게 구현하는지에 대해 알아보기로 한다.
 
 
 [image-01]: https://sa0blogs.blob.core.windows.net/aliencube/2020/04/identifying-faces-through-azure-functions-using-face-api-01-ko.png
@@ -123,6 +123,7 @@ https://gist.github.com/justinyoo/840f71acbc16a767c23e90b16c06a323?file=05-confi
 [image-06]: https://sa0blogs.blob.core.windows.net/aliencube/2020/04/identifying-faces-through-azure-functions-using-face-api-06.png
 
 [post series 1]: /ko/2020/04/01/capturing-images-from-browser-to-azure-blob-storage-via-azure-functions/
+[post series 3]: /ko/2020/04/15/building-online-check-in-app-with-power-apps
 
 [gh sample]: https://github.com/devkimchi/Azure-Functions-Face-Recognition-Sample/tree/part-2
 [az func]: https://docs.microsoft.com/ko-kr/azure/azure-functions/functions-overview?WT.mc_id=aliencubeorg-blog-juyoo

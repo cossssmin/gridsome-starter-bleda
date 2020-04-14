@@ -8,7 +8,7 @@ tags:
 - azure-functions
 - html-media-capture
 - azure-blob-storage
-- face-api
+- covid-19
 cover: https://sa0blogs.blob.core.windows.net/aliencube/2020/04/capturing-images-from-browser-to-azure-blob-storage-via-azure-functions-00.png
 fullscreen: true
 ---
@@ -17,7 +17,7 @@ fullscreen: true
 
 1. **애저 펑션을 이용해서 브라우저에서 애저 블롭 저장소로 스크린샷 이미지 저장하기**
 2. [애저 펑션과 얼굴 인식 API를 이용해서 본인 인증하기][post series 2]
-3. 파워 앱과 얼굴 인식 API를 이용해서 출석 체크 앱 만들기
+3. [파워 앱과 얼굴 인식 API를 이용해서 출석 체크 앱 만들기][post series 3]
 
 ---
 
@@ -76,13 +76,14 @@ https://gist.github.com/justinyoo/f8bf5bbdd0f4fd7d10402527ea08eb4b?file=07-blob-
 
 ---
 
-여기까지 해서 첫번째 단계인 내 얼굴 사진을 찍은 후 저장하는 방법에 대해 알아보았다. 이렇게 저장된 이미지는 실제 내 얼굴인지 확인하는 참조 용도로 쓰일 예정이다. 다음 포스트에서는 애저 [안면 인식 API][az cog faceapi]를 이용해서 실제 내 얼굴인지 아닌지 확인하는 방법에 대해 알아보기로 한다.
+여기까지 해서 첫번째 단계인 내 얼굴 사진을 찍은 후 저장하는 방법에 대해 알아보았다. 이렇게 저장된 이미지는 실제 내 얼굴인지 확인하는 참조 용도로 쓰일 예정이다. [다음 포스트][post series 2]에서는 애저 [안면 인식 API][az cog faceapi]를 이용해서 실제 내 얼굴인지 아닌지 확인하는 방법에 대해 알아보기로 한다.
 
 
 [image-01]: https://sa0blogs.blob.core.windows.net/aliencube/2020/04/capturing-images-from-browser-to-azure-blob-storage-via-azure-functions-01.png
 [image-02]: https://sa0blogs.blob.core.windows.net/aliencube/2020/04/capturing-images-from-browser-to-azure-blob-storage-via-azure-functions-02.jpeg
 
 [post series 2]: /ko/2020/04/08/identifying-faces-through-azure-functions-using-face-api/
+[post series 3]: /ko/2020/04/15/building-online-check-in-app-with-power-apps
 
 [gh sample]: https://github.com/devkimchi/Azure-Functions-Face-Recognition-Sample
 [gh photocapture]: https://github.com/devkimchi/Azure-Functions-Face-Recognition-Sample/blob/master/src/FaceApiSample.FunctionApp/photo-capture.html
