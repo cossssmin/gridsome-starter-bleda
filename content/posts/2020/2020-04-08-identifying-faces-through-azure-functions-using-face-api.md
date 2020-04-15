@@ -8,7 +8,7 @@ tags:
 - azure-functions
 - face-api
 - azure-blob-storage
-- azure-table-storage
+- covid-19
 cover: https://sa0blogs.blob.core.windows.net/devkimchi/2020/04/identifying-faces-through-azure-functions-using-face-api-00.png
 fullscreen: true
 ---

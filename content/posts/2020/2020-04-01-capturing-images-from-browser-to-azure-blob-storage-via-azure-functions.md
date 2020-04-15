@@ -8,7 +8,7 @@ tags:
 - azure-functions
 - html-media-capture
 - azure-blob-storage
-- face-api
+- covid-19
 cover: https://sa0blogs.blob.core.windows.net/devkimchi/2020/04/capturing-images-from-browser-to-azure-blob-storage-via-azure-functions-00.png
 fullscreen: true
 ---
