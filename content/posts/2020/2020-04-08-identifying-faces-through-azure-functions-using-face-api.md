@@ -17,7 +17,7 @@ fullscreen: true
 
 1. [Capturing Face Images from Browser to Azure Blob Storage via Azure Functions][post series 1]
 2. **Identifying Students' Face with Azure Functions and Azure Face API**
-3. Building Students' Check-in App with Power Apps, Azure Functions and Azure Face API
+3. [Building Students' Check-in App with Power Apps, Azure Functions and Azure Face API][post series 3]
 
 ---
 
@@ -112,7 +112,7 @@ Once everything is done, the final result of `FaceEntity` is updated on the [Azu
 
 ---
 
-So far, we've walked through how to identify my face through [Azure Functions][az func] and [Azure Face API][az cog faceapi]. In fact, the algorithm for face identification is really hard to understand. However, the Face API is a fully managed service that we don't have to maintain &ndash; this is the key concept of this post. In the next post, as the final post of this series, I'll build a [Power App][power apps] to integrate the [Function][az func] app.
+So far, we've walked through how to identify my face through [Azure Functions][az func] and [Azure Face API][az cog faceapi]. In fact, the algorithm for face identification is really hard to understand. However, the Face API is a fully managed service that we don't have to maintain &ndash; this is the key concept of this post. In the [next post][post series 3], as the final post of this series, I'll build a [Power App][power apps] to integrate the [Function][az func] app.
 
 
 [image-01]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/04/identifying-faces-through-azure-functions-using-face-api-01-en.png
@@ -123,6 +123,7 @@ So far, we've walked through how to identify my face through [Azure Functions][a
 [image-06]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/04/identifying-faces-through-azure-functions-using-face-api-06.png
 
 [post series 1]: /2020/04/01/capturing-images-from-browser-to-azure-blob-storage-via-azure-functions/
+[post series 3]: /2020/04/15/building-online-check-in-app-with-power-apps/
 
 [gh sample]: https://github.com/devkimchi/Azure-Functions-Face-Recognition-Sample/tree/part-2
 [az func]: https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=devkimchicom-blog-juyoo
