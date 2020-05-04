@@ -1,0 +1,45 @@
+name: Pull Request
+
+on:
+  pull_request:
+    branches:
+    - dev
+    types:
+    - opened
+    # - edited
+    # - synchronize
+
+jobs:
+  schedule_publish:
+    name: Schedule publish
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # - name: Check event payload
+    #   shell: bash
+    #   run: |
+    #     echo ${{ toJSON(github.event) }}
+
+    - name: Check pr body
+      id: prbody
+      shell: bash
+      run: |
+        echo ::set-output name=published::$(echo ${{ toJSON(github.event.pull_request.body) }} | sed 's!published: !!g' | sed 's!\\r\\n!!g')
+
+    - name: Check environment variables
+      shell: bash
+      run: |
+        echo "Published: ${{ steps.prbody.outputs.published }}"
+
+    # - name: Get owner and repository
+    #   uses: jungwinter/split@v1
+    #   id: split
+    #   with:
+    #     msg: ${{ github.event.repository.full_name) }}
+    #     separator: '/'
+
+    - name: Schedule publish
+      shell: bash
+      run: |
+        curl -X POST 'https://${{ secrets.AZURE_FUNCTIONS_NAME }}.azurewebsites.net/api/orchestrators/schedule-event' -d '{ "owner": "devkimchi", "repository": "blog", "issueId": ${{ github.event.pull_request.number }}, "schedule": "${{ steps.prbody.outputs.published }}" }} }' -H "x-functions-key: ${{ secrets.AZURE_FUNCTIONS_KEY }}" -H "Content-Type: application/json"
