@@ -43,3 +43,4 @@ jobs:
       shell: bash
       run: |
         curl -X POST 'https://${{ secrets.AZURE_FUNCTIONS_NAME }}.azurewebsites.net/api/orchestrators/schedule-event' -d '{ "owner": "devkimchi", "repository": "blog", "issueId": ${{ github.event.pull_request.number }}, "schedule": "${{ steps.prbody.outputs.published }}" }} }' -H "x-functions-key: ${{ secrets.AZURE_FUNCTIONS_KEY }}" -H "Content-Type: application/json"
+
