@@ -65,12 +65,14 @@ Let's rerun the application and punch the `Click me` button. You'll be able to s
 So far, we have walked through the way to add [React][reactjs] UI components into the [Blazor Web Assembly][blazor wasm] application. There are a few caveats that this post hasn't covered, though:
 
 * It always renders the component every time the counter value changes. As [Blazor][blazor] has the [state management feature][blazor statemanagement], it may be worth considering. But make sure that it also increases the complexity of the app.
-* We used CDN to import [React][reactjs] libraries. We can also consider the npm packages, which will be covered in the next post.
+* We used CDN to import [React][reactjs] libraries. We can also consider the npm packages, which will be covered in the [next post][post next].
 
 
 [image-01]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/adding-react-components-to-blazor-webassembly-app-01.png
 [image-02]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/adding-react-components-to-blazor-webassembly-app-02.png
 [image-03]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/adding-react-components-to-blazor-webassembly-app-03.png
+
+[post next]: /2020/06/10/adding-react-components-to-blazor-webassembly-app-by-nodejs/
 
 [gh sample]: https://github.com/devkimchi/Blazor-React-Sample
 
