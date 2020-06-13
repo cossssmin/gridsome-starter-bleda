@@ -50,6 +50,8 @@ Then, install the following packages for development, not for distribution.
 
 https://gist.github.com/justinyoo/224fa5fe1bfa2dca8dcdd0fc83c17251?file=04-npm-install-save-dev.sh
 
+> **NOTE** If you are using Mac OS and get `node-gyp` error while installing `webpack` or `webpack-cli`, this is a known issue. Follow the instruction from [this page][node-gyp issue] to fix it.
+
 Create the `src` directory and add both `index.js` and `progressbar.js` files. The `progressbar.js` file contains the component logic, and `index.js` exposes those components to [Blazor Web Assembly][blazor wasm] app. Enter the following code to the `progressbar.js` file.
 
 https://gist.github.com/justinyoo/224fa5fe1bfa2dca8dcdd0fc83c17251?file=05-progressbar.js&highlights=1-3,5
@@ -120,6 +122,8 @@ So far, we've built a [Blazor Web Assembly][blazor wasm] app with [React][reactj
 [npmjs]: https://www.npmjs.com/
 [webpackjs]: https://webpack.js.org/
 [babeljs]: https://babeljs.io/
+
+[node-gyp issue]: https://github.com/nodejs/node-gyp/issues/569
 
 [fluentui]: https://developer.microsoft.com/fluentui/?WT.mc_id=devkimchicom-blog-juyoo
 [fluentui progressindicator]: https://developer.microsoft.com/fluentui?WT.mc_id=devkimchicom-blog-juyoo#/controls/web/progressindicator
