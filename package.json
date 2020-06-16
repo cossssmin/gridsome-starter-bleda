@@ -8,12 +8,12 @@
     "newpost": "node scripts/newPost.js"
   },
   "dependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.0",
-    "@gridsome/plugin-sitemap": "^0.2.3",
+    "@gridsome/plugin-google-analytics": "^0.1.1",
+    "@gridsome/plugin-sitemap": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.5.0",
+    "@gridsome/transformer-remark": "^0.6.0",
     "@noxify/gridsome-plugin-remark-embed": "^1.1.5",
-    "gridsome": "^0.7.14",
+    "gridsome": "^0.7.15",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "gridsome-plugin-rss": "^1.2.0",
     "medium-zoom": "^1.0.5",
@@ -21,9 +21,9 @@
     "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {
-    "moment": "^2.25.1",
+    "moment": "^2.26.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
-    "tailwindcss": "^1.4.4"
+    "tailwindcss": "^1.4.6"
   }
 }
