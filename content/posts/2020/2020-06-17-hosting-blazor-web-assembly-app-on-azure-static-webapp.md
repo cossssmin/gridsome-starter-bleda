@@ -62,7 +62,7 @@ Save the workflow and push it back to the repository. Then the workflow will suc
 
 ## Deploying Proxy API to Azure Static Web Apps ##
 
-One of the biggest challenges for all static web app hosting services, including [Azure Static Web Apps][az swa] is to communicate with the back-end APIs with no trouble. There are several ways for front-end apps to talk to the back-end APIs. OAuth is one way and API auth key is another. The auth key should be stored in a safe place and used, if necessary. But a static web app is not the place to store the key because it's exposed. [Azure Static Web App][as swa] offers the [API proxy feature][az swa api]. With this feature, the auth key is securely stored at rest.
+One of the biggest challenges for all static web app hosting services, including [Azure Static Web Apps][az swa] is to communicate with the back-end APIs with no trouble. There are several ways for front-end apps to talk to the back-end APIs. OAuth is one way and API auth key is another. The auth key should be stored in a safe place and used, if necessary. But a static web app is not the place to store the key because it's exposed. [Azure Static Web App][az swa] offers the [API proxy feature][az swa api]. With this feature, the auth key is securely stored at rest.
 
 
 ### Building External API ###
