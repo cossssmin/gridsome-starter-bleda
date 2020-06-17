@@ -13,6 +13,10 @@ cover: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/hosting-blazor-w
 fullscreen: true
 ---
 
+* [Adding React UI Components to Blazor Web Assembly App][post series 1]
+* [Adding React UI Components to Blazor Web Assembly App by node.js][post series 2]
+* ***Hosting Blazor Web Assembly App on Azure Static Web App***
+
 In my [previous post][post prev], we developed a [Blazor Web Assembly][blazor wasm] app on our local machine. Throughout this post, I'm going to discuss how to deploy the app to [Azure Static Web Apps][az swa].
 
 > The sample code used here can be found at [https://github.com/devkimchi/Blazor-React-Sample][gh sample].
@@ -164,6 +168,10 @@ So far, we have walked through how the [Blazor Web Assembly][blazor wasm] app is
 [gh sample blazor]: https://github.com/devkimchi/Blazor-React-Sample/tree/master/BlazorNpmSample
 [gh sample api]: https://github.com/devkimchi/Blazor-React-Sample/tree/master/BlazorApiSample
 [gh sample proxy]: https://github.com/devkimchi/Blazor-React-Sample/tree/master/BlazorProxySample
+
+[post series 1]: /2020/06/03/adding-react-components-to-blazor-webassembly-app/
+[post series 2]: /2020/06/10/adding-react-components-to-blazor-webassembly-app-by-nodejs/
+[post series 3]: /2020/06/17/hosting-blazor-web-assembly-app-on-azure-static-webapp/
 
 [post prev]: /2020/06/10/adding-react-components-to-blazor-webassembly-app-by-nodejs/
 

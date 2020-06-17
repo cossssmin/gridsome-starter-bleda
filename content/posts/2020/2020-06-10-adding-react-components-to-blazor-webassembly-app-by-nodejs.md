@@ -13,6 +13,10 @@ cover: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/adding-react-com
 fullscreen: true
 ---
 
+* [Adding React UI Components to Blazor Web Assembly App][post series 1]
+* ***Adding React UI Components to Blazor Web Assembly App by node.js***
+* [Hosting Blazor Web Assembly App on Azure Static Web App][post series 3]
+
 In my [previous post][post prev], I showed how to integrate [Blazor Web Assembly][blazor wasm] app with [React][reactjs]-based [Fluent UI][fluentui] components, using CDN. While it's one approach for front-end web development, many others use [node.js][nodejs] and [npm packages][npmjs] as an alternative approach. In this post, I'm going to use this way.
 
 > The sample code used in this post can be fount at [https://github.com/devkimchi/Blazor-React-Sample][gh sample].
@@ -93,7 +97,7 @@ Now, let's run the `dotnet build .` command. It will build both Blazor and npm p
 
 ---
 
-So far, we've built a [Blazor Web Assembly][blazor wasm] app with [React][reactjs] UI components, using npm packages. Let's deploy and run this Blazor app on [Azure Static Web App][az swa] instance in the next post.
+So far, we've built a [Blazor Web Assembly][blazor wasm] app with [React][reactjs] UI components, using npm packages. Let's deploy and run this Blazor app on [Azure Static Web App][az swa] instance in the [next post][post next].
 
 
 [image-01]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/adding-react-components-to-blazor-webassembly-app-by-nodejs-01.png
@@ -102,7 +106,12 @@ So far, we've built a [Blazor Web Assembly][blazor wasm] app with [React][reactj
 
 [gh sample]: https://github.com/devkimchi/Blazor-React-Sample
 
+[post series 1]: /2020/06/03/adding-react-components-to-blazor-webassembly-app/
+[post series 2]: /2020/06/10/adding-react-components-to-blazor-webassembly-app-by-nodejs/
+[post series 3]: /2020/06/17/hosting-blazor-web-assembly-app-on-azure-static-webapp/
+
 [post prev]: /2020/06/03/adding-react-components-to-blazor-webassembly-app/
+[post next]: /2020/06/17/hosting-blazor-web-assembly-app-on-azure-static-webapp/
 
 [kedren]: https://www.linkedin.com/in/kedrenvillena/
 [kedren post]: https://medium.com/swlh/using-npm-packages-with-blazor-2b0310279320

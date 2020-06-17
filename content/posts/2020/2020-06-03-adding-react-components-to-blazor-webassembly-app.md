@@ -13,6 +13,10 @@ cover: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/adding-react-com
 fullscreen: true
 ---
 
+* ***Adding React UI Components to Blazor Web Assembly App***
+* [Adding React UI Components to Blazor Web Assembly App by node.js][post series 2]
+* [Hosting Blazor Web Assembly App on Azure Static Web App][post series 3]
+
 There were literally a lot of services and technologies announced at [Build 2020][build]. [Blazor Web Assembly][blazor wasm] was one of them, which I believe it may put a significant impact on the front-end development experiences. For those who are not familiar with the term, [Web Assembly][wasm], it's technology to run binaries on web browsers, which is written in high-level languages such as C#, C, Java, Go, and so forth. [Blazor][blazor] uses this technology to run .NET .dll files on web browsers directly. If you want to know more about [Blazor Web Assembly][blazor wasm], I would recommend watching this [video at Build][build blazor].
 
 Like any other web front-end frameworks, as [Blazor Web Assembly][blazor wasm] has completeness by itself, it might be tricky to mix with other frameworks. However, we can do a workaround if we're using a component-based web framework. Throughout this post, I'm going to show how to integrate [React][reactjs]-based [Fluent UI][fluentui] components with a [Blazor Web Assembly][blazor wasm] web application.
@@ -71,6 +75,10 @@ So far, we have walked through the way to add [React][reactjs] UI components int
 [image-01]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/adding-react-components-to-blazor-webassembly-app-01.png
 [image-02]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/adding-react-components-to-blazor-webassembly-app-02.png
 [image-03]: https://sa0blogs.blob.core.windows.net/devkimchi/2020/06/adding-react-components-to-blazor-webassembly-app-03.png
+
+[post series 1]: /2020/06/03/adding-react-components-to-blazor-webassembly-app/
+[post series 2]: /2020/06/10/adding-react-components-to-blazor-webassembly-app-by-nodejs/
+[post series 3]: /2020/06/17/hosting-blazor-web-assembly-app-on-azure-static-webapp/
 
 [post next]: /2020/06/10/adding-react-components-to-blazor-webassembly-app-by-nodejs/
 
